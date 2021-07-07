@@ -4,9 +4,7 @@ title: Welcome
 permalink: /
 section: home
 intro_paragraph: >
-  [Jekyll Netlify Boilerplate](https://github.com/danurbanowicz/jekyll-netlify-boilerplate)
-  provides the basics to get a fast, static website deployed on Netlify.
-  Features [Netlify CMS](https://www.netlifycms.org), responsive
-  CSS Grid layout, sample
-  pages and posts, and a continuous deployment workflow.
+  # Rocket Academy Test Homepage!🚀
+
+  Rocket Academy is South East Asia's premier coding School. Based in Singapore, we offer a range of coding classes for those looking to further their personal interest or switch careers.
 ---
