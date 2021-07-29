@@ -42,3 +42,17 @@ Jekyll will watch your project folder for changes.
 
 Now navigate to [localhost:4000](http://localhost:4000/) to preview the site, and
 [localhost:4000/admin](http://localhost:4000/admin) to log into the CMS.
+
+@@ Bootstrap
+
+Bootstrap was added simply by `git clone`ing the GitHub repo into the `_sass/bootstrap` directory and deleting the `.git` repo directory.
+
+This is so that the sass files have access to all Bootstrap SASS variables and mixins.
+
+See the docs here: https://getbootstrap.com/docs/5.0/customize/sass/
+
+Media queries: https://getbootstrap.com/docs/5.0/layout/breakpoints/#min-width
+
+Variables: https://bootstrap-cheatsheet.themeselection.com/variables.html
+
+Mixins: https://bootstrap-cheatsheet.themeselection.com/mixins.html
