@@ -18,7 +18,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Rocket Academy is SEA's best coding bootcamp. We offer a range of coding courses designed to level you up in the tech industry!
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://fervent-ritchie-70464f.netlify.app" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://fervent-keller-3fa421.netlify.app"
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title

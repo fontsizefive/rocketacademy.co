@@ -43,7 +43,7 @@ Jekyll will watch your project folder for changes.
 Now navigate to [localhost:4000](http://localhost:4000/) to preview the site, and
 [localhost:4000/admin](http://localhost:4000/admin) to log into the CMS.
 
-@@ Bootstrap
+## Bootstrap
 
 Bootstrap was added simply by `git clone`ing the GitHub repo into the `_sass/bootstrap` directory and deleting the `.git` repo directory.
 
