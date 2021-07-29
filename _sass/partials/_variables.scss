@@ -8,8 +8,12 @@ $grey-bg-color: rgb(243,243,243);
 $hairline-color: rgb(230,230,230);
 $selection-bg-color: rgba(255,255,100,0.5);
 
+$brand-primary-red:#E73C3E;
+
 // typographic defaults
-$base-font: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;
+$primary-font:Raleway;
+$secondary-font:Open Sans;
+$base-font: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
 $code-font: Courier, monospace;
 $base-font-size: 62.5%;
 $base-font-weight: 300;

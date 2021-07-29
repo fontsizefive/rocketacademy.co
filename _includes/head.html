@@ -1,6 +1,8 @@
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {% if page.section == "home" %}
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
@@ -10,6 +12,9 @@
       <meta name="description" content="{{ page.meta_description }}">
     {% endif %}
   {% endif %}
+
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Raleway:ital,wght@0,700;0,800;1,700">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% if jekyll.environment == 'production' and site.analytics %}
     {% include analytics.html %}
