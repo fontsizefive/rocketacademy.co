@@ -1,25 +1,28 @@
 // site colours
-$text-color: rgb(40,40,40);
+$text-color: rgb(40, 40, 40);
 $text-color-negative: white;
-$brand-color: rgb(29,37,52);
-$link-color: rgb(0,114,154);
-$link-hover-color: rgb(0,57,78);
-$grey-bg-color: rgb(243,243,243);
-$hairline-color: rgb(230,230,230);
-$selection-bg-color: rgba(255,255,100,0.5);
-
-$brand-primary-red:#E73C3E;
+// $brand-color: rgb(29, 37, 52);
+$link-color: rgb(0, 114, 154);
+// $link-hover-color: rgb(0, 57, 78);
+$grey-bg-color: rgb(243, 243, 243);
+$hairline-color: rgb(230, 230, 230);
+$selection-bg-color: rgba(255, 255, 100, 0.5);
+$button-text: white;
+$brand-offwhite: rgb(249, 246, 231);
+$brand-blue: rgb(0, 86, 126);
+$brand-secondary-red: rgb(175, 35, 28);
+$brand-primary-red: #e73c3e;
 
 // typographic defaults
-$primary-font:Raleway;
-$secondary-font:Open Sans;
-$base-font: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+$primary-font: Raleway;
+$secondary-font: Open Sans;
+$base-font: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
 $code-font: Courier, monospace;
 $base-font-size: 62.5%;
 $base-font-weight: 300;
 $bold-font-weight: 600;
 $base-line-height: 1.5;
-
+$button-height: 50px;
 // viewport breakpoints
 $screen-xs-min: 480px;
 $screen-sm-min: 768px;

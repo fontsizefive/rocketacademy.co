@@ -1,8 +1,8 @@
 ---
 layout: contact
-title: Contact
-permalink: /contact
-section: contact
+title: Bootcamp
+permalink: /bootcamp
+section: bootcamp
 intro_paragraph: |-
 
   The contact form on this page uses

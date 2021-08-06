@@ -2,21 +2,30 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<!-- <h2>{{ page.title }}</h2>
 
-  {% include page-intro.html %}
+{% include page-intro.html %} {{ content }} -->
 
-  {{ content }}
+<!-- <section>
+  <h3>Recent posts from the blog</h3>
 
-  <section>
-
-    <h3>Recent posts from the blog</h3>
-
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+  <ul>
+    {% for post in site.posts limit:3 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section> -->
+<div class="container-fluid">
+  <div class="row main-header-row">
+    <div class="col-12 col-lg-6 main-header-col">
+      <h3>Become a Software Engineer</h3>
+      <br />
+      <p>100% placement at companies like GovTech, Ninja Van, and Xfers.</p>
+      <br />
+      <button class="btn">Apply Now</button>
+    </div>
+    <div class="col-12 col-lg-6"></div>
+  </div>
+</div>

@@ -1,28 +1,177 @@
 body {
   min-height: 100vh;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
-.navbar{
-  a{
+// .navbar {
+//   background-color: $background-color-1;
+//   a {
+//   }
 
-  }
+//   .navbar-brand {
+//     font-family: $primary-font;
+//     font-weight: $bold-font-weight;
+//     color: $brand-primary-red;
+//     img {
+//       padding: 0;
+//       height: 80px;
+//       width: 300px;
+//     }
+//   }
+//   .navbar-nav {
+//     .nav-link {
+//       font-size: 20px;
+//       font-family: $secondary-font;
+//       color: $text-color-1;
+//     }
+//   }
+// }
 
-  .navbar-brand{
-    font-family: $primary-font;
-    font-weight: $bold-font-weight;
-    color:$brand-primary-red;
-  }
-  .navbar-nav{
-    .nav-link{
-      font-size:1.2rem;
+// .btn {
+//   color: $button-text;
+//   background-color: $button-color;
+// }
+
+main {
+  .container-fluid {
+    padding: 60px 0 0;
+    letter-spacing: 0.2rem;
+    overflow: auto;
+    .main-header-row {
+      height: 90vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/img/uploads/Rocket Academy 2-1764.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .main-header-col {
+      padding: 100px 40px;
+      color: white;
+      font-family: $primary-font;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      h3 {
+        font-size: 55px;
+        font-weight: lighter;
+      }
+      p {
+        font-size: 30px;
+        font-weight: lighter;
+      }
+      @media screen and (max-width: $screen-sm-min) {
+        padding-top: 30vh;
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
 
-main{
-  .container{
-    padding: 60px 15px 0;
+.navbar {
+  background-color: $brand-offwhite;
+  letter-spacing: 0.1rem;
+  padding: 0 20px 0 0;
+  .navbar-brand {
+    img {
+      padding: 0;
+      height: 80px;
+      width: 260px;
+    }
+  }
+
+  .navbar-toggler {
+    width: 47px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    outline: none;
+    outline-width: 0;
+    box-shadow: none;
+  }
+
+  .navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: $brand-blue;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    color: $brand-blue;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  .navlink-current {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  color: $button-text;
+  height: $button-height;
+  letter-spacing: 0.1rem;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $brand-primary-red;
+}
+
+.footer {
+  .container {
+    padding: 30px 10px;
+  }
+
+  .footer-column {
+    padding-bottom: 20px;
+  }
+
+  .footer-heading {
+    color: $brand-blue;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $secondary-font;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding-left: 0;
+    .footer-list-link {
+      color: $brand-secondary-red;
+    }
+  }
+
+  .footer-url {
+    font-size: 16px;
+    color: $brand-secondary-red;
+  }
+
+  .footer-icon-list {
+    color: $brand-blue;
+    display: flex;
+    font-size: 18px;
+  }
+
+  .footer-icon {
+    padding-right: 15px;
   }
 }

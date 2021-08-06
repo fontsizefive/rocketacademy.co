@@ -1,5 +1,29 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @import "bootstrap/scss/bootstrap";
 @import "main";
+
+// .navbar {
+//   background-color: $backgroundColor1;
+//   padding: 0;
+// }
+
+// .nav-link {
+//   color: $textColor1;
+//   font-family: $secondaryFont;
+// }
+
+// .btn {
+//   color: $buttonText;
+//   background-color: $buttonColor;
+// }
+
+// .navbar-brand {
+//   img {
+//     padding: 0;
+//     height: 80px;
+//     width: 300px;
+//   }
+// }
