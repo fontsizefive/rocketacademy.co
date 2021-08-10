@@ -28,4 +28,178 @@ layout: default
     </div>
     <div class="col-12 col-lg-6"></div>
   </div>
+  <div class="row coursetype-row">
+    {% for item in site.data.course-details %}
+    <div class="col-12 col-md-6 coursetype-col">
+      <div class="coursetype-container">
+        <div class="coursetype-details">
+          <h3 class="coursetype-header">{{ item.text }}</h3>
+          <br /><br />
+          <h3 class="coursetype-price">{{ item.price }}</h3>
+          <br /><br />
+          <p>{{ item.duration }}</p>
+          <p>{{ item.online }}</p>
+          <p>{{ item.prerequisites }}</p>
+          <br />
+          <p>{{ item.description }}</p>
+          <br />
+          <p>Next Batch: {{ item.next-batch }}</p>
+        </div>
+        <div class="coursetype-button-container">
+          <button class="coursetype-button">Learn More</button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row track-record-row">
+    <div class="col-12 col-md-6 track-record-col">
+      <div class="track-record-container-left">
+        <img src="../assets/img/uploads/Rocket Academy 2-1877.jpg" />
+      </div>
+    </div>
+    <div class="col-12 col-md-6 track-record-col">
+      <div class="track-record-container-right">
+        <h1>Proven Track Record.</h1>
+        <br /><br />
+        <p>
+          100% of Coding Bootcamp grads have software engineering offers from
+          companies such as GovTech, Ninja Van, Xfers, 99.co, and Glints.
+        </p>
+        <br /><br /><br />
+        <h1>Not Hired? Get a Refund.</h1>
+        <br /><br />
+        <p>
+          Bootcamp grads applying but unable to get a coding job within 6 months
+          are eligible for a full refund. Read more in our FAQ.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row table-row">
+    <div class="col-12 table-header-col">
+      <h1>The Most Comprehensive Bootcamp.</h1>
+    </div>
+    <div class="col-12 table-content-col">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Other bootcamps</th>
+            <th scope="col">Rocket Academy</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in site.data.comparison %}
+          <tr>
+            <th scope="row">{{ item.heading }}</th>
+            <td>{{ item.others }}</td>
+            <td>{{ item.RA }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row row-testimonial">
+    <div class="col-12 col-testimonial-header">
+      <h1>Hear From Our Graduates.</h1>
+    </div>
+    <div class="col-12 testimonial-content">
+      <div class="row testimonial-content-col-row">
+        <div class="col-md-4 testimonial-content-col">
+          <p class="quote">
+            “Rocket Academy gave me a learning structure curated from industry
+            experience. I would not have known what to focus my energy and time
+            on if I were studying on my own.”
+          </p>
+          <p class="student">
+            — Samantha Koh Former Business Analyst Software Engineer at GovTech
+          </p>
+        </div>
+        <div class="col-md-4 testimonial-content-col">
+          <p class="quote">
+            “It has been very rewarding. I feel proud of all the projects I've
+            done and have a better sense of what to learn as a software
+            engineer.”
+          </p>
+          <p class="student">
+            — Perry Lim Former Chef Software Engineer at Glints
+          </p>
+        </div>
+        <div class="col-md-4 testimonial-content-col">
+          <p class="quote">
+            “RA understood my situation and helped me achieve my goals, covering
+            topics not found at other bootcamps. The RA staff were always
+            available for help. I recommend Rocket Academy.”
+          </p>
+          <p class="student">
+            — Loh Eng Liang Former Electrical Engineer Software Engineer at
+            Xfers
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row testimonial-footer">
+      <a href="https://www.switchup.org/bootcamps/rocket-academy"
+        >Read More Testimonials Here</a
+      >
+    </div>
+  </div>
+  <div class="row success-row">
+    <div class="col-12 success-header">
+      <h1>Everything You Need to Succeed.</h1>
+    </div>
+    <div class="col-12 success-content-col">
+      <div class="row success-top-row">
+        {% for item in site.data.success-top %}
+        <div class="col-12 col-md-6 success-top-row-col">
+          <img src="{{ item.image }}" />
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.content }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="row success-bottom-row">
+        {% for item in site.data.success-bottom %}
+        <div class="col-12 col-md-6 success-bottom-row-col">
+          <img src="{{ item.image }}" />
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.content }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="instructors-row">
+    <div class="col instructors-header">
+      <h1>Learn From the Best Instructors</h1>
+    </div>
+    <div class="col instructors-content">
+      <div class="row">
+        {% for item in site.data.instructors %}
+        <div class="col-12 col-md-6 instructors-col">
+          <div class="instructors-container">
+            <div class="instructor-details">
+              <img src="{{ item.image }}" />
+              <h4>
+                {{ item.name }}(<span
+                  ><a href="{{ item.linked-in }}">LinkedIn</a></span
+                >)
+              </h4>
+              <ol>
+                <li>{{ item.list-item-1 }}</li>
+                <li>{{ item.list-item-2 }}</li>
+                <li>{{ item.list-item-3 }}</li>
+              </ol>
+            </div>
+            <div class="instructors-button-container">
+              <button class="instructors-button">Read More</button>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,23 @@
+- heading: Time Commitment
+  others: 3 months (FT), 6 months (PT)
+  RA: 6 months (FT), 12 months (PT)
+
+- heading: Curriculum Reputation
+  others: "3 projects<br>Surface-level app-building<br>Lacks fundamentals"
+  RA: "6 projects<br>Thorough exploration of frontend, backend, and computer science fundamentals"
+
+- heading: Data Structures and Algorithms
+  others: "❌ "
+  RA: "✅ "
+
+- heading: Career Coaching by Software Engineers
+  others: "❌ "
+  RA: "✅ "
+
+- heading: Cost (Singaporeans)
+  others: ~S$6,000 (~S$8,000 if you don't get a job, to pay back government subsidy)
+  RA: S$4,999 (Free if you don't get a job)
+
+- heading: Cost (Non-Singaporeans)
+  others: ~S$15,000
+  RA: S$4,999

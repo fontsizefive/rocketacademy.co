@@ -1,0 +1,15 @@
+- text: Basics
+  price: S$999
+  duration: 6 weeks | Part-Time
+  online: Live and Online
+  prerequisites: No background required
+  description: Learn basic coding by building simple apps
+  next-batch: 14 Aug - 25 Sep 2021
+
+- text: Bootcamp
+  price: S$4999
+  duration: 24 Weeks (6 Months) | Full-Time<br>48 Weeks (12 Months) | Part-Time
+  online: Live and Online
+  prerequisites: Basics Course Required
+  description: Switch careers to coding. Job or money back.
+  next-batch: "<br>Full-Time: 04 Oct 2021 - 25 Mar 2022<br>Part-Time: 16 Aug 2021 - 15 Jul 2022"
