@@ -273,11 +273,12 @@ main {
         }
       }
       .instructors-button {
-        width: 100px;
-        height: 40px;
+        width: 90px;
+        height: 30px;
         border-radius: 5px;
         border: none;
         font-size: 12px;
+        font-weight: 500;
         color: $brand-primary-red;
         background-color: $brand-offwhite;
       }
@@ -285,6 +286,25 @@ main {
   }
 }
 
+.blog-row {
+  background-color: $brand-secondary-red;
+  padding: 40px;
+  color: white;
+  .blog-header {
+    padding: 20px;
+  }
+  .btn-blog {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+  }
+  .blog-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
 .navbar {
   background-color: $brand-offwhite;
   letter-spacing: 0.1rem;
