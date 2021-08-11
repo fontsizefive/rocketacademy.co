@@ -35,11 +35,11 @@ layout: default
         <div class="coursetype-details">
           <h3 class="coursetype-header">{{ item.text }}</h3>
           <br /><br />
-          <h3 class="coursetype-price">{{ item.price }}</h3>
-          <br /><br />
+          <h2><span class="price">{{ item.price }}</span>&nbsp;&nbsp;<span {% if item.text == "Basics"%} class="new-price" {% endif %}>&nbsp;{{ item.new-price }}&nbsp;</span>  </h2>
+          <br >
           <p>{{ item.duration }}</p>
           <p>{{ item.online }}</p>
-          <p>{{ item.prerequisites }}</p>
+          <p{% if item.text == "Bootcamp" %} class="pre-requisite" style="width: 55%;" {% endif %}>{{ item.prerequisites }}</p>
           <br />
           <p>{{ item.description }}</p>
           <br />
@@ -113,9 +113,17 @@ layout: default
             experience. I would not have known what to focus my energy and time
             on if I were studying on my own.”
           </p>
-          <p class="student">
-            — Samantha Koh Former Business Analyst Software Engineer at GovTech
-          </p>
+          <br />
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <p class="student">
+                — Samantha Koh <br />Former Business Analyst <br />Software
+                Engineer at GovTech
+              </p>
+            </div>
+            <div class="col-6 col-md-12"></div>
+          </div>
+          <br />
         </div>
         <div class="col-md-4 testimonial-content-col">
           <p class="quote">
@@ -123,9 +131,16 @@ layout: default
             done and have a better sense of what to learn as a software
             engineer.”
           </p>
-          <p class="student">
-            — Perry Lim Former Chef Software Engineer at Glints
-          </p>
+          <br />
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <p class="student">
+                — Perry Lim <br />Former Chef <br />Software Engineer at Glints
+              </p>
+            </div>
+            <div class="col-6 col-md-12"></div>
+          </div>
+          <br />
         </div>
         <div class="col-md-4 testimonial-content-col">
           <p class="quote">
@@ -133,10 +148,17 @@ layout: default
             topics not found at other bootcamps. The RA staff were always
             available for help. I recommend Rocket Academy.”
           </p>
-          <p class="student">
-            — Loh Eng Liang Former Electrical Engineer Software Engineer at
-            Xfers
-          </p>
+          <br />
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <p class="student">
+                — Loh Eng Liang <br />Former Electrical Engineer <br />Software
+                Engineer at Xfers
+              </p>
+            </div>
+            <div class="col-6 col-md-12"></div>
+          </div>
+          <br />
         </div>
       </div>
     </div>
@@ -147,26 +169,32 @@ layout: default
     </div>
   </div>
   <div class="row success-row">
-    <div class="col-12 success-header">
+    <div class="col success-header">
       <h1>Everything You Need to Succeed.</h1>
     </div>
     <div class="col-12 success-content-col">
       <div class="row success-top-row">
         {% for item in site.data.success-top %}
         <div class="col-12 col-md-6 success-top-row-col">
-          <img src="{{ item.image }}" />
-          <h4>{{ item.title }}</h4>
-          <p>{{ item.content }}</p>
+          <div class="success-content-container">
+            <img src="{{ item.image }}" />
+            <p class="success-title">{{ item.title }}</p>
+            <p>{{ item.content }}</p>
+          </div>
+          <br />
         </div>
         {% endfor %}
       </div>
       <div class="row success-bottom-row">
         {% for item in site.data.success-bottom %}
         <div class="col-12 col-md-6 success-bottom-row-col">
-          <img src="{{ item.image }}" />
-          <h4>{{ item.title }}</h4>
-          <p>{{ item.content }}</p>
+          <div class="success-content-container">
+            <img src="{{ item.image }}" />
+            <p class="success-title">{{ item.title }}</p>
+            <p>{{ item.content }}</p>
+          </div>
         </div>
+        <br />
         {% endfor %}
       </div>
     </div>
@@ -193,6 +221,7 @@ layout: default
                 <li>{{ item.list-item-3 }}</li>
               </ol>
             </div>
+            <br>
             <div class="instructors-button-container">
               <button class="instructors-button">Read More</button>
             </div>
@@ -215,9 +244,9 @@ layout: default
         <div class="carousel-item active">
           <div class="row">
             {% for item in site.data.carousel-1 %}
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4">
               <img src="{{ item.image }}" />
-              <h3>{{ item.heading }}</h3>
+              <h4 class="blog-title">{{ item.heading }}</h4>
             </div>
             {% endfor %}
           </div>
@@ -225,9 +254,9 @@ layout: default
         <div class="carousel-item">
           <div class="row">
             {% for item in site.data.carousel-1 %}
-            <div class="col-md-4">
-              <img src="{{ item.image }}" />
-              <h3>{{ item.heading }}</h3>
+            <div class="col-12 col-lg-4">
+                <img src="{{ item.image }}" />
+                <h4 class="blog-title">{{ item.heading }}</h4>
             </div>
             {% endfor %}
           </div>
@@ -235,9 +264,9 @@ layout: default
         <div class="carousel-item">
           <div class="row">
             {% for item in site.data.carousel-1 %}
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4">
               <img src="{{ item.image }}" />
-              <h3>{{ item.heading }}</h3>
+              <h4 class="blog-title">{{ item.heading }}</h4>
             </div>
             {% endfor %}
           </div>
