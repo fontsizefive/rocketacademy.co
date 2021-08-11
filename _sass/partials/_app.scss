@@ -105,11 +105,113 @@ main {
       .prices-header-col {
         color: $brand-primary-red;
         padding: 40px 0;
+        text-align: center;
+        @media screen and (max-width: $screen-sm-min) {
+          border-bottom: 1px solid $brand-blue;
+          text-align: left;
+        }
       }
       .prices-content-col {
         color: $brand-blue;
         .prices-middle-col {
-          border-top: 2px solid $brand-blue;
+          padding-top: 50px;
+          @media screen and (min-width: $screen-sm-min) {
+            border-top: 1px solid $brand-blue;
+          }
+          h4,
+          h3 {
+            font-weight: bold;
+          }
+          span {
+            text-decoration: line-through;
+          }
+          ul {
+            line-height: 200%;
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .basics-test-row {
+      padding: 40px;
+      img {
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: bottom left;
+      }
+      .basics-test-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        @media screen and (max-width: $screen-sm-min) {
+          padding-top: 40px;
+        }
+        .quote {
+          font-size: 22px;
+          color: $brand-blue;
+          span {
+            background-color: $brand-offwhite;
+          }
+        }
+        .student,
+        a {
+          color: $brand-secondary-red;
+        }
+        .student {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .audience-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      background-color: $brand-offwhite;
+      h1 {
+        color: $brand-primary-red;
+        text-align: center;
+        padding-top: 40px;
+      }
+      .audience-content-col {
+        width: 70%;
+        @media screen and (max-width: $screen-sm-min) {
+          width: 90%;
+        }
+        .audience-col {
+          padding: 20px 40px;
+          .question,
+          p {
+            color: $brand-blue;
+          }
+          .question {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .structure-row {
+      padding: 40px;
+      background-color: $brand-secondary-red;
+      h1,
+      .structure-content-heading {
+        color: white;
+      }
+
+      .structure-content {
+        color: $brand-offwhite;
+        span {
+          background-color: $brand-offwhite;
+          color: $brand-secondary-red;
+          border-radius: 5px;
         }
       }
     }
