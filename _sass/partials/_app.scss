@@ -4,35 +4,6 @@ body {
   margin: 0;
 }
 
-// .navbar {
-//   background-color: $background-color-1;
-//   a {
-//   }
-
-//   .navbar-brand {
-//     font-family: $primary-font;
-//     font-weight: $bold-font-weight;
-//     color: $brand-primary-red;
-//     img {
-//       padding: 0;
-//       height: 80px;
-//       width: 300px;
-//     }
-//   }
-//   .navbar-nav {
-//     .nav-link {
-//       font-size: 20px;
-//       font-family: $secondary-font;
-//       color: $text-color-1;
-//     }
-//   }
-// }
-
-// .btn {
-//   color: $button-text;
-//   background-color: $button-color;
-// }
-
 main {
   .container-fluid {
     font-family: $secondary-font;
@@ -51,7 +22,7 @@ main {
       background-size: cover;
       background-position: center;
 
-      .basics-header-col {
+      .header-col {
         color: white;
         display: flex;
         flex-direction: column;
@@ -66,6 +37,37 @@ main {
           font-size: 50px;
         }
         h2 {
+          text-align: center;
+          font-size: 40px;
+          font-family: $primary-font;
+        }
+      }
+    }
+
+    .bootcamp-header-row {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/img/uploads/Rocket Academy 2-1827.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .header-col {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1,
+        h2,
+        h3 {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 50px;
+        }
+        h2 {
+          text-align: center;
           font-size: 40px;
           font-family: $primary-font;
         }
@@ -96,6 +98,12 @@ main {
         color: $brand-secondary-red;
         border-radius: 5px;
         width: 20px;
+      }
+      .percent {
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: transparent;
+        color: $brand-offwhite;
       }
     }
 
@@ -290,11 +298,114 @@ main {
     .schedule-row {
       padding: 60px 40px;
       background-color: $brand-offwhite;
+      .schedule-tabs-col {
+        @media screen and (max-width: $screen-md-min) {
+          display: none;
+        }
+        ul {
+          margin-bottom: 60px;
+        }
+      }
+      .schedule-accordion-col {
+        @media screen and (min-width: $screen-md-min) {
+          display: none;
+        }
+        .accordion-button {
+          background-color: $brand-secondary-red;
+          color: $brand-offwhite;
+          height: 55px;
+          font-size: 16px;
+          border: none;
+          padding-right: 40px;
+        }
+        .accordion-button:focus {
+          outline: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .accordion-button:not(.collapsed) {
+          background-color: $brand-primary-red;
+        }
+        .accordion-button:after {
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F9F6E7'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+        .accordion-button:hover {
+          background-color: $brand-primary-red;
+        }
+        .accordion-body {
+          margin: 0;
+          padding: 0;
+        }
+      }
       .schedule-heading-col {
         color: $brand-primary-red;
         a {
           color: $brand-primary-red;
         }
+      }
+
+      .schedule-tabs-col {
+        .nav-tabs {
+          background-color: $brand-offwhite;
+          border-bottom: 1px solid $brand-secondary-red;
+        }
+        .nav-link {
+          background-color: $brand-secondary-red;
+          color: $brand-offwhite;
+          padding: 15px 25px;
+          margin-right: 15px;
+        }
+        .nav-link:hover {
+          background-color: $brand-primary-red;
+        }
+        .active {
+          background-color: $brand-primary-red;
+        }
+      }
+      .day-row {
+        background-color: $brand-offwhite;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .day-col {
+          color: $brand-blue;
+          width: 60%;
+          .day-row-first {
+            border-bottom: 1px solid $brand-blue;
+          }
+          .day-row-first,
+          .day-row-last {
+            font-size: 14px;
+            padding: 40px 0;
+            .lesson-day {
+              font-family: $primary-font;
+              font-size: 12px;
+              font-weight: bold;
+            }
+            .lesson-title {
+              font-family: $primary-font;
+            }
+            .lesson-title,
+            .lesson-heading {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .last-row {
+      background-color: $brand-primary-red;
+      color: $brand-offwhite;
+      padding: 80px;
+      .last-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .last-btn {
+        background-color: $brand-offwhite;
+        color: $brand-primary-red;
       }
     }
     .main-header-row {
@@ -645,6 +756,9 @@ main {
   font-size: 16px;
   font-weight: 400;
   background-color: $brand-primary-red;
+}
+.btn:hover {
+  color: $brand-offwhite;
 }
 
 .footer {

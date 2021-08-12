@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: bootcamp
 title: Bootcamp
 permalink: /bootcamp
 section: bootcamp
