@@ -82,7 +82,7 @@ main {
         align-items: center;
       }
       ol {
-        @media screen and (min-width: $screen-md-min) {
+        @media screen and (min-width: $screen-sm-min) {
           width: 70%;
         }
 
@@ -174,7 +174,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 40px;
+      padding: 40px;
       background-color: $brand-offwhite;
       h1 {
         color: $brand-primary-red;
@@ -183,11 +183,7 @@ main {
       }
       .audience-content-col {
         width: 70%;
-        @media screen and (max-width: $screen-sm-min) {
-          width: 90%;
-        }
         .audience-col {
-          padding: 20px 40px;
           .question,
           p {
             color: $brand-blue;
@@ -199,11 +195,19 @@ main {
       }
     }
     .structure-row {
-      padding: 40px;
+      padding: 60px 40px;
       background-color: $brand-secondary-red;
+      .structure-heading-col {
+        h1 {
+          @media screen and (min-width: $screen-sm-min) {
+            width: 70%;
+          }
+        }
+      }
       h1,
       .structure-content-heading {
         color: white;
+        font-weight: bold;
       }
 
       .structure-content {
@@ -212,6 +216,84 @@ main {
           background-color: $brand-offwhite;
           color: $brand-secondary-red;
           border-radius: 5px;
+        }
+      }
+    }
+    .background-row {
+      padding: 60px 40px 40px;
+      color: white;
+      background-color: $brand-blue;
+      .background-header-col {
+        h1 {
+          color: $brand-offwhite;
+          @media screen and (min-width: $screen-sm-min) {
+            width: 70%;
+          }
+        }
+      }
+    }
+    .curriculum-row {
+      padding: 60px 40px;
+      .curriculum-heading-col {
+        color: $brand-primary-red;
+        text-align: center;
+      }
+      .curriculum-content-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .curriculum-content {
+        width: 70%;
+        .curriculum-module {
+          text-align: center;
+          h4 {
+            color: $brand-secondary-red;
+            font-weight: bold;
+          }
+          p {
+            color: $brand-blue;
+            font-size: 14px;
+          }
+        }
+      }
+      .curriculum-schedule {
+        width: 70%;
+        border-top: 1px solid $brand-secondary-red;
+        .curriculum-schedule-header {
+          color: $brand-primary-red;
+          h1 {
+            @media screen and (min-width: $screen-sm-min) {
+              width: 80%;
+            }
+          }
+        }
+        .curriculum-schedule-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: $brand-blue;
+          ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+            li {
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .schedule-row {
+      padding: 60px 40px;
+      background-color: $brand-offwhite;
+      .schedule-heading-col {
+        color: $brand-primary-red;
+        a {
+          color: $brand-primary-red;
         }
       }
     }
