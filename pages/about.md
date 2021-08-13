@@ -1,9 +1,8 @@
 ---
-layout: default
-title: about
+layout: about
+title: About
+permalink: /about
+section: about
 ---
 
 # About page
-
-<h1>{{ page.title }} </h1>
-this page tells you a little about me
