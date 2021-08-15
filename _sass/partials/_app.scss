@@ -13,9 +13,38 @@ main {
     overflow: auto;
     h1 {
       font-family: $primary-font;
-      font-size: 35px;
     }
+    .blog-page-row {
+      padding: 40px 40px;
+      color: $brand-primary-red;
+      h1 {
+        padding-bottom: 50px;
+        border-bottom: 1px solid $brand-primary-red;
+      }
+      .blog-page-col {
+        padding: 20px 0;
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .post-row {
+          padding: 40px;
 
+          a {
+            color: $brand-blue;
+            text-decoration: none;
+          }
+          img {
+            border-radius: 30px;
+            height: 100%;
+            width: 90%;
+            object-fit: cover;
+            background-position: bottom left;
+          }
+        }
+      }
+    }
     .faq-row {
       background-color: $brand-offwhite;
       padding: 80px 40px;
@@ -25,6 +54,7 @@ main {
 
       h1 {
         color: $brand-primary-red;
+        font-size: 35px;
       }
       h4 {
         color: $brand-blue;
