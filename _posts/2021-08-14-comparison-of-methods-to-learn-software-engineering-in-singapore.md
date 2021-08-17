@@ -3,7 +3,7 @@ layout: post
 title: Comparison of Common Methods to Learn Software Engineering in Singapore
 meta_description: ../../assets/img/uploads/2.png
 author:
-date: "2021-08-14 12:00:00"
+date: "2021-08-14"
 categories: learning methods
 ---
 

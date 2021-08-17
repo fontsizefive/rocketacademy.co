@@ -11,8 +11,198 @@ main {
     letter-spacing: 0.1rem;
     font-size: 16px;
     overflow: auto;
+    .intro {
+      border-bottom: 1px solid $brand-blue;
+      padding-bottom: 30px;
+    }
     h1 {
       font-family: $primary-font;
+    }
+    small {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    .application-row {
+      padding: 60px;
+      background-color: $brand-offwhite;
+      color: $brand-blue;
+      h1 {
+        color: $brand-primary-red;
+      }
+
+      select {
+        width: 20%;
+      }
+    }
+    .process-row {
+      padding: 60px;
+      background-color: $brand-offwhite;
+      color: $brand-blue;
+      h1 {
+        color: $brand-primary-red;
+      }
+      a {
+        color: $brand-primary-red;
+      }
+      h2 {
+        font-weight: bold;
+        font-family: $primary-font;
+      }
+    }
+    .image-row {
+      height: 60vh;
+      color: white;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/img/uploads/Perry-1659.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      .image-col {
+        padding: 40px 70px;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    .blog-carousel-row {
+      background-color: $brand-offwhite;
+      color: $brand-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .blog-carousel-col {
+        padding: 50px;
+        border-top: 1px solid $brand-blue;
+        width: 80%;
+        h3 {
+          width: 80%;
+          font-weight: bold;
+        }
+        img {
+          border-radius: 30px;
+          height: 50%;
+          width: 80%;
+          object-fit: cover;
+          background-position: center;
+        }
+        p {
+          width: 70%;
+        }
+      }
+    }
+    .page-bottom {
+      padding: 20px;
+      background-color: $brand-offwhite;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h2 {
+        width: 40%;
+      }
+      a {
+        font-family: $primary-font;
+        padding: 0 5px;
+        text-decoration: none;
+        color: $brand-blue;
+      }
+      .bottom-container-left {
+        display: flex;
+        align-items: center;
+      }
+      .bottom-container-right {
+        display: flex;
+        align-items: center;
+        text-align: right;
+      }
+    }
+    .individual-blog-page-row {
+      padding: 50px;
+      background-color: $brand-offwhite;
+      color: $brand-blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .individual-blog-page-col {
+        width: 80%;
+        h4 {
+          font-weight: bold;
+        }
+        .categories {
+          font-size: 14px;
+          font-weight: 100;
+        }
+      }
+    }
+    .all-posts-row {
+      background-color: $brand-offwhite;
+      color: $brand-primary-red;
+      padding: 50px 40px;
+      h1 {
+        padding-bottom: 50px;
+        border-bottom: 1px solid $brand-blue;
+        text-align: center;
+      }
+      .all-posts-col {
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .post-row {
+          padding: 40px;
+
+          a {
+            color: $brand-blue;
+            text-decoration: none;
+          }
+          .read-more {
+            color: $brand-primary-red;
+            text-decoration: underline;
+            font-size: 14px;
+          }
+          img {
+            padding-bottom: 20px;
+            border-radius: 30px;
+            height: 50%;
+            width: 100%;
+            object-fit: cover;
+            background-position: center;
+          }
+        }
+      }
+    }
+    .people-row {
+      background-color: $brand-blue;
+      color: $brand-offwhite;
+      padding: 50px 40px;
+      h1 {
+        padding-bottom: 50px;
+        border-bottom: 1px solid $brand-offwhite;
+        text-align: center;
+      }
+      .people-col {
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .post-row {
+          padding: 40px;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          img {
+            padding-bottom: 20px;
+            border-radius: 30px;
+            height: 100%;
+            width: 90%;
+            object-fit: cover;
+            background-position: center;
+          }
+        }
+      }
     }
     .blog-page-row {
       padding: 40px 40px;
@@ -36,6 +226,7 @@ main {
             text-decoration: none;
           }
           img {
+            padding-bottom: 20px;
             border-radius: 30px;
             height: 100%;
             width: 90%;
@@ -1025,6 +1216,7 @@ main {
   background-color: $brand-offwhite;
   letter-spacing: 0.1rem;
   padding: 0 20px 0 0;
+
   .navbar-brand {
     img {
       padding: 0;
@@ -1069,6 +1261,10 @@ main {
 }
 
 .btn {
+  a {
+    text-decoration: none;
+    color: $button-text;
+  }
   color: $button-text;
   height: $button-height;
   letter-spacing: 0.1rem;
