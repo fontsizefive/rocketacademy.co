@@ -48,6 +48,9 @@ main {
         font-weight: bold;
         font-family: $primary-font;
       }
+      .inner-col {
+        width: 90%;
+      }
     }
     .image-row {
       height: 60vh;
