@@ -1,0 +1,68 @@
+.navbar {
+  background-color: $brand-offwhite;
+  letter-spacing: 0.1rem;
+  padding: 0 20px 0 0;
+
+  .navbar-brand {
+    img {
+      padding: 0;
+      height: 80px;
+      width: 260px;
+    }
+  }
+
+  .navbar-toggler {
+    width: 47px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    outline: none;
+    outline-width: 0;
+    box-shadow: none;
+  }
+
+  .navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: $brand-blue;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    color: $brand-blue;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  .navlink-current {
+    text-decoration: underline;
+  }
+  .btn {
+    color: $button-text;
+    height: $button-height;
+    letter-spacing: 0.1rem;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $brand-primary-red;
+
+    a {
+      text-decoration: none;
+      color: $button-text;
+    }
+    .btn:hover {
+      color: $brand-offwhite;
+      cursor: pointer;
+    }
+  }
+}

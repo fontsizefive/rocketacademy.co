@@ -1,0 +1,30 @@
+.faq-row {
+  background-color: $brand-offwhite;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $brand-primary-red;
+    font-size: 35px;
+  }
+  h4 {
+    color: $brand-blue;
+    font-weight: bold;
+  }
+
+  a {
+    color: $brand-secondary-red;
+  }
+
+  ol,
+  p {
+    color: $brand-blue;
+  }
+  .faq-col {
+    @media screen and (min-width: $screen-md-min) {
+      width: 60%;
+    }
+  }
+}

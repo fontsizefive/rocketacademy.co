@@ -1,0 +1,288 @@
+.main-header-row {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/img/uploads/Rocket Academy 2-1764.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .main-header-col {
+    padding: 100px 40px;
+    color: white;
+    font-family: $primary-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h3 {
+      font-size: 55px;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+      padding-top: 30vh;
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .coursetype-row {
+    background-color: $brand-primary-red;
+    padding: 40px;
+
+    .coursetype-col {
+      .coursetype-container {
+        margin: 20px 5px;
+        padding: 40px 40px 20px;
+        background-color: white;
+        color: $brand-blue;
+        font-family: $secondary-font;
+        border-radius: 15px;
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .coursetype-header {
+          font-weight: bold;
+          font-family: $primary-font;
+          font-size: 22px;
+          color: $brand-primary-red;
+        }
+
+        .pre-requisite {
+          background-color: $brand-offwhite;
+          color: $brand-secondary-red;
+          border-radius: 10px;
+        }
+        .coursetype-details {
+          height: 90%;
+          span {
+            font-weight: bold;
+          }
+          .price {
+            text-decoration: line-through;
+          }
+          .new-price {
+            background-color: $brand-offwhite;
+            color: $brand-secondary-red;
+            border-radius: 10px;
+          }
+        }
+
+        .coursetype-button-container {
+          height: 10%;
+        }
+
+        .coursetype-button {
+          background-color: $brand-blue;
+          border: none;
+          border-radius: 40px;
+          color: white;
+          width: 150px;
+          height: 40px;
+          font-size: 14px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .track-record-row {
+    padding: 40px;
+    background-color: $brand-blue;
+    color: white;
+    font-family: $primary-font;
+
+    .track-record-col {
+      .track-record-container-left,
+      .track-record-container-right {
+        text-align: left;
+        margin: 20px;
+        height: 100%;
+        text-align: left;
+        h1 {
+          font-family: $primary-font;
+        }
+
+        img {
+          border-radius: 20px;
+          height: 90%;
+          width: 100%;
+          object-fit: cover;
+          background-position: bottom left;
+        }
+      }
+
+      .track-record-container-right {
+        @media screen and (max-width: $screen-xs-min) {
+          height: 80%;
+        }
+      }
+    }
+  }
+
+  .table-row {
+    padding: 40px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/img/uploads/Perry-1659.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .table-header-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .table-content-col {
+      padding: 0;
+      margin: 0;
+      th,
+      td {
+        padding: 15px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+
+  .row-testimonial {
+    padding: 40px;
+    background-color: $brand-offwhite;
+    .col-testimonial-header {
+      color: $brand-primary-red;
+      padding: 40px;
+      @media screen and (max-width: $screen-xs-min) {
+        padding: 20px;
+      }
+    }
+    .testimonial-content-col {
+      padding: 0 40px;
+      color: $brand-secondary-red;
+      @media screen and (max-width: $screen-xs-min) {
+        padding: 0 20px;
+      }
+      .student {
+        color: $brand-blue;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: $primary-font;
+        @media screen and (max-width: $screen-xs-min) {
+          padding-top: 20px;
+        }
+      }
+    }
+    .testimonial-content-col-row {
+      padding: 20px 0;
+    }
+    .testimonial-footer a {
+      color: $brand-primary-red;
+      padding: 40px;
+      @media screen and (max-width: $screen-xs-min) {
+        padding: 20px;
+      }
+    }
+  }
+  .success-row {
+    padding: 40px;
+    .success-header {
+      color: $brand-primary-red;
+      padding: 40px 40px 0;
+      @media screen and (max-width: $screen-xs-min) {
+        padding: 20px;
+      }
+    }
+
+    .success-content-col {
+      padding: 40px;
+      color: $brand-blue;
+      .success-title {
+        font-weight: bold;
+      }
+      .success-content {
+        width: 80%;
+      }
+
+      @media screen and (max-width: $screen-xs-min) {
+        padding: 20px;
+      }
+    }
+    img {
+      border-radius: 20px;
+      height: 90%;
+      width: 80%;
+      object-fit: cover;
+      background-position: center;
+    }
+  }
+  .instructors-row {
+    background-color: $brand-blue;
+    padding: 40px;
+    .instructors-header {
+      padding: 40px;
+      color: $brand-offwhite;
+    }
+    .instructors-container {
+      margin: 20px;
+      h4 {
+        padding: 10px;
+        a {
+          color: $brand-secondary-red;
+        }
+      }
+    }
+    .instructor-details {
+      color: white;
+      img {
+        border-radius: 20px;
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+      }
+    }
+    .instructors-button-container {
+      .instructors-button {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        font-weight: bold;
+        color: $brand-primary-red;
+        background-color: $brand-offwhite;
+        a {
+          text-decoration: none;
+          color: $brand-primary-red;
+        }
+      }
+    }
+    .blog-row {
+      background-color: $brand-secondary-red;
+      padding: 40px;
+      color: white;
+      height: 90vh;
+      .blog-header {
+        padding: 40px;
+      }
+
+      .blog-title {
+        padding: 0 10px;
+      }
+    }
+  }
+}

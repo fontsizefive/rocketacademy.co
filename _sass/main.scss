@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-@import
-  "partials/variables",
-  "partials/mixins",
-  "partials/typography",
-  "partials/app"
-;
+@import "partials/variables", "partials/mixins", "partials/typography",
+  "partials/app", "partials/footer", "partials/navbar", "partials/blog",
+  "partials/basics", "partials/bootcamp", "partials/home", "partials/about",
+  "partials/faq", "partials/posts", "partials/signup";

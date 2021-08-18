@@ -1,0 +1,50 @@
+.footer {
+  .container {
+    padding: 30px 10px;
+  }
+  .svg-icon,
+  .icon,
+  .mask {
+    width: 30px;
+    height: 40px;
+    fill: transparent;
+  }
+
+  .icon {
+    fill: #00567e;
+  }
+
+  .footer-column {
+    padding-bottom: 20px;
+  }
+
+  .footer-heading {
+    color: $brand-blue;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $secondary-font;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding-left: 0;
+    .footer-list-link {
+      color: $brand-secondary-red;
+    }
+  }
+
+  .footer-url {
+    font-size: 16px;
+    color: $brand-secondary-red;
+  }
+
+  .footer-icon-list {
+    color: $brand-blue;
+    display: flex;
+    font-size: 18px;
+  }
+
+  .footer-icon {
+    padding-right: 15px;
+  }
+}

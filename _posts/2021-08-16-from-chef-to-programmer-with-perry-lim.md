@@ -7,8 +7,16 @@ date: "2021-08-16 12:00:00"
 categories: profiles
 ---
 
-Perry is a Rocket Academy graduate who has launched his dream career in programming through our flagship Coding Bootcamp course. His journey also represents our belief that anyone can become a software engineer with enough motivation and diligence, no matter their background.
+![perry-image](../../assets/img/uploads/6.png)
+<br><br>
 
+### Perry is a Rocket Academy graduate who has launched his dream career in programming through our flagship Coding Bootcamp course. His journey also represents our belief that anyone can become a software engineer with enough motivation and diligence, no matter their background.
+
+<br><br>
+
+---
+
+<br><br>
 For Perry, software engineering was a significant career change from his previous role as a chef. “I always had an interest in computers,” He tells us. “Maybe not coding specifically, but as a kid, my sister always asked me to fix problems with her computer and I loved it.” However, the prospect of programming professionally seemed to elude his life’s orbit. Instead, Perry ended up graduating in the Culinary Arts and donning his chef’s hat.
 
 It was not until National Service that Perry began toying with the idea of using his free time to “learn things I never thought I could do on my own before”. This included exploring programming languages through part-time data analytics courses. “I realised how fun that self-development process was and also how much I liked problem solving,” says Perry. “So, I decided to focus on pursuing a job as a programmer after finishing NS. When I came home, I actually threw my chef shoes away!”

@@ -1,0 +1,44 @@
+.application-row {
+  padding: 60px;
+  background-color: $brand-offwhite;
+  color: $brand-blue;
+  h1 {
+    color: $brand-primary-red;
+  }
+
+  select {
+    width: 20%;
+  }
+}
+.process-row {
+  padding: 60px;
+  background-color: $brand-offwhite;
+  color: $brand-blue;
+  h1 {
+    color: $brand-primary-red;
+  }
+  a {
+    color: $brand-primary-red;
+  }
+  h2 {
+    font-weight: bold;
+    font-family: $primary-font;
+  }
+  .inner-col {
+    width: 90%;
+  }
+}
+.image-row {
+  height: 60vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../assets/img/uploads/Perry-1659.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .image-col {
+    padding: 40px 70px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
