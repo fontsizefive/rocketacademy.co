@@ -22,6 +22,7 @@ main {
       font-size: 12px;
       font-weight: 100;
     }
+
     .application-row {
       padding: 60px;
       background-color: $brand-offwhite;
@@ -55,7 +56,7 @@ main {
     .image-row {
       height: 60vh;
       color: white;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("../../assets/img/uploads/Perry-1659.jpg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -923,7 +924,9 @@ main {
     }
     .last-btn {
       background-color: $brand-offwhite;
-      color: $brand-primary-red;
+      a {
+        color: $brand-primary-red;
+      }
     }
   }
   .main-header-row {
@@ -1019,6 +1022,10 @@ main {
           width: 150px;
           height: 40px;
           font-size: 14px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
     }
@@ -1190,6 +1197,10 @@ main {
         font-weight: bold;
         color: $brand-primary-red;
         background-color: $brand-offwhite;
+        a {
+          text-decoration: none;
+          color: $brand-primary-red;
+        }
       }
     }
   }
@@ -1199,17 +1210,18 @@ main {
   background-color: $brand-secondary-red;
   padding: 40px;
   color: white;
+  height: 90vh;
   .blog-header {
     padding: 40px;
   }
 
   .blog-title {
-    padding: 0 40px;
+    padding: 0 10px;
   }
 
   img {
     border-radius: 20px;
-    height: 75%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
     background-position: center;
@@ -1286,6 +1298,16 @@ main {
 .footer {
   .container {
     padding: 30px 10px;
+  }
+  .sqs-svg-icon--social,
+  .sqs-use--icon,
+  .sqs-use--mask {
+    fill: transparent;
+  }
+
+  .sqs-use--icon,
+  .sqs-use--icon {
+    fill: #00567e;
   }
 
   .footer-column {

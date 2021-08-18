@@ -24,7 +24,7 @@ layout: default
       <br />
       <p>100% placement at companies like GovTech, Ninja Van, and Xfers.</p>
       <br />
-      <button class="btn">Apply Now</button>
+      <button class="btn"><a href="/apply-now">Apply Now</a></button>
     </div>
     <div class="col-12 col-lg-6"></div>
   </div>
@@ -39,14 +39,14 @@ layout: default
           <br >
           <p>{{ item.duration }}</p>
           <p>{{ item.online }}</p>
-          <p{% if item.text == "Bootcamp" %} class="pre-requisite" style="width: 55%;" {% endif %}>{{ item.prerequisites }}</p>
+          <p{% if item.text == "Bootcamp" %} class="pre-requisite" style="width: 55%;" {% endif %}>&nbsp;{{ item.prerequisites }}</p>
           <br />
           <p>{{ item.description }}</p>
           <br />
           <p>Next Batch: {{ item.next-batch }}</p>
         </div>
         <div class="coursetype-button-container">
-          <button class="coursetype-button">Learn More</button>
+          <button class="coursetype-button"><a href="{{ item.url }}">Learn More</a></button>
         </div>
       </div>
     </div>
@@ -191,6 +191,7 @@ layout: default
         <div class="col-12 col-md-6 success-bottom-row-col">
           <div class="success-content-container">
             <img src="{{ item.image }}" />
+            <br><br>
             <p class="success-title">{{ item.title }}</p>
             <p class="success-content">{{ item.content }}</p>
           </div>
@@ -224,7 +225,7 @@ layout: default
             </div>
             <br>
             <div class="instructors-button-container">
-              <button class="instructors-button">Read More</button>
+              <button class="instructors-button"><a href="/about">Read More</a></button>
             </div>
           </div>
         </div>
@@ -237,45 +238,63 @@ layout: default
       <h1>Break Into the Tech Industry.</h1>
     </div>
     <div
-      id="carouselExampleControls"
+      id="homepage-carousel-controls"
       class="carousel slide"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
-            {% for item in site.data.carousel-1 %}
-            <div class="col-12 col-lg-4">
+            <!-- {% for item in site.data.carousel-1 %}
+            <div class="col-4">
               <img src="{{ item.image }}" />
               <p class="blog-title">{{ item.heading }}</p>
             </div>
-            {% endfor %}
+            {% endfor %} -->
+            {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "learning" %} {% assign count = count |
+              plus:1 %}
+              <div class="col-4">
+                <img src="{{ post.meta_description }}" />
+                <br /><br />
+                <p class="blog-title">{{ post.title }}</p>
+              </div>
+              {% if count == 3 %}{% break %}
+              {% endif %}
+               {% endif %}{% endfor %}
           </div>
         </div>
         <div class="carousel-item">
           <div class="row">
-            {% for item in site.data.carousel-1 %}
-            <div class="col-12 col-lg-4">
-                <img src="{{ item.image }}" />
-                <p class="blog-title">{{ item.heading }}</p>
-            </div>
-            {% endfor %}
+            {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "profiles" %} {% assign count = count |
+              plus:1 %}
+              <div class="col-4">
+                <img src="{{ post.meta_description }}" />
+                <br /><br />
+                <p class="blog-title">{{ post.title }}</p>
+              </div>
+              {% if count == 3 %}{% break %}
+              {% endif %}
+               {% endif %}{% endfor %}
           </div>
         </div>
         <div class="carousel-item">
           <div class="row">
-            {% for item in site.data.carousel-1 %}
-            <div class="col-12 col-lg-4">
-              <img src="{{ item.image }}" />
-              <p class="blog-title">{{ item.heading }}</p>
-            </div>
-            {% endfor %}
+            {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "community" %} {% assign count = count |
+              plus:1 %}
+              <div class="col-4">
+                <img src="{{ post.meta_description }}" />
+                <br /><br />
+                <p class="blog-title">{{ post.title }}</p>
+              </div>
+              {% if count == 3 %}{% break %}
+              {% endif %}
+               {% endif %}{% endfor %}
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#homepage-carousel-controls"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -284,7 +303,7 @@ layout: default
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#homepage-carousel-controls"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
