@@ -26,21 +26,21 @@
       font-family: $primary-font;
     }
   }
-
-  .bootcamp-schedule-row {
-    padding: 60px 40px;
-    display: flex;
-    justify-content: center;
-    background-color: $brand-offwhite;
-    .schedule-container {
-      @media screen and (min-width: $screen-md-min) {
-        width: 70%;
-      }
-    }
-    ul {
-      margin-bottom: 60px;
+}
+.bootcamp-schedule-row {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: $brand-offwhite;
+  .schedule-container {
+    @media screen and (min-width: $screen-md-min) {
+      width: 70%;
     }
   }
+  ul {
+    margin-bottom: 60px;
+  }
+
   .schedule-heading-col {
     color: $brand-blue;
     h1 {
@@ -96,5 +96,26 @@
         }
       }
     }
+  }
+}
+
+.last-btn {
+  color: $brand-primary-red;
+  height: $button-height;
+  letter-spacing: 0.1rem;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $brand-offwhite;
+  a {
+    text-decoration: none;
+    color: $brand-primary-red;
+  }
+  .btn:hover {
+    cursor: pointer;
   }
 }
