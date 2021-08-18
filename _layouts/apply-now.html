@@ -74,7 +74,7 @@ layout: default
           <br />
           <small>We may WhatsApp you if we cannot reach you via email.</small>
           <input
-            type="number"
+            type="text"
             name="MERGE4"
             id="MERGE4"
             class="form-control form-control-lg"
@@ -86,8 +86,8 @@ layout: default
         </div>
         <div class="mb-3">
           <label for="MERGE10" class="form-label"
-            >LinkedIn profile (if any) *</label
-          >
+            >LinkedIn profile (if any) *
+          </label>
           <br />
           <small
             >We will connect with you on LinkedIn and help you grow your
@@ -95,19 +95,18 @@ layout: default
             profile.</small
           >
           <input
-            type="url"
+            type="text"
             class="form-control form-control-lg"
             name="MERGE10"
             id="MERGE10"
             placeholder="http://linkedin.com/in/example"
-            pattern="https://.*"
           />
           <br />
         </div>
         <div class="mb-3">
           <label for="MERGE3">Describe your coding experience *</label>
           <small>Prior experience is welcome but not necessary</small>
-          <div class="form-check">
+          <div class="form-check" id="MERGE3">
             <input
               class="form-check-input"
               type="radio"
