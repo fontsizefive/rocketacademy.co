@@ -66,6 +66,13 @@
   align-items: center;
   .individual-blog-page-col {
     width: 80%;
+    img {
+      border-radius: 30px;
+      height: 60%;
+      width: 100%;
+      object-fit: cover;
+      background-position: center;
+    }
     h4 {
       font-weight: bold;
     }
