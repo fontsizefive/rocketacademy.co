@@ -2,15 +2,15 @@
 
 // set font sizes in percent on the root element
 
-html {
-  font-size: $base-font-size;
-  @media screen and (min-width: $screen-xs-min) {
-    font-size: $base-font-size * 1.2;
-  }
-  @media screen and (min-width: $screen-md-min) {
-    font-size: $base-font-size * 1.4;
-  }
-}
+//html {
+//  font-size: $base-font-size;
+//  @media screen and (min-width: $screen-xs-min) {
+//    font-size: $base-font-size * 1.2;
+//  }
+//  @media screen and (min-width: $screen-md-min) {
+//    font-size: $base-font-size * 1.4;
+//  }
+//}
 
 // now we can specify a single font size in rem for each of our elements
 // the root breakpoints above will then scale all elements together
