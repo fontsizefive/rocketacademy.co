@@ -25,7 +25,10 @@ hr {
 
 .image-left {
   border-radius: 30px;
-  width: 50%;
+  width: 100%;
+  @media screen and (min-width: $screen-sm-min) {
+    width: 50%;
+  }
   object-fit: cover;
   background-position: center;
   float: left;
