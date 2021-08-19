@@ -11,7 +11,8 @@ At Rocket Academy, we are committed to launching you towards your goals, softwar
 
 We invited four graduates of Coding Basics to share their stories, from their journey with Rocket Academy to personal goals and future plans.
 
-Bryan
+# Bryan
+
 Bryan-Rocket-Academy-Student-Theology-Student.png
 “I'm currently a full-time student in the totally unrelated field of theological studies. And in my pursuit of this field, I've come to a point where I'm wondering if I should make a switch. I’m not sure yet if software engineering is what I want to do — I’m still exploring. But it’s something I’m more used to because I have a diploma in aviation engineering. That required some form of logical thinking in terms of computer logic, and a bit of coding here and there. So these are things I know I can do well in.
 
@@ -19,7 +20,8 @@ During this entire period of searching what I want to do next, I started coding 
 
 Coding Basics was a good introduction to the bigger things to come, so I wanted to use it to see if things fit with me. The course was a great introduction and exposure to what coding looks like, on top of everything I had learnt on my own. I managed to code well also because of the setup Rocket Academy had. There's a lot more one-to-one face time, and closer interaction, which really helped. The many interpersonal relationships involved was the thing that had the greatest impact for me. It was something unique that I saw in Rocket Academy and Kai. Right now, I'm waiting to make that transition into Coding Bootcamp, while slowly reading and brushing up on my own knowledge in preparation for that.”
 
-Marie
+# Marie
+
 Marie-Rocket-Academy-Student-UX-Designer-Entrepreneur.png
 “I'm a user experience designer and I wanted to learn backend coding to better understand what the developers I work with feel. As a designer, you always want to have the most perfect design. But developers are always at the losing end because they are at the end of the process and have the most work to do. Learning basic coding was useful in showing me the things someone should be thinking about when developing anything, which really helps put things into perspective when it comes to creating designs that are useful to everyone, including my team members.
 
@@ -31,7 +33,8 @@ I think the workflow of the course was especially memorable. All the materials a
 
 Pair work was also really interesting because we get to work with people with different abilities. So we could lean, particularly me, on peers who were better. From my experience with a lot of developers, they’re not particularly great at communication skills too. So pair programming taught me how to interact better with them and the questions I should be asking. It was also nice to see people who were just beginning and having a tough time work things out together. Even if we couldn’t finish every task, the triumph was actually just being able to finish one thing. We would even say, do you want to continue working on it after this? And then we would get to know each other’s backstory as well and build bonds.”
 
-Al
+# Al
+
 Al-Rocket-Academy-Student-Software-Engineer-Recruiter.png
 “Coding is always something I've wanted to do, but I just never got around to it because of work, life, and whatnot. I did learn it in school way back when I was a business student, but it was very basic. To be honest, I didn’t quite like it then and I can’t remember anything now either!
 
@@ -45,7 +48,8 @@ At the moment, I’m a recruiter who hires mostly for software engineers. So kno
 
 See Al’s LinkedIn profile here.
 
-Cynthia
+# Cynthia
+
 Cynthia-Rocket-Academy-Student-Product-Manager-Igloohome.png
 “Before taking Coding Basics, I already had some interest in coding because of my job as a product manager in a tech company. I manage software products, but I don't have any background in software engineering. Although it’s not completely necessary, it does help. So I've played around with some other classes before, like Harvard’s CS50.
 
