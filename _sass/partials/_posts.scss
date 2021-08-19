@@ -1,3 +1,13 @@
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-width: 1px;
+  padding: 10px;
+}
+
 .blog-carousel-row {
   background-color: $brand-offwhite;
   color: $brand-blue;
