@@ -8,6 +8,29 @@ th {
   padding: 10px;
 }
 
+p,
+h3,
+h2 {
+  padding: 20px;
+}
+
+h4 {
+  padding: 20px;
+  font-weight: bold;
+}
+
+hr {
+  margin: 30px;
+}
+
+.image-left {
+  border-radius: 30px;
+  width: 50%;
+  object-fit: cover;
+  background-position: center;
+  float: left;
+}
+
 .blog-carousel-row {
   background-color: $brand-offwhite;
   color: $brand-blue;
@@ -21,6 +44,10 @@ th {
     width: 80%;
     .carousel-inner {
       height: 50vh;
+      p,
+      h3 {
+        padding: 0;
+      }
       @media screen and (max-width: $screen-md-min) {
         height: 60vh;
       }
