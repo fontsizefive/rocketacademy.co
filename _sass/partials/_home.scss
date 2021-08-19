@@ -53,8 +53,13 @@ main {
       background-size: cover;
       background-position: center;
 
+      .main-header-cont{
+        height:100%;
+      }
+
       .main-header-col {
-        padding: 100px 40px;
+        height:100%;
+        padding: 0 40px 25vh 40px;
         color: white;
         font-family: $primary-font;
         display: flex;
@@ -62,22 +67,28 @@ main {
         justify-content: center;
         align-items: flex-start;
         h3 {
-          font-size: 55px;
-          font-weight: lighter;
-        }
-        p {
           font-size: 30px;
           font-weight: lighter;
         }
-        @media screen and (max-width: $screen-sm-min) {
-          padding-top: 30vh;
+        p {
+          font-weight: lighter;
+          font-size: 18px;
+        }
+        @media screen and (min-width: $screen-sm-min) {
           h3 {
-            font-size: 30px;
+            font-size: 55px;
           }
           p {
-            font-size: 18px;
+            font-size: 30px;
           }
         }
+      }
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+
+      .main-header-row {
+        background-position: right;
       }
     }
 
@@ -295,28 +306,24 @@ main {
       }
       .instructor-details {
         color: white;
-        img {
-          border-radius: 20px;
-          height: 90%;
-          width: 100%;
-          object-fit: cover;
-          background-position: center;
-        }
       }
-      .instructors-button-container {
-        .instructors-button {
-          width: 100px;
-          height: 30px;
-          border-radius: 5px;
-          border: none;
-          font-size: 10px;
-          font-weight: bold;
+
+      .instructor-img{
+        width:100%;
+        border-radius: 20px;
+      }
+      .instructors-button {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        font-weight: bold;
+        color: $brand-primary-red;
+        background-color: $brand-offwhite;
+        a {
+          text-decoration: none;
           color: $brand-primary-red;
-          background-color: $brand-offwhite;
-          a {
-            text-decoration: none;
-            color: $brand-primary-red;
-          }
         }
       }
     }
@@ -324,7 +331,6 @@ main {
       background-color: $brand-secondary-red;
       padding: 40px;
       color: white;
-      height: 90vh;
       .blog-header {
         padding: 40px;
       }
