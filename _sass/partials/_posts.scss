@@ -1,18 +1,22 @@
 .blog-carousel-row {
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .blog-carousel-col {
     padding: 50px;
-    border-top: 1px solid $brand-blue;
+    border-top: 1px solid $blue;
     width: 80%;
     .carousel-inner {
-      height: 50vh;
-      @media screen and (max-width: $screen-md-min) {
-        height: 60vh;
+      height: 60vh;
+      p,
+      h3 {
+        padding: 0;
+      }
+      @include media-breakpoint-up(md) {
+        height: 50vh;
       }
     }
     h3 {
@@ -31,39 +35,43 @@
     }
   }
 }
-.page-bottom {
-  padding: 20px;
-  background-color: $brand-offwhite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  h2 {
-    width: 40%;
-  }
-  a {
-    font-family: $primary-font;
-    padding: 0 5px;
-    text-decoration: none;
-    color: $brand-blue;
-  }
-  .bottom-container-left {
+.page-bottom-row {
+  background-color: $light;
+  .page-bottom {
+    padding: 20px;
     display: flex;
-    align-items: center;
-  }
-  .bottom-container-right {
-    display: flex;
-    align-items: center;
-    text-align: right;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      width: 40%;
+    }
+    a {
+      font-family: $primary-font;
+      padding: 0 5px;
+      text-decoration: none;
+      color: $blue;
+    }
+    .bottom-container-left {
+      display: flex;
+      align-items: center;
+    }
+    .bottom-container-right {
+      display: flex;
+      align-items: center;
+      text-align: right;
+    }
   }
 }
+
 .individual-blog-page-row {
   padding: 50px;
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .individual-blog-page-col {
     width: 80%;
     img {
@@ -73,17 +81,47 @@
       object-fit: cover;
       background-position: center;
     }
-    h4 {
-      font-weight: bold;
-    }
+
     hr {
       height: 2px;
+      margin: 30px;
     }
     h2 {
-      color: $brand-primary-red;
+      color: $red;
+      padding: 20px;
     }
     a {
-      color: $brand-secondary-red;
+      color: $secondary;
+    }
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+      border-width: 1px;
+      padding: 10px;
+    }
+
+    p,
+    h3 {
+      padding: 20px;
+    }
+
+    h4 {
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .image-left {
+      border-radius: 30px;
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
+      object-fit: cover;
+      background-position: center;
+      float: left;
     }
     .categories {
       font-size: 14px;

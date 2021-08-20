@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Postgraduate Software Engineering Programmes in Singapore
-meta_description: ../../assets/img/uploads/32.png
+meta_description: ../../assets/img/uploads/blog-postgrad.png
 author:
 date: "2021-08-12"
 categories: learning methods
@@ -14,11 +14,9 @@ If you prefer more structured learning, basic coding bootcamps and postgraduate 
 As with bootcamps, postgraduate programmes typically have job fairs and career offices to support students. This may not be as extensive or intensive as bootcamps, however, as postgraduate programmes don’t have the same incentives to get graduates jobs. Unlike bootcamps, their subsidies do not depend on the employability of graduates.
 
 Postgraduate programme graduates often do well in the job market if they have relevant prior experience, such as working at a tech company or in fields like data analytics. However, they may not glean as much practical experience through internships as Computer Science undergraduates. This means postgraduate programme graduates need to spend extra time building practical skills through projects outside their course.
-<br><br>
 
 ---
 
-<br>
 Here are some of the best postgraduate software engineering programmes in Singapore:
 
 - Singapore Polytechnic offers a one-year part-time [Diploma in Web and Programming](<https://www.sp.edu.sg/pace/courses/course-type/part-time-and-post-diplomas/ofr_ap/diploma-(conversion)-in-web-and-programming>).

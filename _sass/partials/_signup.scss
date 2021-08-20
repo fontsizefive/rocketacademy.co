@@ -1,9 +1,9 @@
 .application-row {
   padding: 60px;
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   h1 {
-    color: $brand-primary-red;
+    color: $red;
   }
 
   select {
@@ -12,13 +12,13 @@
 }
 .process-row {
   padding: 60px;
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   h1 {
-    color: $brand-primary-red;
+    color: $red;
   }
   a {
-    color: $brand-primary-red;
+    color: $red;
   }
   h2 {
     font-weight: bold;

@@ -1,11 +1,11 @@
 .navbar-expand-lg {
-  background-color: $brand-offwhite;
+  background-color: $light;
   letter-spacing: 0.1rem;
   padding: 0 20px 0 0;
 
   .navbar-brand {
     img {
-      margin:10px 0 10px 10px;
+      margin: 10px 0 10px 10px;
       height: 37px;
     }
   }
@@ -26,21 +26,24 @@
     width: 100%;
     float: left;
     height: 2px;
-    background-color: $brand-blue;
+    background-color: $blue;
     margin-bottom: 5px;
   }
 
-  .navbar-nav{
-
+  .navbar-nav {
     .nav-link {
-      color: $brand-blue;
+      color: $blue;
       font-weight: 400;
       font-size: 18px;
     }
 
-    @media screen and (min-width: $screen-md-min) {
+    .btn-primary {
+      margin-left: 9px;
+    }
+
+    @include media-breakpoint-up(lg) {
       .nav-link {
-        padding:0;
+        padding: 0;
         margin: 0 9px;
       }
     }
@@ -48,30 +51,5 @@
     .navlink-current {
       text-decoration: underline;
     }
-
-    .btn {
-      color: $button-text;
-      letter-spacing: 0.1rem;
-      width: 150px;
-      padding: .375rem .75rem;
-      border-radius: 5px;
-      border:none;
-      font-family: $primary-font;
-      font-size: 14px;
-      font-weight: 400;
-      background-color: $brand-primary-red;
-
-      a {
-        text-decoration: none;
-        color: $button-text;
-      }
-      .btn:hover {
-        color: $brand-offwhite;
-        cursor: pointer;
-      }
-    }
-
-
-
   }
 }

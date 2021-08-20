@@ -1,5 +1,5 @@
 .footer {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   .container {
     padding: 30px 10px;
   }
@@ -19,26 +19,26 @@
   }
 
   .footer-heading {
-    color: $brand-blue;
+    color: $blue;
     font-weight: 600;
-    font-size:1.3rem;
+    font-size: 1.3rem;
   }
 
   .footer-list {
-    letter-spacing:0.7px;
+    letter-spacing: 0.7px;
     list-style: none;
     padding-left: 0;
     .footer-list-link {
-      color: $brand-secondary-red;
+      color: $secondary;
     }
   }
 
   .footer-url {
-    color: $brand-secondary-red;
+    color: $secondary;
   }
 
   .footer-icon-list {
-    color: $brand-blue;
+    color: $blue;
     display: flex;
   }
 
