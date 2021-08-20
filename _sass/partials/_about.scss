@@ -1,5 +1,5 @@
 .about-header-row {
-  background-color: $brand-secondary-red;
+  background-color: $secondary;
   color: white;
 
   .about-header-col {
@@ -47,23 +47,23 @@
     }
     .objectives-text-row {
       width: 80%;
-      color: $brand-blue;
+      color: $blue;
       padding: 80px 20px 40px;
-      border-bottom: 1px solid $brand-primary-red;
+      border-bottom: 1px solid $red;
       .last {
         border-bottom: none;
       }
       h1 {
-        color: $brand-primary-red;
+        color: $red;
       }
     }
   }
 }
 .kai-row {
   padding: 80px 40px;
-  background-color: $brand-offwhite;
+  background-color: $light;
   .kai-top-left {
-    color: $brand-primary-red;
+    color: $red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,11 +80,11 @@
     }
   }
   .upper-text {
-    color: $brand-blue;
-    border-bottom: 1px solid $brand-blue;
+    color: $blue;
+    border-bottom: 1px solid $blue;
   }
   .lower-text {
-    color: $brand-blue;
+    color: $blue;
     font-size: 14px;
   }
   .kai-bottom {
@@ -94,7 +94,7 @@
     align-items: center;
     .kai-bottom-col {
       width: 70%;
-      color: $brand-blue;
+      color: $blue;
       h3 {
         font-weight: bold;
       }
@@ -103,9 +103,9 @@
 }
 .akira-row {
   padding: 80px 40px;
-  background-color: $brand-blue;
+  background-color: $blue;
   .akira-top-left {
-    color: $brand-offwhite;
+    color: $light;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +136,7 @@
     align-items: center;
     .akira-bottom-col {
       width: 70%;
-      color: $brand-offwhite;
+      color: $light;
       h3 {
         font-weight: bold;
       }
@@ -146,8 +146,8 @@
 .team-row {
   padding: 40px;
   text-align: center;
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   h1 {
     padding: 20px;
   }
@@ -164,7 +164,7 @@
       background-position: center;
     }
     .team-name {
-      color: $brand-primary-red;
+      color: $red;
       font-size: 18px;
       font-family: $primary-font;
       font-weight: 600;
@@ -174,7 +174,7 @@
     }
     a {
       font-weight: bold;
-      color: $brand-blue;
+      color: $blue;
     }
   }
 }

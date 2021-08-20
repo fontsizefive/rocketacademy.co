@@ -1,12 +1,12 @@
 .footer {
+  font-size: 1.2rem;
   .container {
     padding: 30px 10px;
   }
   .svg-icon,
   .icon,
   .mask {
-    width: 30px;
-    height: 40px;
+    width: 68px;
     fill: transparent;
   }
 
@@ -19,29 +19,27 @@
   }
 
   .footer-heading {
-    color: $brand-blue;
+    color: $blue;
     font-weight: 600;
-    font-size: 16px;
-    font-family: $secondary-font;
+    font-size: 1.3rem;
   }
 
   .footer-list {
+    letter-spacing: 0.7px;
     list-style: none;
     padding-left: 0;
     .footer-list-link {
-      color: $brand-secondary-red;
+      color: $secondary;
     }
   }
 
   .footer-url {
-    font-size: 16px;
-    color: $brand-secondary-red;
+    color: $secondary;
   }
 
   .footer-icon-list {
-    color: $brand-blue;
+    color: $blue;
     display: flex;
-    font-size: 18px;
   }
 
   .footer-icon {

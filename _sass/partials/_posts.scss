@@ -1,22 +1,22 @@
 .blog-carousel-row {
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .blog-carousel-col {
     padding: 50px;
-    border-top: 1px solid $brand-blue;
+    border-top: 1px solid $blue;
     width: 80%;
     .carousel-inner {
-      height: 50vh;
+      height: 60vh;
       p,
       h3 {
         padding: 0;
       }
-      @media screen and (max-width: $screen-md-min) {
-        height: 60vh;
+      @include media-breakpoint-up(md) {
+        height: 50vh;
       }
     }
     h3 {
@@ -36,7 +36,7 @@
   }
 }
 .page-bottom-row {
-  background-color: $brand-offwhite;
+  background-color: $light;
   .page-bottom {
     padding: 20px;
     display: flex;
@@ -49,7 +49,7 @@
       font-family: $primary-font;
       padding: 0 5px;
       text-decoration: none;
-      color: $brand-blue;
+      color: $blue;
     }
     .bottom-container-left {
       display: flex;
@@ -65,8 +65,8 @@
 
 .individual-blog-page-row {
   padding: 50px;
-  background-color: $brand-offwhite;
-  color: $brand-blue;
+  background-color: $light;
+  color: $blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,11 +87,11 @@
       margin: 30px;
     }
     h2 {
-      color: $brand-primary-red;
+      color: $red;
       padding: 20px;
     }
     a {
-      color: $brand-secondary-red;
+      color: $secondary;
     }
     thead,
     tbody,
@@ -116,7 +116,7 @@
     .image-left {
       border-radius: 30px;
       width: 100%;
-      @media screen and (min-width: $screen-sm-min) {
+      @include media-breakpoint-up(md) {
         width: 50%;
       }
       object-fit: cover;

@@ -1,31 +1,25 @@
-// site colours
-$text-color: rgb(40, 40, 40);
-$text-color-negative: white;
-// $brand-color: rgb(29, 37, 52);
-$link-color: rgb(0, 114, 154);
-// $link-hover-color: rgb(0, 57, 78);
-$grey-bg-color: rgb(243, 243, 243);
-$hairline-color: rgb(230, 230, 230);
-$selection-bg-color: rgba(255, 255, 100, 0.5);
-$button-text: white;
-$brand-offwhite: rgb(249, 246, 231);
-$brand-blue: rgb(0, 86, 126);
-$brand-secondary-red: rgb(175, 35, 28);
-$brand-primary-red: #e73c3e;
-
 // typographic defaults
-$primary-font: Raleway;
-$secondary-font: Open Sans;
-$base-font: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
-$code-font: Courier, monospace;
-$base-font-size: 62.5%;
-$base-font-weight: 300;
-$bold-font-weight: 600;
-$base-line-height: 1.5;
-$button-height: 50px;
+$primary-font: Raleway, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$headings-font-family: $primary-font;
+
+$font-family-sans-serif: Open Sans, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 // viewport breakpoints
-$screen-xs-min: 480px;
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1240px;
-$screen-xl-min: 1920px;
+// https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+
+// https://webaim.org/resources/contrastchecker/
+// our app colors are below the acceptablke contrast range:
+$min-contrast-ratio:   4.0;
+$red: #E73C3E; //crimson
+$primary: $red;
+$secondary: #AF231C; // mercury red
+$blue: #00567E; // agean
+$info: $blue;
+$light:#F9F6E7;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info":$info,
+  "light": $light
+);
+$body-bg: #F9F6E7; // milk

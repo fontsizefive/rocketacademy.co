@@ -1,10 +1,10 @@
 .all-posts-row {
-  background-color: $brand-offwhite;
-  color: $brand-primary-red;
+  background-color: $light;
+  color: $red;
   padding: 50px 40px;
   h1 {
     padding-bottom: 50px;
-    border-bottom: 1px solid $brand-blue;
+    border-bottom: 1px solid $blue;
     text-align: center;
   }
   .all-posts-col {
@@ -17,11 +17,11 @@
       padding: 40px;
 
       a {
-        color: $brand-blue;
+        color: $blue;
         text-decoration: none;
       }
       .read-more {
-        color: $brand-primary-red;
+        color: $red;
         text-decoration: underline;
         font-size: 14px;
       }
@@ -37,12 +37,12 @@
   }
 }
 .people-row {
-  background-color: $brand-blue;
-  color: $brand-offwhite;
+  background-color: $blue;
+  color: $light;
   padding: 50px 40px;
   h1 {
     padding-bottom: 50px;
-    border-bottom: 1px solid $brand-offwhite;
+    border-bottom: 1px solid $light;
     text-align: center;
   }
   .people-col {
@@ -71,10 +71,10 @@
 }
 .blog-page-row {
   padding: 40px 40px;
-  color: $brand-primary-red;
+  color: $red;
   h1 {
     padding-bottom: 50px;
-    border-bottom: 1px solid $brand-primary-red;
+    border-bottom: 1px solid $red;
   }
   .blog-page-col {
     padding: 20px 0;
@@ -87,7 +87,7 @@
       padding: 40px;
 
       a {
-        color: $brand-blue;
+        color: $blue;
         text-decoration: none;
       }
       img {

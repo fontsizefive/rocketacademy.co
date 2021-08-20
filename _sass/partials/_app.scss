@@ -1,47 +1,12 @@
-body {
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
+body{
+  min-height:100vh;
 }
-
-main {
-  .container-fluid {
-    font-family: $secondary-font;
-    letter-spacing: 0.1rem;
-    font-size: 16px;
-    overflow: auto;
-    .intro {
-      border-bottom: 1px solid $brand-blue;
-      padding-bottom: 30px;
-    }
-    h1 {
-      font-family: $primary-font;
-    }
-    small {
-      font-size: 12px;
-      font-weight: 100;
-    }
-
-    .btn {
-      // color: $button-text;
-      // height: $button-height;
-      // letter-spacing: 0.1rem;
-      // width: 150px;
-      // margin-bottom: 10px;
-      // border-radius: 5px;
-      // font-family: $primary-font;
-      // font-size: 16px;
-      // font-weight: 400;
-      // background-color: $brand-primary-red;
-
-      a {
-        text-decoration: none;
-        color: $button-text;
-      }
-      .btn:hover {
-        color: $brand-offwhite;
-        cursor: pointer;
-      }
-    }
-  }
+.ra-max-width-cont{
+  max-width:1320px;
+}
+.btn{
+  font-family: $primary-font;
+}
+.btn-light{
+  color:red;
 }
