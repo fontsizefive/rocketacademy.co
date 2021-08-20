@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What You Need To Know About The Singapore Tech Industry
-meta_description: ../../assets/img/uploads/Fiver+blog+post+website+2.png
+meta_description: ../../assets/img/uploads/blog-sg-tech.png
 author:
 date: "2021-08-11 12:00:00"
 categories: community

@@ -10,6 +10,9 @@ main {
     letter-spacing: 0.1rem;
     font-size: 16px;
     overflow: auto;
+    .ra-max-width-cont {
+      max-width: 1320px;
+    }
     .intro {
       border-bottom: 1px solid $brand-blue;
       padding-bottom: 30px;
@@ -23,16 +26,16 @@ main {
     }
 
     .btn {
-      color: $button-text;
-      height: $button-height;
-      letter-spacing: 0.1rem;
-      width: 150px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      font-family: $primary-font;
-      font-size: 16px;
-      font-weight: 400;
-      background-color: $brand-primary-red;
+      // color: $button-text;
+      // height: $button-height;
+      // letter-spacing: 0.1rem;
+      // width: 150px;
+      // margin-bottom: 10px;
+      // border-radius: 5px;
+      // font-family: $primary-font;
+      // font-size: 16px;
+      // font-weight: 400;
+      // background-color: $brand-primary-red;
 
       a {
         text-decoration: none;
@@ -45,9 +48,8 @@ main {
     }
 
     .main-header-row {
-      height: 100vh;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../assets/img/uploads/Rocket Academy 2-1764.jpg");
+        url("../../assets/img/uploads/home-header.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -68,15 +70,18 @@ main {
           font-size: 30px;
           font-weight: lighter;
         }
-        @media screen and (max-width: $screen-sm-min) {
-          padding-top: 30vh;
-          h3 {
-            font-size: 30px;
-          }
-          p {
-            font-size: 18px;
-          }
-        }
+        //    @include media-breakpoint-up(md) {
+        //   width: 60%;
+        // }
+        //   @media screen and (max-width: $screen-sm-min) {
+        //     padding-top: 30vh;
+        //     h3 {
+        //       font-size: 30px;
+        //     }
+        //     p {
+        //       font-size: 18px;
+        //     }
+        //   }
       }
     }
 
@@ -173,8 +178,10 @@ main {
         }
 
         .track-record-container-right {
-          @media screen and (max-width: $screen-xs-min) {
-            height: 80%;
+          height: 80%;
+
+          @include media-breakpoint-up(sm) {
+            height: 100%;
           }
         }
       }
@@ -184,7 +191,7 @@ main {
       padding: 40px;
       color: white;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../../assets/img/uploads/Perry-1659.jpg");
+        url("../../assets/img/uploads/home-table.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -212,24 +219,24 @@ main {
       background-color: $brand-offwhite;
       .col-testimonial-header {
         color: $brand-primary-red;
-        padding: 40px;
-        @media screen and (max-width: $screen-xs-min) {
-          padding: 20px;
+        padding: 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 40px;
         }
       }
       .testimonial-content-col {
-        padding: 0 40px;
+        padding: 0 20px;
         color: $brand-secondary-red;
-        @media screen and (max-width: $screen-xs-min) {
-          padding: 0 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 0 40px;
         }
         .student {
           color: $brand-blue;
           font-size: 12px;
           font-weight: bold;
           font-family: $primary-font;
-          @media screen and (max-width: $screen-xs-min) {
-            padding-top: 20px;
+          padding-top: 20px;
+          @include media-breakpoint-up(sm) {
           }
         }
       }
@@ -238,9 +245,9 @@ main {
       }
       .testimonial-footer a {
         color: $brand-primary-red;
-        padding: 40px;
-        @media screen and (max-width: $screen-xs-min) {
-          padding: 20px;
+        padding: 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 40px;
         }
       }
     }
@@ -248,14 +255,14 @@ main {
       padding: 40px;
       .success-header {
         color: $brand-primary-red;
-        padding: 40px 40px 0;
-        @media screen and (max-width: $screen-xs-min) {
-          padding: 20px;
+        padding: 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 40px 40px 0;
         }
       }
 
       .success-content-col {
-        padding: 40px;
+        padding: 20px;
         color: $brand-blue;
         .success-title {
           font-weight: bold;
@@ -264,8 +271,8 @@ main {
           width: 80%;
         }
 
-        @media screen and (max-width: $screen-xs-min) {
-          padding: 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 40px;
         }
       }
       img {
@@ -278,52 +285,55 @@ main {
     }
     .instructors-row {
       background-color: $brand-blue;
-      padding: 40px;
-      .instructors-header {
-        padding: 40px;
-        color: $brand-offwhite;
-      }
+
       .instructors-container {
-        margin: 20px;
-        h4 {
-          padding: 10px;
-          a {
-            color: $brand-secondary-red;
+        padding: 40px;
+        .instructors-header {
+          padding: 40px;
+          color: $brand-offwhite;
+        }
+        .instructors-container {
+          margin: 20px;
+          h4 {
+            padding: 10px;
+            a {
+              color: $brand-secondary-red;
+            }
           }
         }
-      }
-      .instructor-details {
-        color: white;
-        img {
-          border-radius: 20px;
-          height: 90%;
-          width: 100%;
-          object-fit: cover;
-          background-position: center;
+        .instructor-details {
+          color: white;
+          img {
+            border-radius: 20px;
+            height: 90%;
+            width: 100%;
+            object-fit: cover;
+            background-position: center;
+          }
         }
-      }
-      .instructors-button-container {
-        .instructors-button {
-          width: 100px;
-          height: 30px;
-          border-radius: 5px;
-          border: none;
-          font-size: 10px;
-          font-weight: bold;
-          color: $brand-primary-red;
-          background-color: $brand-offwhite;
-          a {
-            text-decoration: none;
+        .instructors-button-container {
+          .instructors-button {
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            font-size: 10px;
+            font-weight: bold;
             color: $brand-primary-red;
+            background-color: $brand-offwhite;
+            a {
+              text-decoration: none;
+              color: $brand-primary-red;
+            }
           }
         }
       }
     }
+
     .blog-row {
       background-color: $brand-secondary-red;
       padding: 40px;
       color: white;
-      height: 90vh;
       .blog-header {
         padding: 40px;
       }
@@ -337,6 +347,9 @@ main {
         width: 100%;
         object-fit: cover;
         background-position: center;
+      }
+      .carousel-inner {
+        font-size: 14px;
       }
     }
   }

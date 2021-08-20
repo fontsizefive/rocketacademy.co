@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Instructor Insights: Get to Know Kai"
-meta_description: ../../assets/img/uploads/KAI-LANDSCAPE.png
+meta_description: ../../assets/img/uploads/blog-kai.png
 author:
 date: "2021-08-15 12:00:00"
 categories: profiles
 ---
 
-![kai-image](../../assets/img/uploads/KAI-LANDSCAPE.png)
+![kai-image](../../assets/img/uploads/blog-kai.png)
 
 It might surprise you that [Kai, CEO and Founder of Rocket Academy](https://www.linkedin.com/in/kaiyuanneo/), had not planned to study software engineering. His initial choice was mechanical engineering — a dream shaped by the advent of the iPod, which inspired him to build products that people enjoy. Friends at Stanford, however, encouraged him to try computer science. “I loved it,” Kai tells us. “I found software engineering fun, in-demand, and nascent as a field and industry. I also realised I could build software products that people love, so I set my mind on that.”
 

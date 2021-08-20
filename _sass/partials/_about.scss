@@ -1,11 +1,12 @@
 .about-header-row {
   background-color: $brand-secondary-red;
   color: white;
-  height: 60vh;
+
   .about-header-col {
     padding: 40px;
-    @media screen and (min-width: $screen-md-min) {
-      width: 70%;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 80%;
     }
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@
           width: 100%;
           object-fit: cover;
           background-position: bottom left;
-          @media screen and (min-width: $screen-sm-min) {
+          @include media-breakpoint-up(md) {
             width: 60%;
           }
         }
@@ -70,9 +71,9 @@
     img {
       border-radius: 30px;
       height: 100%;
-      width: 80%;
-      @media screen and (max-width: $screen-sm-min) {
-        width: 100%;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        width: 80%;
       }
       object-fit: cover;
       background-position: center;
@@ -112,9 +113,9 @@
     img {
       border-radius: 30px;
       height: 100%;
-      width: 80%;
-      @media screen and (max-width: $screen-sm-min) {
-        width: 100%;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        width: 80%;
       }
       object-fit: cover;
       background-position: center;

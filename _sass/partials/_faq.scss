@@ -1,9 +1,6 @@
 .faq-row {
   background-color: $brand-offwhite;
   padding: 80px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   h1 {
     color: $brand-primary-red;
@@ -22,9 +19,14 @@
   p {
     color: $brand-blue;
   }
-  .faq-col {
-    @media screen and (min-width: $screen-md-min) {
-      width: 60%;
+  .row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .faq-col {
+      @include media-breakpoint-up(md) {
+        width: 60%;
+      }
     }
   }
 }

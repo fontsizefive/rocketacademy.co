@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why The Singapore Tech Scene Needs Latecomers
-meta_description: https://images.squarespace-cdn.com/content/v1/5fb21b9813eba3050d7ca252/1625034852647-FGQX57MS7BGIPC88KZ80/RA+thought+leadership+post+thumbnail+pic+2.png?format=300w
+meta_description: ../../assets/img/uploads/blog-latecomers.png
 author:
 date: "2021-08-10 12:00:00"
 categories: community

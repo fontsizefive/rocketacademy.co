@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Enrol in a Coding Bootcamp to Become a Software Engineer
-meta_description: ../../assets/img/uploads/1 (2).png
+meta_description: ../../assets/img/uploads/blog-enrol.png
 author:
 date: "2021-08-14"
 categories: learning methods
