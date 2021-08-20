@@ -1,16 +1,7 @@
-body {
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
 .container-fluid {
   .intro {
     border-bottom: 1px solid $brand-blue;
     padding-bottom: 30px;
-  }
-  h1 {
-    font-family: $primary-font;
   }
   small {
     font-size: 12px;
@@ -26,7 +17,6 @@ body {
     font-family: $primary-font;
     font-size: 16px;
     font-weight: 400;
-    background-color: $brand-primary-red;
 
     a {
       text-decoration: none;
@@ -95,7 +85,6 @@ body {
         padding: 40px 40px 20px;
         background-color: white;
         color: $brand-blue;
-        font-family: $secondary-font;
         border-radius: 15px;
         height: 98%;
         display: flex;

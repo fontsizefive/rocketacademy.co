@@ -1,21 +1,6 @@
-body {
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  font-family: $secondary-font;
+body{
+  min-height:100vh;
 }
-.intro {
-  border-bottom: 1px solid $brand-blue;
-  padding-bottom: 30px;
-}
-h1 {
-  font-family: $primary-font;
-}
-small {
-  font-size: 0.9rem;
-  font-weight: 100;
-}
-
 .ra-max-width-cont{
   max-width:1320px;
 }
