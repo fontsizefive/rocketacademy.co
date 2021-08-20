@@ -205,6 +205,7 @@
   }
 }
 .curriculum-row {
+  background-color:$white;
   padding: 60px 40px;
   .curriculum-heading-col {
     color: $red;
@@ -232,7 +233,6 @@
       }
       p {
         color: $blue;
-        font-size: 14px;
       }
     }
   }

@@ -1,5 +1,7 @@
 body{
   min-height:100vh;
+  line-height: 1.7;
+  padding-top:69px;
 }
 .ra-max-width-cont{
   max-width:1320px;
@@ -9,4 +11,7 @@ body{
 }
 .btn-light{
   color:red;
+}
+.ra-title-col{
+  padding-bottom:2rem;
 }
