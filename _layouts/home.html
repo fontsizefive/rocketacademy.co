@@ -18,17 +18,23 @@ layout: default
   </ul>
 </section> -->
 <div class="container-fluid">
-  <div class="row main-header-row">
-    <div class="col-12 col-lg-6 main-header-col">
+   <div class="row main-header-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
+    <div class="col-12 col-md-8 main-header-col">
       <h3>Become a Software Engineer</h3>
       <br />
       <p>100% placement at companies like GovTech, Ninja Van, and Xfers.</p>
       <br />
-      <button class="btn"><a href="http://eepurl.com/g6a1hj" target="_blank">Apply Now</a></button>
+      <a class="btn btn-primary btn-lg" href="http://eepurl.com/g6a1hj" role="button" target="_blank">Apply Now</a>
     </div>
-    <div class="col-12 col-lg-6"></div>
+    <div class="col-12 col-md-4"></div>
   </div>
-  <div class="row coursetype-row">
+  </div>
+  </div>
+   <div class="row coursetype-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     {% for item in site.data.course-details %}
     <div class="col-12 col-md-6 coursetype-col">
       <div class="coursetype-container">
@@ -46,16 +52,20 @@ layout: default
           <p>Next Batch: {{ item.next-batch }}</p>
         </div>
         <div class="coursetype-button-container">
-          <button class="coursetype-button"><a href="{{ item.url }}">Learn More</a></button>
+          <a class="btn btn-primary btn-lg" href="{{ item.url }}" role="button" target="_blank">Learn More</a>
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
-  <div class="row track-record-row">
+  </div>
+  </div>
+   <div class="row track-record-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     <div class="col-12 col-md-6 track-record-col">
       <div class="track-record-container-left">
-        <img src="../assets/img/uploads/Rocket Academy 2-1877.jpg" />
+        <img src="../assets/img/uploads/home-track-record.png" />
       </div>
     </div>
     <div class="col-12 col-md-6 track-record-col">
@@ -76,7 +86,11 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="row table-row">
+  </div>
+  </div>
+   <div class="row table-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     <div class="col-12 table-header-col">
       <h1>The Most Comprehensive Bootcamp.</h1>
     </div>
@@ -101,7 +115,11 @@ layout: default
       </table>
     </div>
   </div>
-  <div class="row row-testimonial">
+  </div>
+  </div>
+   <div class="row row-testimonial justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     <div class="col-12 col-testimonial-header">
       <h1>Hear From Our Graduates.</h1>
     </div>
@@ -168,7 +186,11 @@ layout: default
       >
     </div>
   </div>
-  <div class="row success-row">
+  </div>
+  </div>
+   <div class="row success-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     <div class="col-12 success-header">
       <h1>Everything You Need to Succeed.</h1>
     </div>
@@ -195,17 +217,22 @@ layout: default
             <p class="success-title">{{ item.title }}</p>
             <p class="success-content">{{ item.content }}</p>
           </div>
+          <br>
         </div>
         <br />
         {% endfor %}
       </div>
     </div>
   </div>
-  <div class="instructors-row">
-    <div class="col instructors-header">
+  </div>
+  </div>
+   <div class="row instructors-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row instructors-container">
+    <div class="col-12 instructors-header">
       <h1>Learn From the Best Instructors</h1>
     </div>
-    <div class="col instructors-content">
+    <div class="col-12 instructors-content">
       <div class="row">
         {% for item in site.data.instructors %}
         <div class="col-12 col-md-6 instructors-col">
@@ -225,7 +252,7 @@ layout: default
             </div>
             <br>
             <div class="instructors-button-container">
-              <button class="instructors-button"><a href="/about">Read More</a></button>
+              <a class="btn btn-primary btn-lg" href="/about" role="button" target="_blank">Read More</a>
             </div>
           </div>
         </div>
@@ -233,7 +260,11 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="row blog-row">
+  </div>
+  </div>
+   <div class="row blog-row justify-content-center">
+        <div class="ra-max-width-cont">
+          <div class="row">
     <div class="col-12 blog-header">
       <h1>Break Into the Tech Industry.</h1>
     </div>
@@ -253,7 +284,7 @@ layout: default
             {% endfor %} -->
             {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "learning" %} {% assign count = count |
               plus:1 %}
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <img src="{{ post.meta_description }}" />
                 <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
@@ -267,7 +298,7 @@ layout: default
           <div class="row">
             {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "profiles" %} {% assign count = count |
               plus:1 %}
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <img src="{{ post.meta_description }}" />
                 <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
@@ -281,7 +312,7 @@ layout: default
           <div class="row">
             {% assign count = 0 %} {% for post in site.posts %}  {% if post.categories[0] == "community" %} {% assign count = count |
               plus:1 %}
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <img src="{{ post.meta_description }}" />
                 <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
@@ -311,5 +342,7 @@ layout: default
         </button>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 </div>

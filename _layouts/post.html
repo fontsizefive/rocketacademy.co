@@ -4,102 +4,124 @@ layout: default
 
 {% assign author = site.data.authors[page.author] %}
 <div class="container-fluid">
-  <div class="row individual-blog-page-row">
-    <div class="col-12 individual-blog-page-col">
-      <h1>{{ page.title }}</h1>
-      <br />
-      <p class="categories">{{ page.categories }}</p>
-      <br />
-      <!-- <time datetime="{{ page.date }}">
+  <!-- <div class="row individual-blog-page-row"> -->
+  <div class="row individual-blog-page-row justify-content-center">
+    <div class="ra-max-width-cont">
+      <div class="row">
+        <div class="col-12 individual-blog-page-col">
+          <h1>{{ page.title }}</h1>
+          <br />
+          <p class="categories">{{ page.categories }}</p>
+          <br />
+          <!-- <time datetime="{{ page.date }}">
   <small>
     <strong>{{ page.date | date_to_string }}</strong>
     {% if author %} by {{ author.name }} {% endif %}
   </small>
 </time> -->
 
-      {% include page-intro.html %} {{ content }}
+          {% include page-intro.html %} {{ content }}
+        </div>
+      </div>
     </div>
   </div>
   {% if page.categories[0] == "learning" %}
-  <div class="row blog-carousel-row">
-    <div class="col-12 blog-carousel-col">
-      <h3>
-        Find out more about the different methods of learning software
-        engineering in Singapore:
-      </h3>
-      <br /><br />
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              {% assign count = 0 %} {% for post in site.posts %} {% if
-              post.categories[0] == "learning" %} {% assign count = count |
-              plus:1 %}
-              <div class="col-4">
-                <img src="{{ post.meta_description }}" />
-                <br /><br />
-                <p class="blog-title">{{ post.title }}</p>
+  <div class="row blog-carousel-row justify-content-center">
+    <div class="ra-max-width-cont">
+      <div class="row">
+        <!-- <div class="row blog-carousel-row"> -->
+        <div class="col-12 blog-carousel-col">
+          <h3>
+            Find out more about the different methods of learning software
+            engineering in Singapore:
+          </h3>
+          <br /><br />
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  {% assign count = 0 %} {% for post in site.posts %} {% if
+                  post.categories[0] == "learning" %} {% assign count = count |
+                  plus:1 %}
+                  <div class="col-4">
+                    <img src="{{ post.meta_description }}" />
+                    <br /><br />
+                    <p class="blog-title">{{ post.title }}</p>
+                  </div>
+                  {% if count == 3 %}{% break %} {% endif %}{% endif %}{% endfor
+                  %}
+                </div>
               </div>
-              {% if count == 3 %}{% break %} {% endif %}{% endif %}{% endfor %}
+              <div class="carousel-item">
+                <div class="row">
+                  {% assign count = 0 %} {% for post in site.posts reversed%} {%
+                  if post.categories[0] == "learning" %} {% assign count = count
+                  | plus:1 %}
+                  <div class="col-4">
+                    <img src="{{ post.meta_description }}" />
+                    <br /><br />
+                    <p class="blog-title">{{ post.title }}</p>
+                  </div>
+                  {% if count == 2 %}{% break %} {% endif %}{% endif %}{% endfor
+                  %}
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              {% assign count = 0 %} {% for post in site.posts reversed%} {% if
-              post.categories[0] == "learning" %} {% assign count = count |
-              plus:1 %}
-              <div class="col-4">
-                <img src="{{ post.meta_description }}" />
-                <br /><br />
-                <p class="blog-title">{{ post.title }}</p>
-              </div>
-              {% if count == 2 %}{% break %} {% endif %}{% endif %}{% endfor %}
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
   </div>
   {% endif %}
+  <div class="row page-bottom-row justify-content-center">
+    <div class="ra-max-width-cont">
+      <!-- <div class="row"> -->
+      <div class="row">
+        <div class="col-12 page-bottom">
+          {% if page.previous.url %}
+          <h2 class="bottom-container-left">
+            <a href="{{page.previous.url}}" rel="prev">&laquo;</a>
+            <a href="{{page.previous.url}}" rel="prev"
+              >{{page.previous.title}}</a
+            >
+          </h2>
 
-  <div class="row">
-    <div class="col-12 page-bottom">
-      {% if page.previous.url %}
-      <h2 class="bottom-container-left">
-        <a href="{{page.previous.url}}" rel="prev">&laquo;</a>
-        <a href="{{page.previous.url}}" rel="prev">{{page.previous.title}}</a>
-      </h2>
+          {% endif %} {% if page.next.url %}
+          <h2 class="bottom-container-right">
+            <a href="{{page.next.url}}" rel="next">{{page.next.title}}</a>
+            <a href="{{page.next.url}}" rel="next">&raquo;</a>
+          </h2>
 
-      {% endif %} {% if page.next.url %}
-      <h2 class="bottom-container-right">
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}}</a>
-        <a href="{{page.next.url}}" rel="next">&raquo;</a>
-      </h2>
-
-      {% endif %}
-      <!-- <nav aria-label="Adjacent Posts">
+          {% endif %}
+          <!-- <nav aria-label="Adjacent Posts">
         <ul>
           {% if page.previous.url %}
           <li>
@@ -120,6 +142,8 @@ layout: default
           {% endif %}
         </ul>
       </nav> -->
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Should I Self-Learn Software Engineering?
-meta_description: ../../assets/img/uploads/23.png
+meta_description: ../../assets/img/uploads/blog-self-study.png
 author:
 date: "2021-08-13"
 categories: learning methods

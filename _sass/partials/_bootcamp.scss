@@ -1,7 +1,7 @@
 .bootcamp-header-row {
-  height: 100vh;
+  padding-bottom: 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../assets/img/uploads/Rocket Academy 2-1827.jpg");
+    url("../../assets/img/uploads/bootcamp-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,15 +33,17 @@
   justify-content: center;
   background-color: $brand-offwhite;
   .schedule-container {
-    @media screen and (min-width: $screen-md-min) {
-      width: 70%;
-    }
+    display: flex;
+    justify-content: center;
   }
   ul {
     margin-bottom: 60px;
   }
 
   .schedule-heading-col {
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
     color: $brand-blue;
     h1 {
       color: $brand-primary-red;
@@ -52,6 +54,9 @@
   }
 
   .schedule-tabs-col {
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
     .nav-tabs {
       background-color: $brand-offwhite;
       border-bottom: 1px solid $brand-secondary-red;
@@ -69,6 +74,7 @@
       background-color: $brand-primary-red;
     }
   }
+
   .day-row {
     background-color: $brand-offwhite;
     padding: 20px 40px;
@@ -78,7 +84,7 @@
     .day-col {
       color: $brand-blue;
       width: 60%;
-      @media screen and (min-width: $screen-md-min) {
+      @include media-breakpoint-up(md) {
         width: 70%;
       }
       .day-row-first {

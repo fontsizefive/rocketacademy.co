@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Pocket Guide to Software Engineering in Singapore
-meta_description: ../../assets/img/uploads/2 (2).png
+meta_description: ../../assets/img/uploads/blog-pocket-guide.png
 author:
 date: "2021-08-15 12:00:00"
 categories: community
