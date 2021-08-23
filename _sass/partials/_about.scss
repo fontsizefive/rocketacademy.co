@@ -22,6 +22,7 @@
 }
 .objectives-row {
   .objective-col {
+    background-color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +147,7 @@
 .team-row {
   padding: 40px;
   text-align: center;
-  background-color: $light;
+  background-color: white;
   color: $blue;
   h1 {
     padding: 20px;
