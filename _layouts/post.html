@@ -101,49 +101,4 @@ layout: default
     </div>
   </div>
   {% endif %}
-  <div class="row page-bottom-row justify-content-center">
-    <div class="ra-max-width-cont">
-      <!-- <div class="row"> -->
-      <div class="row">
-        <div class="col-12 page-bottom">
-          {% if page.previous.url %}
-          <h2 class="bottom-container-left">
-            <a href="{{page.previous.url}}" rel="prev">&laquo;</a>
-            <a href="{{page.previous.url}}" rel="prev"
-              >{{page.previous.title}}</a
-            >
-          </h2>
-
-          {% endif %} {% if page.next.url %}
-          <h2 class="bottom-container-right">
-            <a href="{{page.next.url}}" rel="next">{{page.next.title}}</a>
-            <a href="{{page.next.url}}" rel="next">&raquo;</a>
-          </h2>
-
-          {% endif %}
-          <!-- <nav aria-label="Adjacent Posts">
-        <ul>
-          {% if page.previous.url %}
-          <li>
-            <h1>
-              <a href="{{page.previous.url}}" rel="prev"
-                >&laquo; {{page.previous.title}}</a
-              >
-            </h1>
-          </li>
-          {% endif %} {% if page.next.url %}
-          <li>
-            <h1>
-              <a href="{{page.next.url}}" rel="next"
-                >{{page.next.title}} &raquo;</a
-              >
-            </h1>
-          </li>
-          {% endif %}
-        </ul>
-      </nav> -->
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
