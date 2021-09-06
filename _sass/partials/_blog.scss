@@ -1,16 +1,28 @@
-.blog-title-row{
-  background-color:$blue;
-  color:white;
-  height:20vh;
+.blog-title-row {
+  background-color: $blue;
+  color: white;
+  height: 20vh;
 }
+
+.blog-page-row .blog-page-col .post-row {
+  padding: 0;
+}
+
 .all-posts-row {
   background-color: $light;
   color: $red;
-  padding: 50px 40px;
+  padding: 40px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 40px 40px;
+  }
   h1 {
     padding-bottom: 50px;
     border-bottom: 1px solid $blue;
     text-align: center;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
   }
   .all-posts-col {
     li {
@@ -19,8 +31,9 @@
       padding: 0;
     }
     .post-row {
-      padding: 40px;
-
+      @include media-breakpoint-up(sm) {
+        padding: 40px;
+      }
       a {
         color: $blue;
         text-decoration: none;
@@ -33,10 +46,12 @@
       img {
         padding-bottom: 20px;
         border-radius: 30px;
-        height: 50%;
         width: 100%;
         object-fit: cover;
         background-position: center;
+        @include media-breakpoint-up(sm) {
+          height: 50%;
+        }
       }
     }
   }
@@ -44,64 +59,108 @@
 .people-row {
   background-color: $blue;
   color: $light;
-  padding: 50px 40px;
+  padding: 50px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 50px 40px;
+  }
   h1 {
     padding-bottom: 50px;
     border-bottom: 1px solid $light;
     text-align: center;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
   }
   .people-col {
+    ul {
+      padding: 0;
+    }
     li {
       list-style: none;
       margin: 0;
       padding: 0;
     }
     .post-row {
-      padding: 40px;
+      padding: 0 5px;
+      @include media-breakpoint-up(sm) {
+        padding: 40px;
+      }
 
       a {
         color: white;
         text-decoration: none;
       }
-      img {
-        padding-bottom: 20px;
-        border-radius: 30px;
-        height: 100%;
-        width: 90%;
-        object-fit: cover;
-        background-position: center;
+      .post-img-col {
+        display: flex;
+        img {
+          margin: auto;
+          padding-bottom: 20px;
+          border-radius: 30px;
+          object-fit: cover;
+          width: 100%;
+          background-position: center;
+          @include media-breakpoint-up(sm) {
+            width: 90%;
+          }
+        }
       }
     }
   }
 }
 .blog-page-row {
-  padding: 40px 40px;
   color: $red;
+  @include media-breakpoint-up(sm) {
+    padding: 40px 40px;
+  }
   h1 {
     padding-bottom: 50px;
     border-bottom: 1px solid $red;
   }
   .blog-page-col {
-    padding: 20px 0;
+    padding: 20px 5px;
+    @include media-breakpoint-up(sm) {
+      padding: 40px 40px;
+    }
+    ul {
+      padding: 0;
+      width: 100%;
+    }
     li {
+      display: flex;
+      justify-content: center;
       list-style: none;
       margin: 0;
       padding: 0;
     }
     .post-row {
-      padding: 40px;
-
+      @include media-breakpoint-up(sm) {
+        padding: 40px;
+      }
+      .post-img-col {
+        display: flex;
+      }
+      .post-img-col-2 {
+        padding: 0 20px;
+        @include media-breakpoint-up(sm) {
+          padding: 0 40px;
+        }
+      }
       a {
         color: $blue;
         text-decoration: none;
       }
       img {
+        margin: auto;
         padding-bottom: 20px;
         border-radius: 30px;
         height: 100%;
-        width: 90%;
+        width: 95%;
         object-fit: cover;
         background-position: bottom left;
+        @include media-breakpoint-up(sm) {
+          width: 90%;
+        }
       }
     }
   }

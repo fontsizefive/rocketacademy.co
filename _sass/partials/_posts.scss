@@ -71,9 +71,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px 5px;
+  @include media-breakpoint-up(md) {
+    padding: 40px;
+  }
 
   .individual-blog-page-col {
-    width: 80%;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
     img {
       border-radius: 30px;
       height: 60%;
