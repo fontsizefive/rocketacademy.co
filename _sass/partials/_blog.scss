@@ -44,13 +44,25 @@
         font-size: 14px;
       }
       img {
-        padding-bottom: 20px;
         border-radius: 30px;
         width: 100%;
         object-fit: cover;
         background-position: center;
         @include media-breakpoint-up(sm) {
           height: 50%;
+        }
+      }
+      h4 {
+        padding-top: 20px;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+          text-align: left;
+        }
+      }
+      p {
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+          text-align: left;
         }
       }
     }
@@ -105,6 +117,12 @@
           }
         }
       }
+      .post-img-col-2 {
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+          text-align: left;
+        }
+      }
     }
   }
 }
@@ -142,8 +160,10 @@
       }
       .post-img-col-2 {
         padding: 0 20px;
+        text-align: center;
         @include media-breakpoint-up(sm) {
           padding: 0 40px;
+          text-align: left;
         }
       }
       a {

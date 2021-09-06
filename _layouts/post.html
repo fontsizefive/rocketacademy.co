@@ -47,7 +47,7 @@ layout: default
                   {% assign count = 0 %} {% for post in site.posts %} {% if
                   post.categories[0] == "learning" %} {% assign count = count |
                   plus:1 %}
-                  <div class="col-4">
+                  <div class="col-12 col-md-4 justify-content-center">
                     <img src="{{ post.meta_description }}" />
                     <br /><br />
                     <p class="blog-title">{{ post.title }}</p>
@@ -61,7 +61,7 @@ layout: default
                   {% assign count = 0 %} {% for post in site.posts reversed%} {%
                   if post.categories[0] == "learning" %} {% assign count = count
                   | plus:1 %}
-                  <div class="col-4">
+                  <div class="col-12 col-md-4 justify-content-center">
                     <img src="{{ post.meta_description }}" />
                     <br /><br />
                     <p class="blog-title">{{ post.title }}</p>

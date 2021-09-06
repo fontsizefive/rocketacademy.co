@@ -6,11 +6,11 @@
   align-items: center;
 
   .blog-carousel-col {
-    padding: 50px;
+    h3 {
+      padding-top: 20px;
+    }
     border-top: 1px solid $blue;
-    width: 80%;
     .carousel-inner {
-      height: 60vh;
       p,
       h3 {
         padding: 0;
@@ -20,18 +20,32 @@
       }
     }
     h3 {
-      width: 80%;
+      width: 95%;
+      @include media-breakpoint-up(md) {
+        width: 80%;
+      }
       font-weight: bold;
     }
     img {
       border-radius: 30px;
-      height: 50%;
-      width: 80%;
+      height: 70%;
+      width: 95%;
       object-fit: cover;
       background-position: center;
+      @include media-breakpoint-up(md) {
+        height: 50%;
+        width: 80%;
+      }
     }
     p {
-      width: 70%;
+      width: 95%;
+      text-align: center;
+      padding-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        width: 70%;
+        text-align: left;
+        padding-bottom: 0;
+      }
     }
   }
 }

@@ -1,9 +1,13 @@
 .navbar-expand-lg {
-  height:69px;
+  height: 69px;
   background-color: $light;
   letter-spacing: 0.1rem;
   padding: 0 0 7px 0;
 
+  .navbar-collapse {
+    background-color: $body-bg;
+    padding-bottom: 20px;
+  }
   .navbar-brand {
     img {
       margin: 15px 0 0 10px;
@@ -40,8 +44,8 @@
 
     .btn-primary {
       margin: 0 9px 0 9px;
-      position:relative;
-      top:4px;
+      position: relative;
+      top: 4px;
     }
 
     @include media-breakpoint-up(lg) {
