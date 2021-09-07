@@ -7,8 +7,14 @@
   .navbar-collapse {
     background-color: $body-bg;
     padding-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
   }
   .navbar-brand {
+    @include media-breakpoint-up(lg) {
+      padding-left: 15px;
+    }
     img {
       margin: 15px 0 0 10px;
       height: 37px;
@@ -16,7 +22,8 @@
   }
 
   .navbar-toggler {
-    width: 47px;
+    width: 50px;
+    margin-right: 20px;
     background-color: transparent;
   }
 
