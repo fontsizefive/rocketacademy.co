@@ -506,3 +506,16 @@ layout: default
     </div>
   </div>
 </div>
+<script type="text/javascript">
+var courseType = "boot";
+function eventsLoad(events){
+    events.forEach(function(entry) {
+      var startsAt = new Date(entry.start.dateTime);
+      var endsAt = entry.end.dateTime;
+      var date = `${startsAt} - ${endsAt} - ${entry.summary}`;
+      console.log(entry);
+      console.log(date);
+    });
+}
+</script>
+{% include calendar.html %}

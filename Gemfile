@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8"
+gem "jekyll"
 
 # GitHub flavored markdown
 gem "kramdown-parser-gfm"
@@ -32,3 +32,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # local development server
 gem "webrick", "~> 1.7"
+
+# API key env vars
+gem 'jekyll-dotenv'

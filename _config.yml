@@ -66,6 +66,9 @@ kramdown:
 # Include in processing (e.g. Netlify directives)
 # Uncomment before use
 
+plugins:
+- jekyll-dotenv
+
 #include:
 #  - _redirects
 #  - _headers
