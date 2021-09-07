@@ -116,13 +116,23 @@
     .prices-middle-col {
       padding-top: 40px;
       text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       ol {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
       @include media-breakpoint-up(sm) {
         padding-top: 50px;
         border-top: 1px solid $blue;
-        text-align: left;
+        justify-content: flex-start;
+        ol {
+          text-align: left;
+        }
       }
       h4,
       h3 {
@@ -160,6 +170,12 @@
     padding: 20px 5px;
     @include media-breakpoint-up(sm) {
       padding-top: 20px;
+    }
+    .test-col-top,
+    .test-col-bottom {
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
     }
     .quote {
       font-size: 22px;
@@ -244,8 +260,18 @@
 
   .structure-content-col {
     padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
     @include media-breakpoint-up(sm) {
       padding: 0 12px;
+      align-items: flex-start;
     }
   }
   .structure-content {
@@ -285,7 +311,7 @@
 }
 .curriculum-row {
   background-color: $white;
-  padding: 40px 40px;
+  padding: 40px 5px;
   @include media-breakpoint-up(sm) {
     padding: 60px 40px;
   }
@@ -304,7 +330,11 @@
     .curriculum-module {
       text-align: center;
       .curriculum-container {
-        width: 80%;
+        width: 100%;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+          width: 80%;
+        }
       }
       .curriculum-title {
         font-weight: bold;
