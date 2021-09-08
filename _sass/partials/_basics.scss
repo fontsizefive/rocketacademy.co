@@ -31,21 +31,49 @@
 .learn-row {
   background-color: $red;
   color: white;
-  padding: 100px 80px;
+  padding: 20px 5px;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .learn-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5px;
+    text-align: center;
+    h1 {
+      padding: 20px 0 40px;
+    }
+    li {
+      text-align: left;
+      padding-right: 0;
+      @include media-breakpoint-up(sm) {
+        padding-right: 20px;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      h1 {
+        text-align: center;
+      }
+      width: 70%;
+      padding: 40px;
+      text-align: left;
+    }
   }
   ol {
     @include media-breakpoint-up(sm) {
       width: 70%;
+      padding: 40px;
     }
 
-    padding: 40px;
     li {
       padding: 0 20px;
+      @include media-breakpoint-up(sm) {
+        padding: 0 20px;
+      }
     }
   }
   span {
@@ -64,24 +92,47 @@
 
 .prices-row {
   background-color: $light;
-  padding: 40px;
+  padding: 20px 5px;
+  text-align: left;
+  @include media-breakpoint-up(sm) {
+    padding: 40px;
+    text-align: center;
+  }
   .prices-header-col {
     color: $red;
-    padding: 40px 0;
-
-    border-bottom: 1px solid $blue;
-    text-align: left;
+    padding: 20px 0;
     @include media-breakpoint-up(sm) {
-      text-align: center;
+      border-bottom: 1px solid $blue;
+    }
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
       border-bottom: none;
+      padding: 40px 0;
     }
   }
   .prices-content-col {
     color: $blue;
     .prices-middle-col {
-      padding-top: 50px;
+      padding-top: 40px;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       @include media-breakpoint-up(sm) {
+        padding-top: 50px;
         border-top: 1px solid $blue;
+        justify-content: flex-start;
+        ol {
+          text-align: left;
+        }
       }
       h4,
       h3 {
@@ -101,7 +152,10 @@
 }
 
 .test-row {
-  padding: 40px;
+  padding: 20px 5px;
+  @include media-breakpoint-up(sm) {
+    padding: 40px;
+  }
   img {
     border-radius: 30px;
     height: 100%;
@@ -113,9 +167,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 20px 20px 20px;
+    padding: 20px 5px;
     @include media-breakpoint-up(sm) {
       padding-top: 20px;
+    }
+    .test-col-top,
+    .test-col-bottom {
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
     }
     .quote {
       font-size: 22px;
@@ -139,8 +199,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px 5px;
   background-color: $light;
+  @include media-breakpoint-up(sm) {
+    padding: 20px;
+  }
   h1 {
     color: $red;
     text-align: center;
@@ -156,6 +219,10 @@
       width: 80%;
     }
     .audience-col {
+      padding: 0 5px;
+      @include media-breakpoint-up(md) {
+        padding: 0 12px;
+      }
       .question,
       p {
         color: $blue;
@@ -167,12 +234,21 @@
   }
 }
 .structure-row {
-  padding: 60px 40px;
+  padding: 20px 5px;
+  @include media-breakpoint-up(sm) {
+    padding: 60px 40px;
+  }
   background-color: $secondary;
   .structure-heading-col {
+    padding: 20px 5px;
+    @include media-breakpoint-up(sm) {
+      padding: 40 12px;
+    }
     h1 {
+      text-align: center;
       @include media-breakpoint-up(sm) {
         width: 70%;
+        text-align: left;
       }
     }
   }
@@ -182,6 +258,22 @@
     font-weight: bold;
   }
 
+  .structure-content-col {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    @include media-breakpoint-up(sm) {
+      padding: 0 12px;
+      align-items: flex-start;
+    }
+  }
   .structure-content {
     color: $light;
     span {
@@ -192,10 +284,23 @@
   }
 }
 .background-row {
-  padding: 60px 40px 40px;
+  padding: 40px 5px;
   color: white;
   background-color: $blue;
+  @include media-breakpoint-up(sm) {
+    padding: 60px 40px 40px;
+  }
+  .background-col {
+    padding: 0px 5px;
+    @include media-breakpoint-up(sm) {
+      padding: 0 12px;
+    }
+  }
   .background-header-col {
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+      text-align: left;
+    }
     h1 {
       color: $light;
       @include media-breakpoint-up(sm) {
@@ -205,8 +310,11 @@
   }
 }
 .curriculum-row {
-  background-color:$white;
-  padding: 60px 40px;
+  background-color: $white;
+  padding: 40px 5px;
+  @include media-breakpoint-up(sm) {
+    padding: 60px 40px;
+  }
   .curriculum-heading-col {
     color: $red;
     text-align: center;
@@ -222,7 +330,11 @@
     .curriculum-module {
       text-align: center;
       .curriculum-container {
-        width: 80%;
+        width: 100%;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+          width: 80%;
+        }
       }
       .curriculum-title {
         font-weight: bold;
@@ -238,13 +350,18 @@
   }
 
   .curriculum-schedule {
-    width: 70%;
+    @include media-breakpoint-up(sm) {
+      width: 70%;
+    }
     border-top: 1px solid $secondary;
     .curriculum-schedule-header {
       color: $red;
+
       h1 {
+        text-align: center;
         @include media-breakpoint-up(sm) {
           width: 80%;
+          text-align: left;
         }
       }
     }
@@ -270,19 +387,25 @@
 }
 
 .schedule-row {
-  padding: 60px 40px;
+  padding: 40px 5px;
+  @include media-breakpoint-up(md) {
+    padding: 60px 40px;
+  }
+  .schedule-heading-col {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
   background-color: $light;
   .schedule-tabs-col {
     display: none;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: block;
-    }
-    ul {
-      margin-bottom: 60px;
     }
   }
   .schedule-accordion-col {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: none;
     }
     .accordion-button {
@@ -372,7 +495,12 @@
 .last-row {
   background-color: $red;
   color: $light;
-  padding: 80px;
+  padding: 40px 5px;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 80px;
+    text-align: left;
+  }
   .last-col {
     display: flex;
     flex-direction: column;
