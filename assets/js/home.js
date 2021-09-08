@@ -9,50 +9,51 @@ const getFormattedDate = (d) => {
   return `${da} ${mo} ${ye}`;
 }
 
+// helper function for formatting output
+const getOutput = (start, end) => {
+const formattedStart = getFormattedDate(start);
+const formattedEnd = getFormattedDate(end);
+  return `${formattedStart} - ${formattedEnd}`;
+}
+
 // must define a function called eventsLoad
 // this is specified in the calendar partial
 function eventsLoad(events){
-    let count = 0;
-    console.log('homepage', events);
+    let basicsCount = 0;
+    let fullTimeCount = 0;
+    let partTimeCount = 0;
     
     // sorts events object by date in ascending order
     events.sort(function(a,b){
       return new Date(a.start.date) - new Date(b.start.date);
     });
 
-    // events.forEach(function(entry) {
-    //     const today = new Date();
-    //     let startsAt = new Date(entry.start.date);
-
-    //     // limit of 5 course dates with start date > current date
-    //     if (count < 3 && startsAt > today) {
-    //       let contentStartDate = getFormattedDate(entry.start.date);
-    //       let contentEndDate = getFormattedDate(entry.end.date);
-    //       let date = `${contentStartDate} - ${contentEndDate} (${entry.summary})`;
-
-    //       let bootcampLi = document.createElement('li');
-    //       let curriculumLi = document.createElement('li');
-    //       bootcampLi.innerHTML = date;
-    //       curriculumLi.innerHTML = date;
-    //       (document.getElementById('basics-course-dates')).appendChild(bootcampLi);
-    //       (document.getElementById('basics-curriculum')).appendChild(curriculumLi);
-    //       count += 1;
-    //     }
-    // });
-
-    let basicsCount = 0;
     events.forEach((entry) => {
       const today = new Date();
       let startsAt = new Date(entry.start.date);
+      let start = entry.start.date;
+      let end = entry.end.date;
+
       // header course dates
       if (basicsCount === 0 && startsAt > today && entry.summary === "Basics") {
-        let headingStartDate = getFormattedDate(entry.start.date);
-        let headingEndDate = getFormattedDate(entry.end.date);
-
         let basicsDate = document.createElement('p');
-        basicsDate.innerHTML = `Next Batch: ${headingStartDate} - ${headingEndDate}`;
+        basicsDate.innerHTML = `Next Batch: ${getOutput(start, end)}`;
         (document.getElementById('basics-homepage-dates')).appendChild(basicsDate);
         basicsCount += 1;
+      }
+
+      if (fullTimeCount === 0 && startsAt > today && entry.summary === 'Full Time') {
+        let fullTimeDates = document.createElement('p');
+        fullTimeDates.innerHTML = `Full Time: ${getOutput(start, end)}`;
+        (document.getElementById('bootcamp-homepage-dates')).appendChild(fullTimeDates);
+        fullTimeCount += 1;
+      }
+
+      if(partTimeCount === 0 && startsAt > today && entry.summary === 'Part Time') {
+        let partTimeDates = document.createElement('p');
+        partTimeDates.innerHTML = `Part Time: ${getOutput(start, end)}`;
+        (document.getElementById('bootcamp-homepage-dates')).appendChild(partTimeDates);
+        partTimeCount += 1;
       }
     })
 }
