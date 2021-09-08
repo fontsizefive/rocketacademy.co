@@ -1,4 +1,4 @@
-var courseType = "Bootcamp";
+var courseType = "Basics";
 
 // helper function for formatting date
 const getFormattedDate = (d) => {
@@ -24,17 +24,17 @@ function eventsLoad(events){
         let startsAt = new Date(entry.start.date);
 
         // limit of 5 course dates with start date > current date
-        if (count < 5 && startsAt > today) {
+        if (count < 3 && startsAt > today) {
           let contentStartDate = getFormattedDate(entry.start.date);
           let contentEndDate = getFormattedDate(entry.end.date);
-          let date = `${contentStartDate} - ${contentEndDate} (${entry.summary})`;
+          let date = `${contentStartDate} - ${contentEndDate}`;
 
           let bootcampLi = document.createElement('li');
           let curriculumLi = document.createElement('li');
           bootcampLi.innerHTML = date;
           curriculumLi.innerHTML = date;
-          (document.getElementById('course-dates-container')).appendChild(bootcampLi);
-          (document.getElementById('course-dates-curriculum')).appendChild(curriculumLi);
+          (document.getElementById('basics-course-dates')).appendChild(bootcampLi);
+          (document.getElementById('basics-curriculum')).appendChild(curriculumLi);
           count += 1;
         }
     });
@@ -50,7 +50,7 @@ function eventsLoad(events){
 
         let headerDate = document.createElement('h2');
         headerDate.innerHTML = `Next Batch: ${headingStartDate} - ${headingEndDate}`;
-        (document.getElementById('next-batch-date')).appendChild(headerDate);
+        (document.getElementById('basics-next-batch')).appendChild(headerDate);
         headerCount += 1;
       }
       
