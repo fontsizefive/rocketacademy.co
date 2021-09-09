@@ -42,14 +42,14 @@ function eventsLoad(events){
         basicsCount += 1;
       }
 
-      if (fullTimeCount === 0 && startsAt > today && entry.description === 'Full time') {
+      if (fullTimeCount === 0 && startsAt > today && entry.description === 'Full Time') {
         let fullTimeDates = document.createElement('p');
         fullTimeDates.innerHTML = `Full Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(fullTimeDates);
         fullTimeCount += 1;
       }
 
-      if(partTimeCount === 0 && startsAt > today && entry.description === 'Part time') {
+      if(partTimeCount === 0 && startsAt > today && entry.description === 'Part Time') {
         let partTimeDates = document.createElement('p');
         partTimeDates.innerHTML = `Part Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(partTimeDates);
