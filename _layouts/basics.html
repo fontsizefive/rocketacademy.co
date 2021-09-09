@@ -8,7 +8,7 @@ layout: default
       <div class="row">
         <div class="col-12 header-col">
           <h1>Coding Basics</h1>
-          <h2>Next Batch: 14 Aug - 25 Sep 2021</h2>
+          <div id="basics-next-batch"></div>
           <h3>(Free for a limited time)</h3>
           <a class="btn btn-primary" href="http://eepurl.com/g6a1hj" target="_blank">Apply Now</a>
         </div>
@@ -60,10 +60,7 @@ layout: default
             <div class="col-12 col-md-3 prices-middle-col">
               <h4>Upcoming Batches</h4>
               <br />
-              <ul>
-                <li>14 Aug - 25 Sep 2021</li>
-                <li>2 Oct - 13 Nov 2021</li>
-                <li>13 Nov - 25 Dec 2021</li>
+              <ul id="basics-course-dates">
               </ul>
               <br />
               <a class="btn btn-primary" href="http://eepurl.com/g6a1hj" target="_blank">Apply Now</a>
@@ -241,10 +238,7 @@ layout: default
                 </div>
                 <div class="col-12 col-md-6 curriculum-schedule-content">
                   <br />
-                  <ul>
-                    <li>14 Aug - 25 Sep 2021</li>
-                    <li>2 Oct - 13 Nov 2021</li>
-                    <li>13 Nov - 25 Dec 2021</li>
+                  <ul id="basics-curriculum">
                   </ul>
                   <br />
                   <a class="btn btn-primary" href="http://eepurl.com/g6a1hj">Apply Now</a>
@@ -1048,3 +1042,5 @@ layout: default
     </div>
   </div>
 </div>
+<script src="{% link assets/js/basics.js %}" type="text/javascript"></script>
+{% include calendar.html %}

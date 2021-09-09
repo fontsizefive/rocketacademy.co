@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Do I Need a Computer Science Degree to Be a Software Engineer?
-meta_description: ../../assets/img/uploads/blog-cs-degree.png
+meta_description: ../../assets/img/uploads/blog-cs-degree.jpg
 author:
 date: "2021-08-11"
 categories: "learning methods"

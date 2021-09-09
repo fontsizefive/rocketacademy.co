@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Careers In Singapore's Tech Industry
-meta_description: ../../assets/img/uploads/blog-careers.png
+meta_description: ../../assets/img/uploads/blog-careers.jpg
 author:
 date: "2021-08-15 12:00:00"
 categories: community
