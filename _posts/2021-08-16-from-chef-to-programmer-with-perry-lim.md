@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From Chef to Programmer with Perry Lim
-meta_description: ../../assets/img/uploads/blog-perry.png
+meta_description: ../../assets/img/uploads/blog-perry.jpg
 author:
 date: "2021-08-16 12:00:00"
 categories: profiles
