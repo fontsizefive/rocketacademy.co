@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Going Beyond Basics with Coding Basics Graduates
-meta_description: ../../assets/img/uploads/blog-basics.png
+meta_description: ../../assets/img/uploads/blog-basics.jpg
 author:
 date: "2021-08-15 12:00:00"
 categories: profiles
@@ -15,7 +15,7 @@ categories: profiles
 
 ## Bryan
 
-![bryan-image](../../assets/img/uploads/blog-basics.png)
+![bryan-image](../../assets/img/uploads/blog-basics.jpg)
 
 “I'm currently a full-time student in the totally unrelated field of theological studies. And in my pursuit of this field, I've come to a point where I'm wondering if I should make a switch. I’m not sure yet if software engineering is what I want to do — I’m still exploring. But it’s something I’m more used to because I have a diploma in aviation engineering. That required some form of logical thinking in terms of computer logic, and a bit of coding here and there. So these are things I know I can do well in.
 
@@ -27,7 +27,7 @@ Coding Basics was a good introduction to the bigger things to come, so I wanted 
 
 ## Marie
 
-![marie-image](../../assets/img/uploads/blog-marie.png)
+![marie-image](../../assets/img/uploads/blog-marie.jpg)
 
 “I'm a user experience designer and I wanted to learn backend coding to better understand what the developers I work with feel. As a designer, you always want to have the most perfect design. But developers are always at the losing end because they are at the end of the process and have the most work to do. Learning basic coding was useful in showing me the things someone should be thinking about when developing anything, which really helps put things into perspective when it comes to creating designs that are useful to everyone, including my team members.
 
@@ -43,7 +43,7 @@ Pair work was also really interesting because we get to work with people with di
 
 ## Al
 
-![al-image](../../assets/img/uploads/basics-testimonial.png)
+![al-image](../../assets/img/uploads/basics-testimonial.jpg)
 
 Al-Rocket-Academy-Student-Software-Engineer-Recruiter.png
 “Coding is always something I've wanted to do, but I just never got around to it because of work, life, and whatnot. I did learn it in school way back when I was a business student, but it was very basic. To be honest, I didn’t quite like it then and I can’t remember anything now either!
@@ -62,7 +62,7 @@ At the moment, I’m a recruiter who hires mostly for software engineers. So kno
 
 ## Cynthia
 
-![cynthia-image](../../assets/img/uploads/blog-cynthia.png)
+![cynthia-image](../../assets/img/uploads/blog-cynthia.jpg)
 
 Cynthia-Rocket-Academy-Student-Product-Manager-Igloohome.png
 “Before taking Coding Basics, I already had some interest in coding because of my job as a product manager in a tech company. I manage software products, but I don't have any background in software engineering. Although it’s not completely necessary, it does help. So I've played around with some other classes before, like Harvard’s CS50.

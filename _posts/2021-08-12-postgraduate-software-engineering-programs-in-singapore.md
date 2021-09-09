@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Postgraduate Software Engineering Programmes in Singapore
-meta_description: ../../assets/img/uploads/blog-postgrad.png
+meta_description: ../../assets/img/uploads/blog-postgrad.jpg
 author:
 date: "2021-08-12"
 categories: learning methods

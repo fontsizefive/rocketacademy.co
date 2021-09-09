@@ -7,7 +7,7 @@ date: "2021-08-16 12:00:00"
 categories: profiles
 ---
 
-![perry-image](../../assets/img/uploads/blog-perry.png)
+![perry-image](../../assets/img/uploads/blog-perry.jpg)
 
 ### Perry is a Rocket Academy graduate who has launched his dream career in programming through our flagship [Coding Bootcamp course](https://www.rocketacademy.co/courses/bootcamp). His journey also represents our belief that anyone can become a software engineer with enough motivation and diligence, no matter their background.
 
@@ -20,7 +20,7 @@ It was not until National Service that Perry began toying with the idea of using
 He was soon introduced to Rocket Academy by a friend and former student. “I felt that Rocket Academy was a new school very different from others in Singapore,” Perry tells us. “During the first meeting with Kai, I got the feeling that he is very driven to see his students succeed, so I decided to try it out. Also, it was nice to see the founder and CEO so involved in the teaching.”
 
 {:.image-left}
-![perry-img](../../assets/img/uploads/bootcamp-testimonial.png)
+![perry-img](../../assets/img/uploads/bootcamp-testimonial.jpg)
 
 As Perry began the final leg of his journey towards becoming a programmer in Coding Bootcamp, he found appreciation for the strategic curriculum and comprehensive career coaching from industry seniors. “I felt that the course was paced well, and the topics were spread out in a way that you learn all the important things first and foremost,” says Perry. “After graduation, every teacher still gave me a ton of guidance in my search for a job. Jonathan gave me algorithm tests, Kai helped me in creating a better resume, and Lionell helped me out with an assignment. I was amazed!”
 

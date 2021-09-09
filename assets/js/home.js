@@ -35,21 +35,21 @@ function eventsLoad(events){
       let end = entry.end.date;
 
       // header course dates
-      if (basicsCount === 0 && startsAt > today && entry.summary === "Basics") {
+      if (basicsCount === 0 && startsAt > today && entry.summary.includes("Basics")) {
         let basicsDate = document.createElement('p');
         basicsDate.innerHTML = `Next Batch: ${getOutput(start, end)}`;
         (document.getElementById('basics-homepage-dates')).appendChild(basicsDate);
         basicsCount += 1;
       }
 
-      if (fullTimeCount === 0 && startsAt > today && entry.summary === 'Full Time') {
+      if (fullTimeCount === 0 && startsAt > today && entry.description === 'Full time') {
         let fullTimeDates = document.createElement('p');
         fullTimeDates.innerHTML = `Full Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(fullTimeDates);
         fullTimeCount += 1;
       }
 
-      if(partTimeCount === 0 && startsAt > today && entry.summary === 'Part Time') {
+      if(partTimeCount === 0 && startsAt > today && entry.description === 'Part time') {
         let partTimeDates = document.createElement('p');
         partTimeDates.innerHTML = `Part Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(partTimeDates);

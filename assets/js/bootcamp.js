@@ -35,7 +35,7 @@ function eventsLoad(events){
 
         // limit of 5 course dates with start date > current date
         if (count < 5 && startsAt > today) {
-          const listItemDate = `${getOutput(start, end)} (${entry.summary})`;
+          const listItemDate = `${getOutput(start, end)} (${entry.description})`;
           const bootcampLi = document.createElement('li');
           const curriculumLi = document.createElement('li');
           bootcampLi.innerHTML = listItemDate;
