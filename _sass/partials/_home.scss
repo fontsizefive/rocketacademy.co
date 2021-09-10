@@ -57,7 +57,7 @@
 
   .coursetype-row {
     background-color: $red;
-    padding: 40px 5px;
+    padding: 40px 5px 60px 5px;
     @include media-breakpoint-up(sm) {
       padding: 40px;
     }
@@ -128,7 +128,7 @@
   }
 
   .track-record-row {
-    padding: 40px 5px;
+    padding: 50px 5px 30px;
     background-color: $blue;
     color: white;
     font-family: $primary-font;
@@ -139,6 +139,13 @@
       padding: 0;
       @include media-breakpoint-up(sm) {
         padding: 0 12px;
+      }
+      .track-record-container-right {
+        padding-top: 20px;
+
+        @include media-breakpoint-up(sm) {
+          padding-top: 0;
+        }
       }
       .track-record-container-left,
       .track-record-container-right {
@@ -233,28 +240,31 @@
     .testimonial-footer a {
       color: $red;
       padding: 20px;
+      text-align: center;
       @include media-breakpoint-up(sm) {
+        text-align: left;
         padding: 40px;
       }
     }
   }
   .success-row {
+    background-color: $white;
     padding: 40px 5px;
     @include media-breakpoint-up(sm) {
-      padding: 0 40px;
+      padding: 40px;
     }
     .success-header {
       color: $red;
-      padding: 20px 5px;
+      padding: 0 5px 30px;
       text-align: center;
       @include media-breakpoint-up(sm) {
-        padding: 40px 40px 0;
+        padding: 40px;
         text-align: left;
       }
     }
 
     .success-content-col {
-      padding: 40px 5px;
+      padding: 0 5px;
       color: $blue;
       @include media-breakpoint-up(sm) {
         padding: 40px;
@@ -290,7 +300,7 @@
       padding: 40px;
     }
     .instructors-header {
-      padding: 40px 5px;
+      padding: 0 5px 40px;
       color: $light;
       text-align: center;
       @include media-breakpoint-up(sm) {
@@ -325,7 +335,7 @@
     }
     .instructor-details {
       color: white;
-      padding: 0 5px;
+      padding: 20px;
       text-align: center;
       ol {
         text-align: left;
@@ -333,6 +343,7 @@
       @include media-breakpoint-up(sm) {
         margin: 0 12px;
         text-align: left;
+        padding: 20px 5px;
       }
     }
 
@@ -363,7 +374,7 @@
       padding: 40px;
     }
     .blog-header {
-      padding: 40px 5px;
+      padding: 0 0 40px;
       text-align: center;
       @include media-breakpoint-up(sm) {
         padding: 40px;
@@ -372,9 +383,9 @@
     }
 
     #homepage-carousel-controls {
-      padding: 0 5px;
+      padding: 40 5px;
       @include media-breakpoint-up(sm) {
-        padding: 0 12px;
+        padding: 40px 12px;
       }
     }
     .blog-title {

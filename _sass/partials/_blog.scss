@@ -22,6 +22,7 @@
     margin-bottom: 30px;
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
+      text-align: left;
     }
   }
   .all-posts-col {
@@ -86,6 +87,7 @@
     margin-bottom: 30px;
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
+      text-align: left;
     }
   }
   .people-col {

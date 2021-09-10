@@ -108,15 +108,15 @@ layout: default
         <div class="col-12 col-md-6 track-record-col">
           <div class="track-record-container-right">
             <h1>Proven Track Record.</h1>
-            <br /><br />
+            <br />
             <p>
               100% of Coding Bootcamp grads have software engineering offers
               from companies such as GovTech, Ninja Van, Xfers, 99.co, and
               Glints.
             </p>
-            <br /><br /><br />
-            <h1>Not Hired? Get a Refund.</h1>
             <br /><br />
+            <h1>Not Hired? Get a Refund.</h1>
+            <br />
             <p>
               Bootcamp grads applying but unable to get a coding job within 6
               months are eligible for a full refund. Read more in our FAQ.
@@ -268,12 +268,12 @@ layout: default
           <h1>Learn From the Best Instructors</h1>
         </div>
         {% for item in site.data.instructors %}
-        <div class="col-12 col-lg-4 instructors-col">
+        <div class="col-12 col-md-6 col-lg-4 instructors-col">
           <div class="row instructors-container">
-            <div class="col-12 col-md-7 col-lg-12 instructors-image">
+            <div class="col-12 instructors-image">
               <img class="instructor-img" src="{{ item.image }}" />
             </div>
-            <div class="col-12 col-md-5 col-lg-12 instructor-details">
+            <div class="col-12 instructor-details">
               <h4>
                 {{ item.name }}(<span
                   ><a href="{{ item.linked-in }}">LinkedIn</a></span

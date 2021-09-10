@@ -12,6 +12,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1 {
+      text-align: center;
+    }
+    @include media-breakpoint-up(sm) {
+      h1 {
+        text-align: left;
+      }
+    }
     h1,
     h2,
     h3 {
@@ -58,14 +66,14 @@
       h1 {
         text-align: center;
       }
-      width: 70%;
+      // width: 70%;
       padding: 40px;
       text-align: left;
     }
   }
   ol {
     @include media-breakpoint-up(sm) {
-      width: 70%;
+      width: 75%;
       padding: 40px;
     }
 
@@ -98,11 +106,13 @@
     padding: 40px;
     text-align: center;
   }
+
   .prices-header-col {
     color: $red;
     padding: 20px 0;
     @include media-breakpoint-up(sm) {
       border-bottom: 1px solid $blue;
+      width: 80%;
     }
     text-align: center;
 
@@ -152,6 +162,7 @@
 }
 
 .test-row {
+  background-color: white;
   padding: 20px 5px;
   @include media-breakpoint-up(sm) {
     padding: 40px;
@@ -173,8 +184,10 @@
     }
     .test-col-top,
     .test-col-bottom {
+      text-align: center;
       @include media-breakpoint-up(sm) {
         margin-left: 20px;
+        text-align: left;
       }
     }
     .quote {
@@ -213,15 +226,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .audience-container-col {
+      @include media-breakpoint-up(md) {
+        width: 80%;
+        h1 {
+          text-align: left;
+        }
+      }
+    }
   }
   .audience-content-col {
     @include media-breakpoint-up(md) {
       width: 80%;
     }
     .audience-col {
+      text-align: center;
       padding: 0 5px;
       @include media-breakpoint-up(md) {
         padding: 0 12px;
+        text-align: left;
       }
       .question,
       p {
@@ -237,18 +260,19 @@
   padding: 20px 5px;
   @include media-breakpoint-up(sm) {
     padding: 60px 40px;
+    text-align: left;
   }
   background-color: $secondary;
   .structure-heading-col {
     padding: 20px 5px;
+    text-align: center;
     @include media-breakpoint-up(sm) {
       padding: 40 12px;
+      text-align: left;
     }
     h1 {
-      text-align: center;
       @include media-breakpoint-up(sm) {
         width: 70%;
-        text-align: left;
       }
     }
   }
@@ -326,14 +350,17 @@
     justify-content: center;
   }
   .curriculum-content {
-    width: 80%;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
     .curriculum-module {
       text-align: center;
       .curriculum-container {
         width: 100%;
         text-align: center;
-        @include media-breakpoint-up(sm) {
-          width: 80%;
+        @include media-breakpoint-up(lg) {
+          width: 70%;
         }
       }
       .curriculum-title {
@@ -350,8 +377,9 @@
   }
 
   .curriculum-schedule {
-    @include media-breakpoint-up(sm) {
-      width: 70%;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 80%;
     }
     border-top: 1px solid $secondary;
     .curriculum-schedule-header {
