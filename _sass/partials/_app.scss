@@ -1,17 +1,21 @@
-body{
-  min-height:100vh;
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  min-height: 100vh;
   line-height: 1.7;
-  padding-top:69px;
+  padding-top: 69px;
 }
-.ra-max-width-cont{
-  max-width:1320px;
+.ra-max-width-cont {
+  max-width: 1320px;
 }
-.btn{
+.btn {
   font-family: $primary-font;
 }
-.btn-light{
-  color:red;
+.btn-light {
+  color: red;
 }
-.ra-title-col{
-  padding-bottom:2rem;
+.ra-title-col {
+  padding-bottom: 2rem;
 }
