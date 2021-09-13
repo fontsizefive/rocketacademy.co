@@ -2,129 +2,128 @@
 layout: default
 ---
 
-<div class="container-fluid">
-  <div class="row blog-title-row justify-content-center">
-    <div class="ra-max-width-cont">
-      <div class="row h-100">
-        <div class="col-11 offset-1 d-flex align-items-end ra-title-col">
-          <h1>{{ page.title }}</h1>
-        </div>
+<div class="row blog-title-row justify-content-center">
+  <div class="ra-max-width-cont">
+    <div class="row h-100">
+      <div class="col-11 offset-1 d-flex align-items-end ra-title-col">
+        <h1>{{ page.title }}</h1>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="row blog-page-row justify-content-center">
-    <div class="ra-max-width-cont">
-      <div class="row">
-        <!-- <div class="row blog-page-row"> -->
-        <div class="col-12 blog-page-col">
-          <!-- {% include page-intro.html %} -->
+<div class="row blog-page-row justify-content-center">
+  <div class="ra-max-width-cont">
+    <div class="row">
+      <!-- <div class="row blog-page-row"> -->
+      <div class="col-12 blog-page-col">
+        <!-- {% include page-intro.html %} -->
 
-          <!-- {{ content }} -->
-          <!-- {% assign author =
+        <!-- {{ content }} -->
+        <!-- {% assign author =
           site.data.authors[post.author] %} -->
-          <section>
-            <!-- <h3>Posts</h3> -->
-            <ul>
-              {% for post in site.posts %} {% if post.categories[0] ==
-              "learning" %}
-              <li>
-                <div class="row post-row">
-                  <div class="col-12 col-md-6 post-img-col">
-                    <img src="{{ post.meta_description }}" />
-                  </div>
-                  <br /><br />
-                  <div class="col-12 col-md-6 post-img-col-2">
-                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                    <p><a href="{{ post.url }}">Read More →</a></p>
-                    <br />
-                  </div>
-                  <!-- <time datetime="{{ post.date }}">
-                <small>
-                  <strong>{{ post.date | date_to_string }}</strong>
-                  {% if author %} by {{ author.name }} {% endif %}
-                </small>
-              </time>
-              {{ post.excerpt | strip_newlines | truncate: 180 }} -->
-                </div>
-              </li>
-              {% endif %} {% endfor %}
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row people-row justify-content-center">
-    <div class="ra-max-width-cont">
-      <div class="row">
-        <!-- <div class="row people-row"> -->
-        <div class="col-12 people-col">
-          <h1>Student and Instructor Profiles</h1>
-
-          <!-- {% include page-intro.html %} -->
-
-          <!-- {{ content }} -->
-
-          <section>
-            <!-- <h3>Posts</h3> -->
-            <ul>
-              {% for post in site.posts %} {% assign author =
-              site.data.authors[post.author] %} {% if post.categories[0] ==
-              "profiles" %}
-              <li>
-                <div class="row post-row">
-                  <div class="col-12 col-md-6 post-img-col">
-                    <img src="{{ post.meta_description }}" />
-                  </div>
-                  <br /><br />
-                  <div class="col-12 col-md-6 post-img-col-2">
-                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                    <p><a href="{{ post.url }}">Read More →</a></p>
-                    <br />
-                  </div>
-                  <!-- <time datetime="{{ post.date }}">
-                <small>
-                  <strong>{{ post.date | date_to_string }}</strong>
-                  {% if author %} by {{ author.name }} {% endif %}
-                </small>
-              </time>
-              {{ post.excerpt | strip_newlines | truncate: 180 }} -->
-                </div>
-              </li>
-              {% endif %} {% endfor %}
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row all-posts-row justify-content-center">
-    <div class="ra-max-width-cont">
-      <div class="row">
-        <!-- <div class="row all-posts-row"> -->
-        <div class="col-12 all-posts-col">
-          <h1>Browse All Articles</h1>
-
-          <!-- {% include page-intro.html %} -->
-
-          <!-- {{ content }} -->
-
+        <section>
           <!-- <h3>Posts</h3> -->
+          <ul>
+            {% for post in site.posts %} {% if post.categories[0] == "learning"
+            %}
+            <li>
+              <div class="row post-row">
+                <div class="col-12 col-md-6 post-img-col">
+                  <img src="{{ post.meta_description }}" />
+                </div>
+                <br /><br />
+                <div class="col-12 col-md-6 post-img-col-2">
+                  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                  <p><a href="{{ post.url }}">Read More →</a></p>
+                  <br />
+                </div>
+                <!-- <time datetime="{{ post.date }}">
+                <small>
+                  <strong>{{ post.date | date_to_string }}</strong>
+                  {% if author %} by {{ author.name }} {% endif %}
+                </small>
+              </time>
+              {{ post.excerpt | strip_newlines | truncate: 180 }} -->
+              </div>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row people-row justify-content-center">
+  <div class="ra-max-width-cont">
+    <div class="row">
+      <!-- <div class="row people-row"> -->
+      <div class="col-12 people-col">
+        <h1>Student and Instructor Profiles</h1>
 
-          <div class="row post-row">
+        <!-- {% include page-intro.html %} -->
+
+        <!-- {{ content }} -->
+
+        <section>
+          <!-- <h3>Posts</h3> -->
+          <ul>
             {% for post in site.posts %} {% assign author =
-            site.data.authors[post.author] %}
+            site.data.authors[post.author] %} {% if post.categories[0] ==
+            "profiles" %}
+            <li>
+              <div class="row post-row">
+                <div class="col-12 col-md-6 post-img-col">
+                  <img src="{{ post.meta_description }}" />
+                </div>
+                <br /><br />
+                <div class="col-12 col-md-6 post-img-col-2">
+                  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                  <p><a href="{{ post.url }}">Read More →</a></p>
+                  <br />
+                </div>
+                <!-- <time datetime="{{ post.date }}">
+                <small>
+                  <strong>{{ post.date | date_to_string }}</strong>
+                  {% if author %} by {{ author.name }} {% endif %}
+                </small>
+              </time>
+              {{ post.excerpt | strip_newlines | truncate: 180 }} -->
+              </div>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row all-posts-row justify-content-center">
+  <div class="ra-max-width-cont">
+    <div class="row">
+      <!-- <div class="row all-posts-row"> -->
+      <div class="col-12 all-posts-col">
+        <h1>Browse All Articles</h1>
 
-            <div class="col-12 col-md-6 col-lg-4 post-img-col">
-              <img src="{{ post.meta_description }}" />
-              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-              <p>
-                <a class="read-more" href="{{ post.url }}">Read More →</a>
-              </p>
-            </div>
+        <!-- {% include page-intro.html %} -->
 
-            <!-- <time datetime="{{ post.date }}">
+        <!-- {{ content }} -->
+
+        <!-- <h3>Posts</h3> -->
+
+        <div class="row post-row">
+          {% for post in site.posts %} {% assign author =
+          site.data.authors[post.author] %}
+
+          <div class="col-12 col-md-6 col-lg-4 post-img-col">
+            <img src="{{ post.meta_description }}" />
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>
+              <a class="read-more" href="{{ post.url }}">Read More →</a>
+            </p>
+          </div>
+
+          <!-- <time datetime="{{ post.date }}">
                 <small>
                   <strong>{{ post.date | date_to_string }}</strong>
                   {% if author %} by {{ author.name }} {% endif %}
@@ -132,8 +131,7 @@ layout: default
               </time>
               {{ post.excerpt | strip_newlines | truncate: 180 }} -->
 
-            {% endfor %}
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
