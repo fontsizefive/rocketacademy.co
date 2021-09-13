@@ -5,13 +5,15 @@
         <div class="footer-column">
           <h3 class="footer-heading">Courses</h3>
           <ul class="footer-list">
-            {% for item in site.data.courses %}
             <li class="footer-list-item">
-              <a class="footer-list-link" href="{{ item.url }}">
-                {{ item.text }}
-              </a>
+              <a class="footer-list-link" href="/basics"> Basics </a>
             </li>
-            {% endfor %}
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="/bootcamp"> Bootcamp </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="/apply-now"> Apply Now </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -19,13 +21,15 @@
         <div class="footer-column">
           <h3 class="footer-heading">Resources</h3>
           <ul class="footer-list">
-            {% for item in site.data.resources %}
             <li class="footer-list-item">
-              <a class="footer-list-link" href="{{ item.url }}">
-                {{ item.text }}
-              </a>
+              <a class="footer-list-link" href="/faq"> FAQ </a>
             </li>
-            {% endfor %}
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="/blog"> Blog </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="/about"> About </a>
+            </li>
           </ul>
         </div>
       </div>

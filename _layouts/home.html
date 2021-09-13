@@ -2,21 +2,6 @@
 layout: default
 ---
 
-<!-- <h2>{{ page.title }}</h2>
-
-{% include page-intro.html %} {{ content }} -->
-
-<!-- <section>
-  <h3>Recent posts from the blog</h3>
-
-  <ul>
-    {% for post in site.posts limit:3 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</section> -->
 <div class="container-fluid">
   <div class="row main-header-row justify-content-center">
     <div class="ra-max-width-cont">
@@ -232,30 +217,56 @@ layout: default
         </div>
         <div class="col-12 success-content-col">
           <div class="row success-top-row">
-            {% for item in site.data.success-top %}
             <div class="col-12 col-md-6 success-top-row-col">
               <div class="success-content-container">
-                <img src="{{ item.image }}" />
+                <img src="../../assets/img/uploads/home-portfolios.jpg" />
                 <br /><br />
-                <p class="success-title">{{ item.title }}</p>
-                <p class="success-content">{{ item.content }}</p>
+                <p class="success-title">Project Portfolio</p>
+                <p class="success-content">
+                  6 well-rounded programming projects with 1-1 feedback
+                  guaranteed to help you stand out.
+                </p>
               </div>
               <br />
             </div>
-            {% endfor %}
+            <div class="col-12 col-md-6 success-top-row-col">
+              <div class="success-content-container">
+                <img src="../../assets/img/uploads/home-interview.gif" />
+                <br /><br />
+                <p class="success-title">Interview Prep</p>
+                <p class="success-content">
+                  Stanford-quality interview prep and resume review by
+                  experienced software engineers.
+                </p>
+              </div>
+              <br />
+            </div>
           </div>
           <div class="row success-bottom-row">
-            {% for item in site.data.success-bottom %}
             <div class="col-12 col-md-6 success-bottom-row-col">
               <div class="success-content-container">
-                <img src="{{ item.image }}" />
+                <img src="../../assets/img/uploads/home-success-network.png" />
                 <br /><br />
-                <p class="success-title">{{ item.title }}</p>
-                <p class="success-content">{{ item.content }}</p>
+                <p class="success-title">Networking with Engineers</p>
+                <p class="success-content">
+                  Weekly Q&A sessions with experienced software engineers to
+                  help you build your network.
+                </p>
               </div>
             </div>
             <br />
-            {% endfor %}
+            <div class="col-12 col-md-6 success-bottom-row-col">
+              <div class="success-content-container">
+                <img src="../../assets/img/uploads/blog-marie.jpg" />
+                <br /><br />
+                <p class="success-title">Top Classmates and Alumni</p>
+                <p class="success-content">
+                  Classmates and alumni from top companies and schools committed
+                  to helping each other succeed.
+                </p>
+              </div>
+            </div>
+            <br />
           </div>
         </div>
       </div>
@@ -267,22 +278,26 @@ layout: default
         <div class="col-12 col-lg-4 instructors-header">
           <h1>Learn From the Best Instructors</h1>
         </div>
-        {% for item in site.data.instructors %}
         <div class="col-12 col-md-6 col-lg-4 instructors-col">
           <div class="row instructors-container">
             <div class="col-12 instructors-image">
-              <img class="instructor-img" src="{{ item.image }}" />
+              <img
+                class="instructor-img"
+                src="../../assets/img/uploads/blog-kai.jpg"
+              />
             </div>
             <div class="col-12 instructor-details">
               <h4>
-                {{ item.name }}(<span
-                  ><a href="{{ item.linked-in }}">LinkedIn</a></span
+                Kai Yuan Neo (<span
+                  ><a href="https://www.linkedin.com/in/kaiyuanneo/"
+                    >LinkedIn</a
+                  ></span
                 >)
               </h4>
               <ol>
-                <li>{{ item.list-item-1 }}</li>
-                <li>{{ item.list-item-2 }}</li>
-                <li>{{ item.list-item-3 }}</li>
+                <li>Founder and CEO of Rocket Academy</li>
+                <li>Former Facebook engineer</li>
+                <li>Master’s in Computer Science from Stanford</li>
               </ol>
               <p>
                 <a class="btn btn-primary" href="/about" target="_blank"
@@ -293,7 +308,36 @@ layout: default
             <br />
           </div>
         </div>
-        {% endfor %}
+        <div class="col-12 col-md-6 col-lg-4 instructors-col">
+          <div class="row instructors-container">
+            <div class="col-12 instructors-image">
+              <img
+                class="instructor-img"
+                src="../../assets/img/uploads/blog-akira.jpg"
+              />
+            </div>
+            <div class="col-12 instructor-details">
+              <h4>
+                Akira Wong (<span
+                  ><a href="https://www.linkedin.com/in/awongh/"
+                    >LinkedIn</a
+                  ></span
+                >)
+              </h4>
+              <ol>
+                <li>Head of Education at Rocket Academy</li>
+                <li>Former General Assembly Lead Instructor in SG and NY</li>
+                <li>Software Engineer for 5 years in Silicon Valley</li>
+              </ol>
+              <p>
+                <a class="btn btn-primary" href="/about" target="_blank"
+                  >Read More</a
+                >
+              </p>
+            </div>
+            <br />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -311,12 +355,6 @@ layout: default
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <!-- {% for item in site.data.carousel-1 %}
-                <div class="col-4">
-                  <img src="{{ item.image }}" />
-                  <p class="blog-title">{{ item.heading }}</p>
-                </div>
-                {% endfor %} -->
                 {% assign count = 0 %} {% for post in site.posts %} {% if
                 post.categories[0] == "learning" %} {% assign count = count |
                 plus:1 %}
