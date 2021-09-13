@@ -227,11 +227,14 @@
         padding: 0 40px;
         text-align: left;
       }
-      .student {
-        color: $blue;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: $primary-font;
+      .row {
+        width: 100vw;
+        .student {
+          color: $blue;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: $primary-font;
+        }
       }
     }
     .testimonial-content-col-row {
@@ -263,9 +266,19 @@
       }
     }
 
+    .success-top-row,
+    .success-bottom-row {
+      width: 98%;
+      @include media-breakpoint-up(sm) {
+        width: 100%;
+      }
+    }
     .success-content-col {
       padding: 0 5px;
       color: $blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       @include media-breakpoint-up(sm) {
         padding: 40px;
       }

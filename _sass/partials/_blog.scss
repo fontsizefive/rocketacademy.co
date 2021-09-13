@@ -7,6 +7,11 @@
 .blog-page-row .blog-page-col .post-row {
   padding: 0;
 }
+.blog-page-row {
+  .row {
+    width: 100vw;
+  }
+}
 
 .all-posts-row {
   background-color: $light;
@@ -15,6 +20,16 @@
   @include media-breakpoint-up(sm) {
     padding: 40px 40px;
   }
+  .ra-max-width-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .row {
+  //   .post-row {
+  //     width: 100vw;
+  //   }
+  // }
   h1 {
     padding-bottom: 50px;
     border-bottom: 1px solid $blue;
@@ -34,6 +49,10 @@
       list-style: none;
       margin: 0;
       padding: 0;
+    }
+
+    .row {
+      width: 100vw;
     }
     .post-row {
       @include media-breakpoint-up(sm) {
