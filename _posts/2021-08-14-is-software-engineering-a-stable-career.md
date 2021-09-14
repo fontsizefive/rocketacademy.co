@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is Software Engineering a Stable Career?
-meta_description: ../../assets/img/uploads/blog-stable-career.jpg
+meta_description: ../../assets/img/blog/blog-stable-career.jpg
 author:
 date: "2021-08-15 12:00:00"
 categories: community

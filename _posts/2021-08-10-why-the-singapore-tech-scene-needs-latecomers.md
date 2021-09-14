@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why The Singapore Tech Scene Needs Latecomers
-meta_description: ../../assets/img/uploads/blog-latecomers.png
+meta_description: ../../assets/img/blog/blog-latecomers.png
 author:
 date: "2021-08-10 12:00:00"
 categories: community

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Instructor Insights: Get to Know Akira"
-meta_description: ../../assets/img/uploads/blog-akira.jpg
+meta_description: ../../assets/img/blog/blog-akira.jpg
 author:
 date: "2021-08-15 12:00:00"
 categories: profiles
 ---
 
-![akira-image](../../assets/img/uploads/blog-akira.jpg)
+![akira-image](../../assets/img/blog/blog-akira.jpg)
 
 [Akira, Head of Education at Rocket Academy](https://www.linkedin.com/in/awongh/), is one who leads by example. Like many of the students he teaches, he didn’t have an academic background in programming before deciding to pursue it as a career switch. This might be hard to tell from his technical and teaching prowess today, but it only paints a picture of possibility.
 
