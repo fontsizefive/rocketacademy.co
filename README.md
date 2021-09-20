@@ -23,25 +23,23 @@ regenerate your token, head to "Settings" in your Netlify site dashboard, go to 
 section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
 see a text link to "Generate access token in GitHub".
 
+## Netlify CLI
+Globally install the netlify CLI.
+[Netlify CLI](https://docs.netlify.com/cli/get-started/)
+
+When cloning the project, connect the repo to netlify:
+```bash
+netlify init
+```
+
 ## Local Development
 
 Clone this repository and run:
-
 ```bash
 bundle install
-bundle exec jekyll server --watch
+npm install
+netlify dev
 ```
-
-In case you don't want to install ruby-bundler you can use docker:
-
-```bash
-docker-compose up
-```
-
-Jekyll will watch your project folder for changes.
-
-Now navigate to [localhost:4000](http://localhost:4000/) to preview the site, and
-[localhost:4000/admin](http://localhost:4000/admin) to log into the CMS.
 
 ## Bootstrap
 
@@ -56,3 +54,6 @@ Media queries: https://getbootstrap.com/docs/5.0/layout/breakpoints/#min-width
 Variables: https://bootstrap-cheatsheet.themeselection.com/variables.html
 
 Mixins: https://bootstrap-cheatsheet.themeselection.com/mixins.html
+
+## Mailchimp
+Look for the "list id" here: https://mailchimp.com/help/find-audience-id/ (it's called audience id elsewhere)

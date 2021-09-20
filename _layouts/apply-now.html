@@ -8,10 +8,7 @@ layout: default
       <h1>Start Your Coding Career Today.</h1>
     </div>
     <div class="col-12 col-lg-8">
-      <form
-        action="https://rocketacademy.us10.list-manage.com/subscribe/post"
-        method="POST"
-      >
+      <form id="apply-now-form">
         <input type="hidden" name="u" value="1620be4d8adef3c47e6b90477" />
         <input type="hidden" name="id" value="f029518324" />
         <div class="mb-3">
@@ -246,7 +243,7 @@ layout: default
           <br />
         </div>
         <br />
-        <button type="submit" class="btn">Apply</button>
+        <input id="submit" type="submit" class="btn btn-primary" value="Apply"/>
         <input
           type="hidden"
           name="ht"
@@ -324,3 +321,30 @@ layout: default
     </div>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+var form = document.querySelector('#apply-now-form');
+form.addEventListener('submit', function(event) {
+  if (form.checkValidity() === true) {
+
+    form.classList.add('was-validated');
+    axios({
+      method: 'post',
+      url: '/.netlify/functions/apply_now',
+      data: {
+        firstName: 'Fred',
+        lastName: 'Flintstone'
+      }
+    }).then(function(response){
+      console.log("HEY GOT SOMETHING BACK");
+      console.log(response.data);
+    });
+
+  }else{
+    console.log('invalid form');
+  }
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
+// from: https://getbootstrap.com/docs/4.0/components/forms/#custom-styles
+</script>

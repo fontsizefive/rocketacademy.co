@@ -4,3 +4,8 @@ _site
 .jekyll-cache
 .users.yml
 .DS_Store
+node_modules
+.env
+
+# Local Netlify folder
+.netlify
