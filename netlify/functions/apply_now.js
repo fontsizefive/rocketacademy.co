@@ -1,6 +1,5 @@
 require('dotenv').config()
 const { MAILCHIMP_API_KEY, MAILCHIMP_SERVER_NAME, MAILCHIMP_LIST_ID } = process.env;
-console.log('mailchimp list id', MAILCHIMP_LIST_ID);
 // find and set the list id
 // https://mailchimp.com/help/find-audience-id/
 
@@ -17,7 +16,6 @@ client.setConfig({
   server: MAILCHIMP_SERVER_NAME,
 });
 
-console.log('inside function apply now');
 exports.handler = async (event, context) => {
 
 
@@ -36,10 +34,27 @@ exports.handler = async (event, context) => {
       };
    }
 
+
   // Only allow POST
   if (event.httpMethod !== "POST") {
     console.log( event.httpMethod );
     return { statusCode: 405, body: "Method Not Allowed" };
+  }
+  
+  const data = JSON.parse(event.body);
+  const mergeFields = data.merge_fields;
+  let checkedString = true;
+
+  Object.keys(mergeFields).forEach((field) => {
+    if(!(field === 'REFERRAL' || field === 'LINKEDIN')) {
+      if(mergeFields[field].trim().length === 0) {
+        checkedString = false;
+      }
+    }
+  })
+  
+  if (checkedString === false) {
+    return { statusCode: 400, body: "Bad Request" };
   }
 
   // When the method is POST, the name will no longer be in the event’s

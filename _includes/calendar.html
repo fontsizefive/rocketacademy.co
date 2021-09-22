@@ -2,14 +2,11 @@
 https://stackoverflow.com/questions/28262674/retrieve-google-calendar-events-using-api-v3-in-javascript
 https://developers.google.com/calendar/api/v3/reference/events/get {% endcomment
 %}
-
 <script src="https://apis.google.com/js/api.js"></script>
 <script type="text/javascript">
-  import config from "dotenv";
-
   gapi.load("client", function printCalendar() {
-    var calendarId = process.env.GOOGLE_CALENDAR_ID;
-    var apiKey = process.env.GOOGLE_API_KEY;
+    var calendarId = "{{site.env.GOOGLE_CALENDAR_ID}}";
+    var apiKey = "{{site.env.GOOGLE_API_KEY}}";
 
     gapi.client
       .init({

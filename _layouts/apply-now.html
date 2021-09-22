@@ -23,7 +23,6 @@ layout: default
                   placeholder="First name"
                   aria-label="First name"
                 />
-                <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter your first name</div>
               </div>
               <div class="col-12 col-sm-6">
@@ -36,7 +35,6 @@ layout: default
                   placeholder="Last name"
                   aria-label="Last name"
                 />
-                <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter your last name</div>
               </div>
             </div>
@@ -50,6 +48,7 @@ layout: default
               class="form-select form-select-lg mb-3"
               required
             >
+              <option value="">--</option>
               <option value="less than 18">&lt; 18</option>
               <option value="18-24">18-24</option>
               <option value="25-34">25-34</option>
@@ -57,8 +56,20 @@ layout: default
               <option value="55-64">55-54</option>
               <option value="&gt;= 65">&gt;= 65</option>
             </select>
-            <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please select your age</div>
+            <br />
+          </div>
+          <div class="mb-3">
+            <label for="country" class="form-label"
+              >Country of Residence *</label
+            >
+            <select
+              id="country"
+              name="country"
+              class="form-select form-select-lg mb-3"
+              required
+            ></select>
+            <div class="invalid-feedback">Please select a country</div>
             <br />
           </div>
           <div class="mb-3">
@@ -68,8 +79,10 @@ layout: default
               name="email"
               id="email"
               class="form-control form-control-lg"
+              required
               placeholder="example@gmail.com"
             />
+            <div class="invalid-feedback">Please enter your email</div>
             <br />
           </div>
           <div class="mb-3">
@@ -83,19 +96,20 @@ layout: default
               name="phone-number"
               id="phone-number"
               class="form-control form-control-lg"
+              required
               placeholder="+65 1234 5678"
             />
+            <div class="invalid-feedback">Please enter your phone number</div>
             <br />
           </div>
           <div class="mb-3">
             <label for="linkedin" class="form-label"
-              >LinkedIn profile (if any) *
+              >LinkedIn profile (if any)
             </label>
             <br />
             <small
               >We will connect with you on LinkedIn and help you grow your
-              network. Please enter "None" if you do not have a LinkedIn
-              profile.</small
+              network.</small
             >
             <input
               type="text"
@@ -116,6 +130,7 @@ layout: default
                 type="radio"
                 name="experience"
                 value="No experience"
+                required
               />
               <label class="form-check-label"> No experience </label>
             </div>
@@ -125,6 +140,7 @@ layout: default
                 type="radio"
                 name="experience"
                 value="Beginner"
+                required
               />
               <label class="form-check-label"> Beginner </label>
             </div>
@@ -134,6 +150,7 @@ layout: default
                 type="radio"
                 name="experience"
                 value="Intermediate"
+                required
               />
               <label class="form-check-label"> Intermediate </label>
             </div>
@@ -143,8 +160,12 @@ layout: default
                 type="radio"
                 name="experience"
                 value="Advanced"
+                required
               />
               <label class="form-check-label"> Advanced </label>
+              <div class="invalid-feedback">
+                Please enter your experience level
+              </div>
             </div>
             <br />
           </div>
@@ -159,6 +180,7 @@ layout: default
                 type="checkbox"
                 name="course-type"
                 value="basics"
+                required
               />
               <label class="form-check-label">
                 Coding Basics (6 Weeks Part-Time)
@@ -170,6 +192,7 @@ layout: default
                 type="checkbox"
                 name="course-type"
                 value="bootcamp PT"
+                required
               />
               <label class="form-check-label">
                 Coding Bootcamp (48 Weeks Part-Time)
@@ -181,10 +204,14 @@ layout: default
                 type="checkbox"
                 name="course-type"
                 value="bootcamp FT"
+                required
               />
               <label class="form-check-label">
                 Coding Bootcamp (24 Weeks Full-Time)
               </label>
+              <div class="invalid-feedback">
+                Please choose one or more courses
+              </div>
             </div>
             <br />
           </div>
@@ -196,6 +223,7 @@ layout: default
               class="form-select form-select-lg mb-3"
               id="source"
               name="source"
+              required
             >
               <option value="">--</option>
               <option value="Word of Mouth">Word of Mouth</option>
@@ -206,6 +234,9 @@ layout: default
               <option value="Facebook">Facebook</option>
               <option value="Other">Other</option>
             </select>
+            <div class="invalid-feedback">
+              Please tell us where you heard about us!
+            </div>
             <br />
           </div>
           <div class="mb-3">
@@ -236,7 +267,11 @@ layout: default
               name="background"
               id="background"
               rows="3"
+              required
             ></textarea>
+            <div class="invalid-feedback">
+              Please tell us a little bit about yourself!
+            </div>
             <br />
           </div>
           <br />
@@ -324,64 +359,37 @@ layout: default
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="{% link assets/js/countries.js %}" type="text/javascript"></script>
+<script
+  src="{% link assets/js/generateSubscriberObject.js %}"
+  type="text/javascript"
+></script>
+<script
+  src="{% link assets/js/checkCheckboxes.js %}"
+  type="text/javascript"
+></script>
+
 <script>
   var form = document.querySelector(".needs-validation");
-  console.log(form);
   form.addEventListener(
     "submit",
     function (event) {
+      checkCheckboxes(document);
       if (form.checkValidity() === true) {
-        form.classList.add("was-validated");
-        const firstName = document.getElementById("first-name").value;
-        const lastName = document.getElementById("last-name").value;
-        const age = document.getElementById("age");
-        const ageValue = age.options[age.selectedIndex].value;
-        const email = document.getElementById("email").value;
-        const phoneNumber = document.getElementById("phone-number").value;
-        const linkedIn = document.getElementById("linkedin").value;
-        const experience = document.querySelector(
-          "input[name=experience]:checked"
-        ).value;
-        const courseTypeArray = [];
-        const courseType = document
-          .querySelectorAll("input[name=course-type]:checked")
-          .forEach((element) => {
-            courseTypeArray.push(element.value);
-          });
-        const courseTypeValue = courseTypeArray.join(",");
-        console.log("course type", courseTypeValue);
-        const source = document.getElementById("source");
-        const sourceValue = source.options[source.selectedIndex].value;
-        console.log("source", sourceValue);
-        const referral = document.getElementById("referral").value;
-        const background = document.getElementById("background").value;
+        console.log("inside validity check");
 
-        const fullName = `${lastName}, ${firstName}`;
-
+        const data = generateSubscriberObject(document);
+        console.log("data", data);
         axios({
           method: "post",
           url: "/.netlify/functions/apply_now",
-          data: {
-            email_address: email,
-            full_name: fullName,
-            status: "unsubscribed",
-            merge_fields: {
-              FNAME: firstName,
-              LNAME: lastName,
-              AGE: ageValue,
-              PHONE: phoneNumber,
-              LINKEDIN: linkedIn,
-              REFERRAL: referral,
-              SOURCE: sourceValue,
-              COURSETYPE: courseTypeValue,
-              BACKGROUND: background,
-              EXPERIENCE: experience,
-            },
-          },
+          data: data,
         }).then(function (response) {
           console.log("HEY GOT SOMETHING BACK");
+          window.location.href = "/";
         });
       } else {
+        form.classList.add("was-validated");
         console.log("invalid form");
       }
       event.preventDefault();
