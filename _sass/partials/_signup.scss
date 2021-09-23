@@ -11,9 +11,9 @@
   }
 
   select {
-    width: 40%;
+    width: 60%;
     @include media-breakpoint-up(sm) {
-      width: 20%;
+      width: 40%;
     }
   }
   .submit-button-div {
