@@ -1,33 +1,21 @@
-.bootcamp-header-row {
-  padding: 50px 0;
-  @include media-breakpoint-up(md) {
-    padding: 80px 0;
-  }
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../assets/img/bootcamp/bootcamp-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.container-fluid {
+  .main-header-row.bootcamp-header-row {
+    padding: 70px 0 30px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../assets/img/bootcamp/bootcamp-head-port.jpg");
 
-  .header-col {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1,
-    h2,
-    h3 {
-      padding: 20px;
-    }
-    h1 {
-      font-size: 50px;
-      text-align: center;
-    }
-    h2 {
-      text-align: center;
-      font-size: 40px;
-      font-family: $primary-font;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    .main-header-row.bootcamp-header-row {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../assets/img/bootcamp/bootcamp-head-land.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat:no-repeat;
     }
   }
 }
