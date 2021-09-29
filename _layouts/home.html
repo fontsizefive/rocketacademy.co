@@ -20,20 +20,16 @@ layout: default
         <div class="coursetype-container">
           <div class="coursetype-details">
             <h3 class="coursetype-header">Basics</h3>
-            <br /><br />
             <h2>
               <span class="price">S$999</span>&nbsp;&nbsp;<span
                 class="new-price"
                 >&nbsp;FREE&nbsp;</span
               >
             </h2>
-            <br />
             <p>6 weeks | Part-Time</p>
             <p>Live and Online</p>
             <p>&nbsp;No background required</p>
-            <br />
             <p>Learn basic coding by building simple apps</p>
-            <br />
             <div id="basics-homepage-dates"></div>
           </div>
           <div class="coursetype-button-container">
@@ -47,13 +43,11 @@ layout: default
         <div class="coursetype-container">
           <div class="coursetype-details">
             <h3 class="coursetype-header">Bootcamp</h3>
-            <br /><br />
             <h2>
               <span class="price">S$9999</span>&nbsp;&nbsp;<span
                 >&nbsp;S$4999&nbsp;</span
               >
             </h2>
-            <br />
             <p>
               24 Weeks (6 Months) | Full-Time<br />48 Weeks (12 Months) |
               Part-Time
@@ -62,9 +56,7 @@ layout: default
             <p class="pre-requisite" style="width: 55%">
               &nbsp;Basics Course Required
             </p>
-            <br />
             <p>Switch careers to coding. Job or money back.</p>
-            <br />
             <div id="bootcamp-homepage-dates"></div>
           </div>
           <div class="coursetype-button-container">
@@ -88,14 +80,11 @@ layout: default
       <div class="col-12 col-md-6 track-record-col">
         <div class="track-record-container-right">
           <h1>Proven Track Record.</h1>
-          <br />
           <p>
             100% of Coding Bootcamp grads have software engineering offers from
             companies such as GovTech, Ninja Van, Xfers, 99.co, and Glints.
           </p>
-          <br /><br />
           <h1>Not Hired? Get a Refund.</h1>
-          <br />
           <p>
             Bootcamp grads applying but unable to get a coding job within 6
             months are eligible for a full refund. Read more in our FAQ.
@@ -148,7 +137,6 @@ layout: default
               experience. I would not have known what to focus my energy and
               time on if I were studying on my own.”
             </p>
-            <br />
             <div class="row">
               <div class="col-12">
                 <p class="student">
@@ -157,7 +145,6 @@ layout: default
                 </p>
               </div>
             </div>
-            <br />
           </div>
           <div class="col-md-4 testimonial-content-col">
             <p class="quote">
@@ -165,7 +152,6 @@ layout: default
               done and have a better sense of what to learn as a software
               engineer.”
             </p>
-            <br />
             <div class="row">
               <div class="col-12">
                 <p class="student">
@@ -174,7 +160,6 @@ layout: default
                 </p>
               </div>
             </div>
-            <br />
           </div>
           <div class="col-md-4 testimonial-content-col">
             <p class="quote">
@@ -182,7 +167,6 @@ layout: default
               covering topics not found at other bootcamps. The RA staff were
               always available for help. I recommend Rocket Academy.”
             </p>
-            <br />
             <div class="row">
               <div class="col-12">
                 <p class="student">
@@ -191,7 +175,6 @@ layout: default
                 </p>
               </div>
             </div>
-            <br />
           </div>
         </div>
       </div>
@@ -214,33 +197,28 @@ layout: default
           <div class="col-12 col-md-6 success-top-row-col">
             <div class="success-content-container">
               <img src="../../assets/img/home/home-portfolios.jpg" />
-              <br /><br />
               <p class="success-title">Project Portfolio</p>
               <p class="success-content">
                 6 well-rounded programming projects with 1-1 feedback guaranteed
                 to help you stand out.
               </p>
             </div>
-            <br />
           </div>
           <div class="col-12 col-md-6 success-top-row-col">
             <div class="success-content-container">
               <img src="../../assets/img/home/home-interview.gif" />
-              <br /><br />
               <p class="success-title">Interview Prep</p>
               <p class="success-content">
                 Stanford-quality interview prep and resume review by experienced
                 software engineers.
               </p>
             </div>
-            <br />
           </div>
         </div>
         <div class="row success-bottom-row">
           <div class="col-12 col-md-6 success-bottom-row-col">
             <div class="success-content-container">
               <img src="../../assets/img/home/home-success-network.png" />
-              <br /><br />
               <p class="success-title">Networking with Engineers</p>
               <p class="success-content">
                 Weekly Q&A sessions with experienced software engineers to help
@@ -248,11 +226,9 @@ layout: default
               </p>
             </div>
           </div>
-          <br />
           <div class="col-12 col-md-6 success-bottom-row-col">
             <div class="success-content-container">
               <img src="../../assets/img/blog/blog-marie.jpg" />
-              <br /><br />
               <p class="success-title">Top Classmates and Alumni</p>
               <p class="success-content">
                 Classmates and alumni from top companies and schools committed
@@ -260,7 +236,6 @@ layout: default
               </p>
             </div>
           </div>
-          <br />
         </div>
       </div>
     </div>
@@ -299,7 +274,6 @@ layout: default
               >
             </p>
           </div>
-          <br />
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 instructors-col">
@@ -329,7 +303,6 @@ layout: default
               >
             </p>
           </div>
-          <br />
         </div>
       </div>
     </div>
@@ -352,9 +325,8 @@ layout: default
               {% assign count = 0 %} {% for post in site.posts %} {% if
               post.categories[0] == "learning" %} {% assign count = count |
               plus:1 %}
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 carousel-col-item">
                 <img src="{{ post.meta_description }}" />
-                <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
               </div>
               {% if count == 3 %}{% break %} {% endif %} {% endif %}{% endfor %}
@@ -365,9 +337,8 @@ layout: default
               {% assign count = 0 %} {% for post in site.posts %} {% if
               post.categories[0] == "profiles" %} {% assign count = count |
               plus:1 %}
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 carousel-col-item">
                 <img src="{{ post.meta_description }}" />
-                <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
               </div>
               {% if count == 3 %}{% break %} {% endif %} {% endif %}{% endfor %}
@@ -378,9 +349,8 @@ layout: default
               {% assign count = 0 %} {% for post in site.posts %} {% if
               post.categories[0] == "community" %} {% assign count = count |
               plus:1 %}
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 carousel-col-item">
                 <img src="{{ post.meta_description }}" />
-                <br /><br />
                 <p class="blog-title">{{ post.title }}</p>
               </div>
               {% if count == 3 %}{% break %} {% endif %} {% endif %}{% endfor %}

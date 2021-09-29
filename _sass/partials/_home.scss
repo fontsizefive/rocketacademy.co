@@ -414,6 +414,9 @@
       @include media-breakpoint-up(sm) {
         padding: 40px 12px;
       }
+      .carousel-col-item{
+        height:325px;
+      }
     }
     .blog-title {
       padding: 0 5px;
@@ -425,7 +428,6 @@
     }
     img {
       border-radius: 20px;
-      height: 60%;
       width: 100%;
       object-fit: cover;
       background-position: center;
