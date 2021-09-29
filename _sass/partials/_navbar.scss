@@ -2,7 +2,7 @@
   height: 69px;
   background-color: $light;
   letter-spacing: 0.1rem;
-  padding: 0 0 7px 0;
+  padding: 0 10px 0 0;
 
   .navbar-collapse {
     background-color: $body-bg;
@@ -16,7 +16,7 @@
       padding-left: 15px;
     }
     img {
-      margin: 15px 0 0 10px;
+      margin: 10px 0 0 10px;
       height: 37px;
     }
   }
@@ -50,8 +50,6 @@
 
     .btn-primary {
       margin: 0 9px 0 9px;
-      position: relative;
-      top: 4px;
     }
 
     @include media-breakpoint-up(lg) {
