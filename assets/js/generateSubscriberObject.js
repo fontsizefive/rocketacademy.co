@@ -26,28 +26,30 @@ const generateSubscriberObject = (document) => {
 
   const fullName = `${lastName}, ${firstName}`;
 
-  // const mailchimpData = {
-  //     email_address: email,
-  //     full_name: fullName,
-  //     status: "unsubscribed",
-  //     merge_fields: {
-  //       FNAME: firstName,
-  //       LNAME: lastName,
-  //       AGE: ageValue,
-  //       PHONE: phoneNumber,
-  //       LINKEDIN: linkedIn,
-  //       REFERRAL: referral,
-  //       SOURCE: sourceValue,
-  //       COURSETYPE: courseTypeValueMailChimp,
-  //       BACKGROUND: background,
-  //       EXPERIENCE: experience,
-  //       COUNTRY: countryValue
-  //     }
-  //   }
+  const data = [];
 
-  //   data.push(mailchimpData);
+  const mailchimpData = {
+      email_address: email,
+      full_name: fullName,
+      status: "unsubscribed",
+      merge_fields: {
+        FNAME: firstName,
+        LNAME: lastName,
+        AGE: ageValue,
+        PHONE: phoneNumber,
+        LINKEDIN: linkedIn,
+        REFERRAL: referral,
+        SOURCE: sourceValue,
+        COURSETYPE: courseTypeValueMailChimp,
+        BACKGROUND: background,
+        EXPERIENCE: experience,
+        COUNTRY: countryValue
+      }
+    }
 
-    const data = {
+    data.push(mailchimpData);
+
+    const hubspotData = {
       email: email,
       firstname: firstName,
       lastname: lastName,
@@ -61,6 +63,8 @@ const generateSubscriberObject = (document) => {
       country: countryValue,
       linkedin: linkedIn
     }
+
+    data.push(hubspotData);
 
     console.log('data====', data);
 

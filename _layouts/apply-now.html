@@ -378,10 +378,10 @@ layout: default
       if (form.checkValidity() === true) {
         console.log("inside validity check");
         const data = generateSubscriberObject(document);
-        console.log("data", data);
+        console.log("data", data[0]);
         axios({
           method: "post",
-          url: "/.netlify/functions/hubspot",
+          url: "/.netlify/functions/apply_now",
           data: data,
         }).then(function (response) {
           console.log("HEY GOT SOMETHING BACK");
