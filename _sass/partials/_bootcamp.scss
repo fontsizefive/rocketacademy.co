@@ -5,7 +5,7 @@
       url("../../assets/img/bootcamp/bootcamp-head-port.jpg");
 
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -15,7 +15,7 @@
         url("../../assets/img/bootcamp/bootcamp-head-land.jpg");
       background-size: cover;
       background-position: center;
-      background-repeat:no-repeat;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -39,16 +39,19 @@
   }
 
   .schedule-heading-col {
+    padding-bottom: 20px;
     @include media-breakpoint-up(md) {
       width: 70%;
       h1 {
         text-align: left;
+        padding-bottom: 50px;
       }
     }
     color: $blue;
     h1 {
       color: $red;
       text-align: center;
+      padding-bottom: 30px;
     }
     a {
       color: $red;
@@ -111,6 +114,7 @@
         font-size: 14px;
         padding: 40px 0;
         h2 {
+          padding-bottom: 15px;
           color: $secondary;
         }
         .week-heading {

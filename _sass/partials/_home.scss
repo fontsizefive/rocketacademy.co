@@ -21,16 +21,16 @@
       color: white;
       font-family: $primary-font;
       h1 {
-        font-size:2.6rem;
-        margin-bottom:3.1rem;
+        font-size: 2.6rem;
+        margin-bottom: 3.1rem;
       }
       h3 {
-        margin-bottom:1.7rem;
+        margin-bottom: 1.7rem;
       }
       @include media-breakpoint-up(sm) {
         h1 {
-          font-size:3.6rem;
-          margin-bottom:3.7rem;
+          font-size: 3.6rem;
+          margin-bottom: 3.7rem;
         }
       }
     }
@@ -44,7 +44,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left;
-      padding-bottom:60px;
+      padding-bottom: 60px;
     }
   }
   @include media-breakpoint-up(lg) {
@@ -56,13 +56,9 @@
     .main-header-row {
       min-height: 56vh;
       background-position: left 84%;
-      padding-top:14vh;
-
+      padding-top: 14vh;
     }
   }
-
-
-
 
   .coursetype-row {
     background-color: $red;
@@ -151,9 +147,17 @@
       }
       .track-record-container-right {
         padding-top: 20px;
-
+        p {
+          padding-bottom: 20px;
+        }
         @include media-breakpoint-up(sm) {
           padding-top: 0;
+          p {
+            padding-bottom: 50px;
+          }
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
         }
       }
       .track-record-container-left,
@@ -232,17 +236,22 @@
       padding: 0 5px;
       color: $secondary;
       text-align: center;
+
       @include media-breakpoint-up(sm) {
         padding: 0 40px;
         text-align: left;
       }
       .row {
         margin: 0;
-        .student {
-          color: $blue;
-          font-size: 12px;
-          font-weight: bold;
-          font-family: $primary-font;
+        .col-12 {
+          margin-bottom: 10px;
+          .student {
+            color: $blue;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: $primary-font;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -414,8 +423,8 @@
       @include media-breakpoint-up(sm) {
         padding: 40px 12px;
       }
-      .carousel-col-item{
-        height:325px;
+      .carousel-col-item {
+        height: 325px;
       }
     }
     .blog-title {

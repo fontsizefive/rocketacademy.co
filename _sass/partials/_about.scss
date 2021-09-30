@@ -1,5 +1,4 @@
 .about-header-row {
-  height:30vh;
   background-color: $secondary;
   color: white;
 
@@ -15,6 +14,7 @@
     align-items: flex-start;
     h1 {
       font-size: 50px;
+      padding-bottom: 30px;
     }
     p {
       font-size: 20px;
@@ -105,6 +105,9 @@
       width: 100%;
       text-align: center;
     }
+    .title {
+      padding-bottom: 10px;
+    }
     @include media-breakpoint-up(sm) {
       h1 {
         text-align: left;
@@ -124,10 +127,20 @@
   .upper-text {
     color: $blue;
     border-bottom: 1px solid $blue;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
   }
   .lower-text {
     color: $blue;
     font-size: 14px;
+    padding: 20px 0;
+    @include media-breakpoint-up(sm) {
+      padding: 50px 0;
+    }
   }
   .kai-bottom {
     display: flex;
@@ -139,6 +152,10 @@
       color: $blue;
       h3 {
         font-weight: bold;
+        padding: 30px 0;
+        @include media-breakpoint-up(sm) {
+          padding: 50px 0;
+        }
       }
       @include media-breakpoint-up(sm) {
         width: 70%;
@@ -165,6 +182,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    .title {
+      padding-bottom: 10px;
+    }
     h1 {
       width: 100%;
       text-align: center;
@@ -188,10 +208,21 @@
   .upper-text {
     color: white;
     border-bottom: 1px solid white;
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
   }
   .lower-text {
     color: white;
     font-size: 14px;
+    padding: 20px 0;
+    @include media-breakpoint-up(sm) {
+      padding: 50px 0;
+    }
   }
   .akira-bottom {
     display: flex;
@@ -203,6 +234,10 @@
       color: $light;
       h3 {
         font-weight: bold;
+        padding: 30px 0;
+        @include media-breakpoint-up(sm) {
+          padding: 50px 0;
+        }
       }
       @include media-breakpoint-up(sm) {
         width: 70%;
@@ -216,7 +251,7 @@
   background-color: white;
   color: $blue;
   h1 {
-    padding: 20px;
+    padding: 40px;
   }
   @include media-breakpoint-up(sm) {
     padding: 40px;
@@ -226,6 +261,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
     img {
       border-radius: 100px;
       height: 200px;
@@ -238,6 +274,7 @@
       font-size: 18px;
       font-family: $primary-font;
       font-weight: 600;
+      padding-top: 20px;
     }
     p {
       font-size: 14px;

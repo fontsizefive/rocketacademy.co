@@ -4,7 +4,7 @@ title: Do I Need a Computer Science Degree to Be a Software Engineer?
 meta_description: ../../assets/img/blog/blog-cs-degree.jpg
 author:
 date: "2021-08-11"
-categories: "learning methods"
+categories: ["learning", "methods"]
 intro_paragraph: There are four common ways of becoming a software engineer in Singapore. Obtaining a university degree in Computer Science is perhaps the most traditional, though time-consuming, route to becoming a software engineer. We outline key considerations to help you decide if this course of study is right for you.
 ---
 
