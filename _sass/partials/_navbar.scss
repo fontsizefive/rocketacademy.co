@@ -1,61 +1,30 @@
 .navbar-expand-lg {
-  height: 69px;
-  background-color: $light;
   letter-spacing: 0.1rem;
-  padding-right:10px;
+  .navbar-brand {
+    img {
+      height: 37px;
+      margin-left:10px;
+    }
+  }
 
   .navbar-collapse {
-    background-color: $body-bg;
-    padding-bottom: 20px;
-    @include media-breakpoint-up(lg) {
-      padding-bottom: 0;
-    }
-  }
-  .navbar-brand {
-    margin:0;
-    padding:0;
-
-    img {
-      margin: 0px 0 0 19px;
-      height: 37px;
-    }
-  }
-
-  .navbar-toggler {
-    width: 50px;
-    background-color: transparent;
-  }
-
-  .navbar-toggler:active,
-  .navbar-toggler:focus {
-    outline: none;
-    outline-width: 0;
-    box-shadow: none;
-  }
-
-  .navbar-toggler .line {
-    width: 100%;
-    float: left;
-    height: 2px;
-    background-color: $blue;
-    margin-bottom: 5px;
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $blue;
-      font-weight: 400;
-      font-size: 18px;
-    }
-
-    .btn-primary {
-      margin: 0 9px 0 9px;
-    }
-
-    @include media-breakpoint-up(lg) {
+    padding:10px 10px 0 10px;
+    .navbar-nav {
+      margin:0 0 0 auto;
+      text-align:center;
       .nav-link {
-        padding: 0;
-        margin: 0 9px;
+        color: $blue;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .nav-link.active {
+        text-decoration: underline;
+      }
+
+      @include media-breakpoint-up(lg) {
+        .nav-item .btn{
+          margin-left:10px;
+        }
       }
     }
   }
