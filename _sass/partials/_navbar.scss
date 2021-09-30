@@ -2,6 +2,7 @@
   height: 69px;
   background-color: $light;
   letter-spacing: 0.1rem;
+  padding-right:10px;
 
   .navbar-collapse {
     background-color: $body-bg;
@@ -11,11 +12,11 @@
     }
   }
   .navbar-brand {
-    @include media-breakpoint-up(lg) {
-      padding-left: 15px;
-    }
+    margin:0;
+    padding:0;
+
     img {
-      margin: 10px 0 0 10px;
+      margin: 0px 0 0 19px;
       height: 37px;
     }
   }
