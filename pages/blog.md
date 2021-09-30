@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Blog Articles
+title: Blog
 permalink: /blog
 section: blog
 intro_paragraph: >
