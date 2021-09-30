@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rocketacademy/rocketacademy.co#readme",
   "dependencies": {
+    "@hubspot/api-client": "^5.0.0",
     "@mailchimp/mailchimp_marketing": "^3.0.66"
   },
   "devDependencies": {

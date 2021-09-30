@@ -15,7 +15,8 @@ const generateSubscriberObject = (document) => {
     .forEach((element) => {
       courseTypeArray.push(element.value);
     });
-  const courseTypeValue = courseTypeArray.join(",");
+  const courseTypeValueMailChimp = courseTypeArray.join(",");
+  const courseTypeValueHubspot = courseTypeArray.join(';');
   const country = document.getElementById("country");
   const countryValue = country.options[country.selectedIndex].value;
   const source = document.getElementById("source");
@@ -25,24 +26,42 @@ const generateSubscriberObject = (document) => {
 
   const fullName = `${lastName}, ${firstName}`;
 
-  const data = {
-      email_address: email,
-      full_name: fullName,
-      status: "unsubscribed",
-      merge_fields: {
-        FNAME: firstName,
-        LNAME: lastName,
-        AGE: ageValue,
-        PHONE: phoneNumber,
-        LINKEDIN: linkedIn,
-        REFERRAL: referral,
-        SOURCE: sourceValue,
-        COURSETYPE: courseTypeValue,
-        BACKGROUND: background,
-        EXPERIENCE: experience,
-        COUNTRY: countryValue
-      }
+  // const mailchimpData = {
+  //     email_address: email,
+  //     full_name: fullName,
+  //     status: "unsubscribed",
+  //     merge_fields: {
+  //       FNAME: firstName,
+  //       LNAME: lastName,
+  //       AGE: ageValue,
+  //       PHONE: phoneNumber,
+  //       LINKEDIN: linkedIn,
+  //       REFERRAL: referral,
+  //       SOURCE: sourceValue,
+  //       COURSETYPE: courseTypeValueMailChimp,
+  //       BACKGROUND: background,
+  //       EXPERIENCE: experience,
+  //       COUNTRY: countryValue
+  //     }
+  //   }
+
+  //   data.push(mailchimpData);
+
+    const data = {
+      email: email,
+      firstname: firstName,
+      lastname: lastName,
+      phone: phoneNumber,
+      referral: referral,
+      course_type: courseTypeValueHubspot,
+      source: sourceValue,
+      age: ageValue,
+      experience: experience,
+      background: background,
+      country: countryValue,
+      linkedin: linkedIn
     }
+
     console.log('data====', data);
 
   return data;
