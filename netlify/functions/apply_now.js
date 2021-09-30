@@ -18,10 +18,6 @@ client.setConfig({
   server: MAILCHIMP_SERVER_NAME,
 });
 
-// hubspot 
-const { HUBSPOT_API_KEY } = process.env;
-const hubspot = require('@hubspot/api-client');
-const hubspotClient = new hubspot.Client({"apiKey": HUBSPOT_API_KEY});
 
 
 exports.handler = async (event, context) => {
