@@ -1,26 +1,9 @@
 require('dotenv').config()
-
-// mailchimp
-const { MAILCHIMP_API_KEY, MAILCHIMP_SERVER_NAME, MAILCHIMP_LIST_ID } = process.env;
-// find and set the list id
-// https://mailchimp.com/help/find-audience-id/
-
-// medium blogpost about mailchimp / netlify
-// https://archive.is/AiLjW
-
+var mailchimp = require('./mailchimp.js');
+var hubspot = require('./hubspot.js');
 const querystring = require("querystring");
 
-const client = require("@mailchimp/mailchimp_marketing");
-const { getMaxListeners } = require('process');
-
-client.setConfig({
-  apiKey: MAILCHIMP_API_KEY,
-  server: MAILCHIMP_SERVER_NAME,
-});
-
-
-
-exports.handler = async (event, context) => {
+exports.handler = (event, context) => {
 
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -44,59 +27,22 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
   
-  // mailchimp
+  // data from sign up form is event.body
   const data = JSON.parse(event.body);
+  // the data from the sign up form is an array containing 2 objects
+  // the first object contains mailchimp specific data
   const mailchimpData = data[0];
-  console.log('mailchimp data', mailchimpData);
-  const mergeFields = mailchimpData.merge_fields;
-  let checkedStringMC = true;
-
-  Object.keys(mergeFields).forEach((field) => {
-    if(!(field === 'REFERRAL' || field === 'LINKEDIN')) {
-      if(mergeFields[field].trim().length === 0) {
-        checkedStringMC = false;
-      }
-    }
-  })
-  
-  if (checkedStringMC === false) {
-    return { statusCode: 400, body: "Bad Request" };
-  }
-
-
-  // hubspot
+  // the second object contains hubspot specific data
   const properties = data[1];
-  let checkedStringHS = true;
-
-  // checking for blank fields
-  Object.keys(properties).forEach((field) => {
-    if(!(field === 'referral' || field === 'linkedin')) {
-      if(properties[field].trim().length === 0) {
-        checkedStringHS = false;
-      }
-    }
-  })
-  
-  if (checkedStringHS === false) {
-    return { statusCode: 400, body: "Bad Request" };
-  }
-
-  const SimplePublicObjectInput = { properties };
 
   // When the method is POST, the name will no longer be in the event’s
   // queryStringParameters – it’ll be in the event body encoded as a query string
   const params = querystring.parse(event.body);
   const name = params.name || "World";
-
-
-  try{
-
-    const contact = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
-    const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, mailchimpData);
-
-  }catch(error){
-    console.log( error )
-  }
+  
+  // send data to mailchimp/ hubspot to be added to our lists
+  mailchimp.audienceEntry(mailchimpData);
+  hubspot.subscriberEntry(properties);
 
   return {
     statusCode: 200,
