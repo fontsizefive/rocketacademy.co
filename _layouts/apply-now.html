@@ -49,11 +49,11 @@ layout: default
             >
               <option value="">--</option>
               <option value="less than 18">&lt; 18</option>
-              <option value="18-24">18-24</option>
-              <option value="25-34">25-34</option>
-              <option value="45-54">45-54</option>
-              <option value="55-64">55-54</option>
-              <option value="&gt;= 65">&gt;= 65</option>
+              <option value="18 - 24">18-24</option>
+              <option value="25 - 34">25-34</option>
+              <option value="45 - 54">45-54</option>
+              <option value="55 - 64">55-54</option>
+              <option value="more than 65">&gt;= 65</option>
             </select>
             <div class="invalid-feedback">Please select your age</div>
           </div>
@@ -368,9 +368,8 @@ layout: default
       checkCheckboxes(document);
       if (form.checkValidity() === true) {
         console.log("inside validity check");
-
         const data = generateSubscriberObject(document);
-        console.log("data", data);
+        console.log("data", data[0]);
         axios({
           method: "post",
           url: "/.netlify/functions/apply_now",

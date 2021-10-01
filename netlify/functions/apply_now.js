@@ -1,4 +1,6 @@
 require('dotenv').config()
+
+// mailchimp
 const { MAILCHIMP_API_KEY, MAILCHIMP_SERVER_NAME, MAILCHIMP_LIST_ID } = process.env;
 // find and set the list id
 // https://mailchimp.com/help/find-audience-id/
@@ -16,8 +18,13 @@ client.setConfig({
   server: MAILCHIMP_SERVER_NAME,
 });
 
-exports.handler = async (event, context) => {
+// hubspot 
+const { HUBSPOT_API_KEY } = process.env;
+const hubspot = require('@hubspot/api-client');
+const hubspotClient = new hubspot.Client({"apiKey": HUBSPOT_API_KEY});
 
+
+exports.handler = async (event, context) => {
 
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -41,21 +48,44 @@ exports.handler = async (event, context) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
   
+  // mailchimp
   const data = JSON.parse(event.body);
-  const mergeFields = data.merge_fields;
-  let checkedString = true;
+  const mailchimpData = data[0];
+  console.log('mailchimp data', mailchimpData);
+  const mergeFields = mailchimpData.merge_fields;
+  let checkedStringMC = true;
 
   Object.keys(mergeFields).forEach((field) => {
     if(!(field === 'REFERRAL' || field === 'LINKEDIN')) {
       if(mergeFields[field].trim().length === 0) {
-        checkedString = false;
+        checkedStringMC = false;
       }
     }
   })
   
-  if (checkedString === false) {
+  if (checkedStringMC === false) {
     return { statusCode: 400, body: "Bad Request" };
   }
+
+
+  // hubspot
+  const properties = data[1];
+  let checkedStringHS = true;
+
+  // checking for blank fields
+  Object.keys(properties).forEach((field) => {
+    if(!(field === 'referral' || field === 'linkedin')) {
+      if(properties[field].trim().length === 0) {
+        checkedStringHS = false;
+      }
+    }
+  })
+  
+  if (checkedStringHS === false) {
+    return { statusCode: 400, body: "Bad Request" };
+  }
+
+  const SimplePublicObjectInput = { properties };
 
   // When the method is POST, the name will no longer be in the event’s
   // queryStringParameters – it’ll be in the event body encoded as a query string
@@ -65,8 +95,8 @@ exports.handler = async (event, context) => {
 
   try{
 
-    const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, event.body);
-    console.log(response);
+    const contact = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+    const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, mailchimpData);
 
   }catch(error){
     console.log( error )
