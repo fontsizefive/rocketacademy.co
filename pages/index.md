@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: Rocket Academy
 permalink: /
 section: home
 intro_paragraph: >
