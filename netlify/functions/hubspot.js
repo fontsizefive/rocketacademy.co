@@ -1,41 +1,33 @@
 require('dotenv').config()
 
-exports.handler = async (event, context) => {
-  try {
-    if (event.httpMethod !== 'POST') {
-      // Block GET requests
-      return { statusCode: 400, body: null }
-    }
+const { HUBSPOT_API_KEY } = process.env;
+const hubspot = require('@hubspot/api-client');
+const hubspotClient = new hubspot.Client({"apiKey": HUBSPOT_API_KEY});
 
-    console.log('event body', event.body);
-    const properties = JSON.parse(event.body);
-    let checkedString = true;
-
-    // checking for blank fields
-    Object.keys(properties).forEach((field) => {
-      if(!(field === 'REFERRAL' || field === 'LINKEDIN')) {
-        if(properties[field].trim().length === 0) {
-          checkedString = false;
-        }
+exports.subscriberEntry = async function (properties) {
+  let checkedStringHS = true;
+  // checking for blank fields, data is not passed onto hubspot if any fields apart from 'referral' and 'linkedin' are blank
+  Object.keys(properties).forEach((field) => {
+    if(!(field === 'referral' || field === 'linkedin')) {
+      if(properties[field].trim().length === 0) {
+        checkedStringHS = false;
       }
-    })
-    
-    if (checkedString === false) {
-      return { statusCode: 400, body: "Bad Request" };
     }
-
-    const { HUBSPOT_API_KEY } = process.env;
-    const hubspot = require('@hubspot/api-client');
-    const hubspotClient = new hubspot.Client({"apiKey": HUBSPOT_API_KEY});
-
-    const SimplePublicObjectInput = { properties };
-
-    const contact = hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
-
-    // Return a 200 if it succeeds
-    return { statusCode: 200, body: JSON.stringify({ success: true }) }
-
-  } catch (err) {
-    return { statusCode: 500, body: err.toString() }
+  })
+  
+  // if not data is not sent to hubspot
+  if (checkedStringHS === false) {
+    return { statusCode: 400, body: "Bad Request" };
   }
-}
+
+  // data is sent in properties field of request object
+  const SimplePublicObjectInput = { properties };
+
+  try{
+    // send request to hubspot to add user to sunscriber list
+    const contact = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+  }catch(error){
+    console.log( error )
+  }
+}  
+    
