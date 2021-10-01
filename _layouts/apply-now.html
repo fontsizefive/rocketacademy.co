@@ -365,6 +365,8 @@ layout: default
   form.addEventListener(
     "submit",
     function (event) {
+      event.preventDefault();
+
       checkCheckboxes(document);
       if (form.checkValidity() === true) {
         console.log("inside validity check");
