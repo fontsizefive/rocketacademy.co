@@ -29,11 +29,8 @@ exports.handler = (event, context) => {
   
   // data from sign up form is event.body
   const data = JSON.parse(event.body);
-  // the data from the sign up form is an array containing 2 objects
-  // the first object contains mailchimp specific data
-  const mailchimpData = data[0];
-  // the second object contains hubspot specific data
-  const properties = data[1];
+  // data is an object which contains 2 key value pairs, mailchimpData and properties
+  const { mailchimpData, properties } = data
 
   // When the method is POST, the name will no longer be in the event’s
   // queryStringParameters – it’ll be in the event body encoded as a query string
