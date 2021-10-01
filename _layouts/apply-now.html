@@ -38,7 +38,6 @@ layout: default
                 <div class="invalid-feedback">Please enter your last name</div>
               </div>
             </div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="age" class="form-label">Age *</label>
@@ -57,7 +56,6 @@ layout: default
               <option value="more than 65">&gt;= 65</option>
             </select>
             <div class="invalid-feedback">Please select your age</div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="country" class="form-label"
@@ -70,7 +68,6 @@ layout: default
               required
             ></select>
             <div class="invalid-feedback">Please select a country</div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email address *</label>
@@ -83,14 +80,15 @@ layout: default
               placeholder="example@gmail.com"
             />
             <div class="invalid-feedback">Please enter your email</div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="phone-number" class="form-label"
               >Phone number (with country code) *</label
             >
-            <br />
-            <small>We may WhatsApp you if we cannot reach you via email.</small>
+
+            <p class="small">
+              We may WhatsApp you if we cannot reach you via email.
+            </p>
             <input
               type="text"
               name="phone-number"
@@ -100,16 +98,15 @@ layout: default
               placeholder="+65 1234 5678"
             />
             <div class="invalid-feedback">Please enter your phone number</div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="linkedin" class="form-label"
               >LinkedIn profile (if any)
             </label>
-            <br />
-            <small
+
+            <p class="small"
               >We will connect with you on LinkedIn and help you grow your
-              network.</small
+              network.</p class="small"
             >
             <input
               type="text"
@@ -118,12 +115,11 @@ layout: default
               id="linkedin"
               placeholder="http://linkedin.com/in/example"
             />
-            <br />
           </div>
           <div class="mb-3">
             <label for="experience">Describe your coding experience *</label>
-            <br />
-            <small>Prior experience is welcome but not necessary</small>
+
+            <p class="small">Prior experience is welcome but not necessary</p>
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -167,13 +163,12 @@ layout: default
                 Please enter your experience level
               </div>
             </div>
-            <br />
           </div>
           <div class="mb-3">
             <label>Courses you are interested in *</label>
-            <br />
-            <small>Basics is a pre-requisite for Bootcamp.</small>
-            <br />
+
+            <p class="small">Basics is a pre-requisite for Bootcamp.</p>
+
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -213,7 +208,6 @@ layout: default
                 Please choose one or more courses
               </div>
             </div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="source" class="form-label"
@@ -237,31 +231,29 @@ layout: default
             <div class="invalid-feedback">
               Please tell us where you heard about us!
             </div>
-            <br />
           </div>
           <div class="mb-3">
             <label for="referral" class="form-label"
               >If a friend referred you, who was it?</label
             >
-            <br />
-            <small>Refer a friend to earn $500 if they enrol in bootcamp</small>
-            <br />
+
+            <p class="small">Refer a friend to earn $500 if they enrol in bootcamp</p>
+
             <input
               type="text"
               name="referral"
               id="referral"
               class="form-control form-control-lg"
             />
-            <br />
           </div>
           <div class="mb-3">
             <label for="background" class="form-label"
               >Tell us about yourself! What is your background and how can
               Rocket Academy be helpful? *</label
             >
-            <br />
-            <small>We look forward to getting to know you!</small>
-            <br />
+
+            <p class="small">We look forward to getting to know you!</p>
+
             <textarea
               class="form-control form-control-lg"
               name="background"
@@ -272,9 +264,8 @@ layout: default
             <div class="invalid-feedback">
               Please tell us a little bit about yourself!
             </div>
-            <br />
           </div>
-          <br />
+
           <div class="submit-button-div">
             <button type="submit" class="btn btn-primary">Apply</button>
           </div>

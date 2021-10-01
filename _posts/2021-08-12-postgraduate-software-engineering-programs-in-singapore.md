@@ -4,7 +4,7 @@ title: Postgraduate Software Engineering Programmes in Singapore
 meta_description: ../../assets/img/blog/blog-postgrad.jpg
 author:
 date: "2021-08-12"
-categories: learning methods
+categories: ["learning", "methods"]
 ---
 
 There are different methods to learn software engineering in Singapore. The four most common ones are: obtaining a degree in Computer Science; self-learning; bootcamps; and postgraduate programmes like diplomas and Master’s degrees. These are some things to consider when deciding if you should enrol in a postgraduate software engineering programme.

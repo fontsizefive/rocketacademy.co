@@ -4,7 +4,7 @@ title: Should I Self-Learn Software Engineering?
 meta_description: ../../assets/img/blog/blog-self-study.jpg
 author:
 date: "2021-08-13"
-categories: learning methods
+categories: ["learning", "methods"]
 intro_paragraph: "There are different methods to learn software engineering in Singapore. The four most common ones are: obtaining a degree in Computer Science; self-learning; bootcamps; and postgraduate programmes like diplomas and master’s degrees. This post discusses some considerations to decide if self-learning is the right route for you."
 ---
 

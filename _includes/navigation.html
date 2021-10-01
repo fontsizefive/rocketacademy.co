@@ -1,40 +1,26 @@
-<!-- <nav class="navbar navbar-expand-lg fixed-top"> -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <a class="navbar-brand" href="/"
-    ><img
-      src="../assets/img/ra-brand.png"
-      alt="RA brand image"
-      class="d-inline-block align-top"
-  /></a>
-  <button
-    class="navbar-toggler ms-auto ms-sm-2"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarCollapse"
-    aria-controls="navbarCollapse"
-    aria-expanded="false"
-    aria-label="Toggle Navigation"
-  >
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line" style="margin-bottom: 0"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-    <div class="navbar-nav align-items-center">
-      <a class="nav-link active" aria-current="page" href="/basics">Basics</a>
-      <a class="nav-link" href="/bootcamp">Bootcamp</a>
-      <a class="nav-link" href="/blog">Blog</a>
-      <a class="nav-link" href="/about">About</a>
-      <li class="nav-item">
-        <a class="btn btn-primary" href="/apply-now" role="button">Apply Now</a>
-      </li>
+{% assign navurl = page.url | remove: 'index.html' %}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../assets/img/ra-brand.png"
+        alt="RA brand image"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+      {% for item in include.navigation %}
+        <li>
+          <a href="{{ item.url }}"{% if item.url == navurl %} class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %}>{{ item.text }}</a>
+        </li>
+      {% endfor %}
+        <li class="nav-item">
+          <a class="btn btn-primary" href="/apply-now" role="button">Apply Now</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
-
-<!-- <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{ item.url }}"{% if item.url == page.url %} style="text-decoration: underline;" data-current="current page"{% endif %}>{{ item.text }}</a>
-          {% if item.subitems %}
-            {% include navigation.html navigation=item.subitems %}
-          {% endif %}
-        </li> -->

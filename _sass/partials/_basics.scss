@@ -1,41 +1,21 @@
-.basics-header-row {
-  padding: 50px 0;
-  @include media-breakpoint-up(md) {
-    padding: 80px 0;
+.container-fluid {
+  .main-header-row.basics-header-row {
+    padding: 70px 0 30px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/basics/basics-header.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 34%;
   }
 
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../assets/img/basics/basics-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include media-breakpoint-up(md) {
+    .main-header-row.basics-header-row {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/img/basics/basics-header.jpg");
 
-  .header-col {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-      text-align: center;
-    }
-    @include media-breakpoint-up(sm) {
-      h1 {
-        text-align: left;
-      }
-    }
-    h1,
-    h2,
-    h3 {
-      padding: 20px;
-    }
-    h1 {
-      font-size: 50px;
-    }
-    h2 {
-      text-align: center;
-      font-size: 40px;
-      font-family: $primary-font;
+      background-position: center 40%;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -181,7 +161,7 @@
   .test-col {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 5px;
     @include media-breakpoint-up(sm) {
       padding-top: 20px;
@@ -231,6 +211,9 @@
     justify-content: center;
     align-items: center;
     .audience-container-col {
+      h1 {
+        padding-bottom: 30px;
+      }
       @include media-breakpoint-up(md) {
         width: 80%;
         h1 {
@@ -331,6 +314,7 @@
     }
     h1 {
       color: $light;
+      padding-bottom: 30px;
       @include media-breakpoint-up(sm) {
         width: 70%;
       }
@@ -346,6 +330,9 @@
   .curriculum-heading-col {
     color: $red;
     text-align: center;
+    h1 {
+      padding-bottom: 20px;
+    }
   }
   .curriculum-content-col {
     display: flex;
@@ -373,6 +360,7 @@
       h4 {
         color: $secondary;
         font-weight: bold;
+        padding: 15px 0;
       }
       p {
         color: $blue;
@@ -388,7 +376,10 @@
     border-top: 1px solid $secondary;
     .curriculum-schedule-header {
       color: $red;
-
+      padding-top: 30px;
+      @include media-breakpoint-up(sm) {
+        padding-top: 50px;
+      }
       h1 {
         text-align: center;
         @include media-breakpoint-up(sm) {
@@ -403,6 +394,10 @@
       justify-content: center;
       align-items: center;
       color: $blue;
+      padding-top: 20px;
+      @include media-breakpoint-up(sm) {
+        padding-top: 40px;
+      }
       .curriculum-cost {
         font-size: 12px;
       }
@@ -425,6 +420,9 @@
   }
   .schedule-heading-col {
     text-align: center;
+    h1 {
+      padding-bottom: 30px;
+    }
     @include media-breakpoint-up(md) {
       text-align: left;
     }
@@ -500,7 +498,10 @@
     align-items: center;
     .day-col {
       color: $blue;
-      width: 60%;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        width: 60%;
+      }
       .day-row-first {
         border-bottom: 1px solid $red;
       }
@@ -512,6 +513,7 @@
           font-family: $primary-font;
           font-size: 12px;
           font-weight: bold;
+          padding: 20px 0;
         }
         .lesson-title {
           font-family: $primary-font;
@@ -538,6 +540,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h1 {
+      padding-bottom: 30px;
+      @include media-breakpoint-up(sm) {
+        padding-bottom: 50px;
+      }
+    }
   }
   .last-btn {
     color: $red;

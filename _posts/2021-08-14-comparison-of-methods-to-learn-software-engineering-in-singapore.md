@@ -4,7 +4,7 @@ title: Comparison of Common Methods to Learn Software Engineering in Singapore
 meta_description: ../../assets/img/blog/blog-comparison.jpg
 author:
 date: "2021-08-14"
-categories: learning methods
+categories: ["learning", "methods"]
 ---
 
 Do you dream of becoming a programmer? Or perhaps you are planning a career switch to fulfill a lifelong goal of being a software developer. Regardless, anyone can learn software engineering and achieve a rewarding career in the field.

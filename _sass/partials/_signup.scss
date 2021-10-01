@@ -9,7 +9,13 @@
     color: $red;
     padding-bottom: 30px;
   }
-
+  .form-label {
+    margin-top: 10px;
+  }
+  .small {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
   select {
     width: 60%;
     @include media-breakpoint-up(sm) {

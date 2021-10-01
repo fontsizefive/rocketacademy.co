@@ -4,7 +4,7 @@ title: Why Enrol in a Coding Bootcamp to Become a Software Engineer
 meta_description: ../../assets/img/blog/blog-enrol.png
 author:
 date: "2021-08-14"
-categories: learning methods
+categories: ["learning", "methods"]
 intro_paragraph: "There are different methods to learn software engineering in Singapore. The four most common ones are: obtaining a degree in Computer Science; self-learning; bootcamps; and postgraduate programmes like diplomas and Master’s degrees. Here are some things to consider when thinking about signing up for a bootcamp to learn coding and programming, or to kickstart your career in software engineering."
 ---
 

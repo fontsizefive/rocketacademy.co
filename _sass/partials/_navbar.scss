@@ -1,63 +1,30 @@
 .navbar-expand-lg {
-  height: 69px;
-  background-color: $light;
   letter-spacing: 0.1rem;
-  padding: 0 0 7px 0;
+  .navbar-brand {
+    img {
+      height: 37px;
+      margin-left:10px;
+    }
+  }
 
   .navbar-collapse {
-    background-color: $body-bg;
-    padding-bottom: 20px;
-    @include media-breakpoint-up(lg) {
-      padding-bottom: 0;
-    }
-  }
-  .navbar-brand {
-    @include media-breakpoint-up(lg) {
-      padding-left: 15px;
-    }
-    img {
-      margin: 15px 0 0 10px;
-      height: 37px;
-    }
-  }
-
-  .navbar-toggler {
-    width: 50px;
-    background-color: transparent;
-  }
-
-  .navbar-toggler:active,
-  .navbar-toggler:focus {
-    outline: none;
-    outline-width: 0;
-    box-shadow: none;
-  }
-
-  .navbar-toggler .line {
-    width: 100%;
-    float: left;
-    height: 2px;
-    background-color: $blue;
-    margin-bottom: 5px;
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $blue;
-      font-weight: 400;
-      font-size: 18px;
-    }
-
-    .btn-primary {
-      margin: 0 9px 0 9px;
-      position: relative;
-      top: 4px;
-    }
-
-    @include media-breakpoint-up(lg) {
+    padding:10px 10px 0 10px;
+    .navbar-nav {
+      margin:0 0 0 auto;
+      text-align:center;
       .nav-link {
-        padding: 0;
-        margin: 0 9px;
+        color: $blue;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .nav-link.active {
+        text-decoration: underline;
+      }
+
+      @include media-breakpoint-up(lg) {
+        .nav-item .btn{
+          margin-left:10px;
+        }
       }
     }
   }
