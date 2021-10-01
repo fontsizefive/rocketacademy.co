@@ -49,7 +49,7 @@ const generateSubscriberObject = (document) => {
 
     data['mailchimpData'] = mailchimpData;
 
-    const properties = {
+    const hubspotData = {
       email: email,
       firstname: firstName,
       lastname: lastName,
@@ -64,9 +64,7 @@ const generateSubscriberObject = (document) => {
       linkedin: linkedIn
     }
 
-    data['properties'] = properties;
-
-    console.log('data====', data);
+    data['hubspotData'] = hubspotData;
 
   return data;
 }
