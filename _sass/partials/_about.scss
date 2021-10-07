@@ -4,20 +4,14 @@
 
   .about-header-col {
     padding: 40px;
-    width: 100%;
-    @include media-breakpoint-up(md) {
-      width: 80%;
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    min-height:37vh;
     h1 {
-      font-size: 50px;
       padding-bottom: 30px;
-    }
-    p {
-      font-size: 20px;
+      margin-top: 2rem;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 4rem;
+      }
     }
   }
 }
