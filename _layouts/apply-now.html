@@ -371,7 +371,6 @@ layout: default
       if (form.checkValidity() === true) {
         console.log("inside validity check");
         const data = generateSubscriberObject(document);
-        console.log("data", data[0]);
         axios({
           method: "post",
           url: "/.netlify/functions/apply_now",

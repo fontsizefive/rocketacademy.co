@@ -1,7 +1,6 @@
 require('dotenv').config()
 var mailchimp = require('./mailchimp.js');
 var hubspot = require('./hubspot.js');
-const querystring = require("querystring");
 
 exports.handler = (event, context) => {
 
@@ -30,16 +29,11 @@ exports.handler = (event, context) => {
   // data from sign up form is event.body
   const data = JSON.parse(event.body);
   // data is an object which contains 2 key value pairs, mailchimpData and properties
-  const { mailchimpData, properties } = data
-
-  // When the method is POST, the name will no longer be in the event’s
-  // queryStringParameters – it’ll be in the event body encoded as a query string
-  const params = querystring.parse(event.body);
-  const name = params.name || "World";
+  const { mailchimpData, hubspotData } = data
   
   // send data to mailchimp/ hubspot to be added to our lists
   mailchimp.audienceEntry(mailchimpData);
-  hubspot.subscriberEntry(properties);
+  hubspot.subscriberEntry(hubspotData);
 
   return {
     statusCode: 200,
