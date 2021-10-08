@@ -44,7 +44,7 @@ const generateSubscriberObject = (document) => {
         BACKGROUND: background,
         EXPERIENCE: experience,
         COUNTRY: countryValue,
-        SUBSCRIBE_REASON: 'apply'
+        SUB_SOURCE: 'apply'
       }
     }
 
