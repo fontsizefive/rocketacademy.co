@@ -32,6 +32,8 @@ exports.audienceEntry = async function (mailchimpData) {
     return { statusCode: 400, body: "Bad Request" };
   }
 
+  mailchimpData.status = "subscribed";
+
   try {
     // send request to mailchimp to add user to audience list
     const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, mailchimpData);
