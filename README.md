@@ -57,3 +57,13 @@ Mixins: https://bootstrap-cheatsheet.themeselection.com/mixins.html
 
 ## Mailchimp
 Look for the "list id" here: https://mailchimp.com/help/find-audience-id/ (it's called audience id elsewhere)
+
+Documentation: https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
+
+## Hubspot
+For every new apply, we are adding the following custom contact properties:
+
+`course_type` : https://app.hubspot.com/property-settings/20708296/properties?action=edit&property=course_type&type=0-1
+`bootcamp_funnel_status` : https://app.hubspot.com/property-settings/20708296/properties?type=0-1&action=edit&property=bootcamp_funnel_status
+
+Documentation: https://developers.hubspot.com/docs/api/crm/contacts
