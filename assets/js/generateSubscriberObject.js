@@ -31,7 +31,7 @@ const generateSubscriberObject = (document) => {
   const mailchimpData = {
       email_address: email,
       full_name: fullName,
-      status: "unsubscribed",
+      status: "subscribed",
       merge_fields: {
         FNAME: firstName,
         LNAME: lastName,
@@ -43,7 +43,8 @@ const generateSubscriberObject = (document) => {
         COURSETYPE: courseTypeValueMailChimp,
         BACKGROUND: background,
         EXPERIENCE: experience,
-        COUNTRY: countryValue
+        COUNTRY: countryValue,
+        SUB_SOURCE: 'apply'
       }
     }
 
@@ -61,7 +62,9 @@ const generateSubscriberObject = (document) => {
       experience: experience,
       background: background,
       country: countryValue,
-      linkedin: linkedIn
+      linkedin: linkedIn,
+      bootcamp_funnel_status: 'basics_apply',
+      contact_source: 'website_apply_form'
     }
 
     data['hubspotData'] = hubspotData;

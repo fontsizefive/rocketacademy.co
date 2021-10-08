@@ -14,7 +14,7 @@ exports.subscriberEntry = async function (hubspotData) {
       }
     }
   })
-  
+
   // if not data is not sent to hubspot
   if (checkedStringHS === false) {
     return { statusCode: 400, body: "Bad Request" };
@@ -22,12 +22,16 @@ exports.subscriberEntry = async function (hubspotData) {
 
   // data is sent in properties field of request object
   const properties = hubspotData;
+
+
   const SimplePublicObjectInput = { properties }
   try{
     // send request to hubspot to add user to sunscriber list
-    const contact = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+    // https://developers.hubspot.com/docs/api/crm/contacts
+    const response = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+    return response;
   }catch(error){
     console.log( error )
+    throw new Error(error)
   }
-}  
-    
+}
