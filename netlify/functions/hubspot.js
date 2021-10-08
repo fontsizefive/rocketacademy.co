@@ -28,8 +28,10 @@ exports.subscriberEntry = async function (hubspotData) {
   try{
     // send request to hubspot to add user to sunscriber list
     // https://developers.hubspot.com/docs/api/crm/contacts
-    const contact = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+    const response = await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput);
+    return response;
   }catch(error){
     console.log( error )
+    throw new Error(error)
   }
 }

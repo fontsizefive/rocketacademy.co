@@ -18,7 +18,7 @@ var mailchimp = require('./mailchimp.js');
 var hubspot = require('./hubspot.js');
 
 
-exports.handler = (event, context) => {
+exports.handler = async (event, context) => {
 
   initSentry();
 
@@ -51,15 +51,20 @@ exports.handler = (event, context) => {
     const { mailchimpData, hubspotData } = data
 
     // send data to mailchimp/ hubspot to be added to our lists
-    mailchimp.audienceEntry(mailchimpData);
-    hubspot.subscriberEntry(hubspotData);
+    const mailchimpResult = await mailchimp.audienceEntry(mailchimpData);
+    const hubspotResult = await hubspot.subscriberEntry(hubspotData);
 
     return {
       statusCode: 200,
-      headers,
       body: `Hello Banananana`,
     };
   } catch (e) {
+    console.log("capturing sentry excpetion");
     Sentry.captureException(e);
+
+    return {
+      statusCode: 500,
+      body: `whoops, some errors`,
+    };
   }
 };
