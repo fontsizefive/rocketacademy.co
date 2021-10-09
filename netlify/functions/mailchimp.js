@@ -18,19 +18,6 @@ client.setConfig({
 exports.audienceEntry = async function (mailchimpData) {
   // checking that user fields are not blank apart from 'REFERRAL' and 'LINKEDIN'
   const mergeFields = mailchimpData.merge_fields;
-  let checkedStringMC = true;
-
-  Object.keys(mergeFields).forEach((field) => {
-    if(!(field === 'REFERRAL' || field === 'LINKEDIN')) {
-      if(mergeFields[field].trim().length === 0) {
-        checkedStringMC = false;
-      }
-    }
-  })
-  // if not, data is not sent to mailchimp
-  if (checkedStringMC === false) {
-    return { statusCode: 400, body: "Bad Request" };
-  }
 
   // send request to mailchimp to add user to audience list
   // https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
@@ -38,7 +25,6 @@ exports.audienceEntry = async function (mailchimpData) {
     const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, mailchimpData);
     return response;
   }catch(error){
-    console.log( error )
-    throw new Error(error)
+    throw new Error(JSON.stringify(error))
   }
 }

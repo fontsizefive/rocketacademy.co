@@ -60,6 +60,7 @@ exports.handler = async (event, context) => {
     };
   } catch (e) {
     console.log("capturing sentry excpetion");
+    console.log(e)
     Sentry.captureException(e);
 
     return {
