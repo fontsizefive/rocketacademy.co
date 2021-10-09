@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Rocket Academy
-email: your-email@example.com
+email: hello@rocketacademy.co
 description: >- # this means to ignore newlines until "baseurl:"
   Rocket Academy is SEA's best coding bootcamp. We offer a range of coding courses designed to level you up in the tech industry!
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://fervent-keller-3fa421.netlify.app"
+url: "https://rocketacademy.co"
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
@@ -29,9 +29,6 @@ section: true
 
 # set to 'true' to enable Netlify CMS (/admin) in production builds
 netlifycms: true
-
-# set to 'true' to enable Google Analytics tracking code in production builds
-analytics: false
 
 # Compress CSS
 sass:

@@ -92,5 +92,5 @@
     href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
   />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% if site.env.CONTEXT == 'production' and site.analytics %} {% include analytics.html %} {% endif %}
+  {% if site.env.context == 'production' %} {% include analytics.html %} {% endif %}
 </head>
