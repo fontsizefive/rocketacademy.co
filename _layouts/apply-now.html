@@ -268,7 +268,7 @@ layout: default
           </div>
 
           <div class="submit-button-div">
-            <button type="submit" class="btn btn-primary">Apply</button>
+            <button id="apply-submit" type="submit" class="btn btn-primary">Apply</button>
           </div>
         </form>
       </div>
@@ -350,6 +350,23 @@ layout: default
     </div>
   </div>
 </div>
+
+<div class="modal fade bd-example-modal-sm" role="dialog"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-labelledby="thanks-modal" aria-hidden="true" id="thanks-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          Thanks for your application 🙂
+        </h3>
+      </div>
+      <div class="modal-body" id="apply-modal-body">
+        <p>You'll recieve an email confirmation from us shortly.</p>
+        <p id="modal-ready-away"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="{% link assets/js/countries.js %}" type="text/javascript"></script>
 <script
@@ -360,32 +377,3 @@ layout: default
   src="{% link assets/js/checkCheckboxes.js %}"
   type="text/javascript"
 ></script>
-
-<script>
-  var form = document.querySelector(".needs-validation");
-  form.addEventListener(
-    "submit",
-    function (event) {
-      event.preventDefault();
-
-      checkCheckboxes(document);
-      if (form.checkValidity() === true) {
-        console.log("inside validity check");
-        const data = generateSubscriberObject(document);
-        axios({
-          method: "post",
-          url: "/.netlify/functions/apply_now",
-          data: data,
-        }).then(function (response) {
-          window.location.href = "/";
-        });
-      } else {
-        form.classList.add("was-validated");
-        console.log("invalid form");
-      }
-      event.preventDefault();
-      event.stopPropagation();
-    },
-    false
-  );
-</script>
