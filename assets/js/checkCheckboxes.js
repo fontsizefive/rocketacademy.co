@@ -70,7 +70,8 @@ window.addEventListener('load', () => {
           data: data,
         }).then(function (response) {
 
-          // CSS thanks animation
+          // bring them to the confirmation page
+          window.location = '/thanks';
         });
       } else {
         form.classList.add("was-validated");

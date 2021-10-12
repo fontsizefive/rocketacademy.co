@@ -5,10 +5,8 @@ layout: compress
 <html data-current="{{ page.section }}" lang="en">
   {% include head.html %}
   <body class="d-flex flex-column h-100">
-    <div class="container-fluid">
-      {% include header.html %}
-      {{ content }}
-    </div>
+    {% include header.html %}
+    {{ content }}
     {% include footer.html %}
     {% include external_scripts.html %}
   </body>
