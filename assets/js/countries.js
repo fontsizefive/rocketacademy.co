@@ -1,5 +1,7 @@
 const countries = [ 
 {"name": "Singapore", "code": "SG"}, 
+{"name": "Hong Kong", "code": "HK"}, 
+{"name": "Australia", "code": "AU"}, 
 {"name": "Brunei Darussalam", "code": "BN"}, 
 {"name": "Cambodia", "code": "KH"}, 
 {"name": "Timor-Leste", "code": "TL"}, 
@@ -23,7 +25,6 @@ const countries = [
 {"name": "Argentina", "code": "AR"}, 
 {"name": "Armenia", "code": "AM"}, 
 {"name": "Aruba", "code": "AW"}, 
-{"name": "Australia", "code": "AU"}, 
 {"name": "Austria", "code": "AT"}, 
 {"name": "Azerbaijan", "code": "AZ"}, 
 {"name": "Bahamas", "code": "BS"}, 
@@ -105,7 +106,6 @@ const countries = [
 {"name": "Heard Island and Mcdonald Islands", "code": "HM"}, 
 {"name": "Holy See (Vatican City State)", "code": "VA"}, 
 {"name": "Honduras", "code": "HN"}, 
-{"name": "Hong Kong", "code": "HK"}, 
 {"name": "Hungary", "code": "HU"}, 
 {"name": "Iceland", "code": "IS"}, 
 {"name": "India", "code": "IN"}, 
