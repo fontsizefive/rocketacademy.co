@@ -10,14 +10,19 @@ layout: default
       </div>
       <div class="col-12 col-lg-8">
         <form id="apply-now-form" class="needs-validation" novalidate>
+          <input
+            type="hidden"
+            name="contact_source"
+            value="website_apply_form"
+          />
           <div class="mb-3">
-            <label for="first-name" class="form-label">Name *</label>
+            <label for="firstname" class="form-label">Name *</label>
             <div class="row">
               <div class="mb-3 col-12 col-sm-6">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="firstname"
+                  id="firstname"
                   class="form-control form-control-lg"
                   required
                   placeholder="First name"
@@ -28,8 +33,8 @@ layout: default
               <div class="col-12 col-sm-6">
                 <input
                   type="text"
-                  name="last-name"
-                  id="last-name"
+                  name="lastname"
+                  id="lastname"
                   class="form-control form-control-lg"
                   required
                   placeholder="Last name"
@@ -91,11 +96,11 @@ layout: default
             </p>
             <input
               type="text"
-              name="phone-number"
-              id="phone-number"
+              name="phone"
+              id="phone"
               class="form-control form-control-lg"
               required
-              placeholder="+65 1234 5678"
+              placeholder="+00 0000 0000"
             />
             <div class="invalid-feedback">Please enter your phone number</div>
           </div>
@@ -169,43 +174,42 @@ layout: default
 
             <p class="small">Basics is a pre-requisite for Bootcamp.</p>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                name="course-type"
-                value="basics"
-                required
-              />
-              <label class="form-check-label">
-                Coding Basics (6 Weeks Part-Time)
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                name="course-type"
-                value="bootcamp_parttime"
-                required
-              />
-              <label class="form-check-label">
-                Coding Bootcamp (48 Weeks Part-Time)
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                name="course-type"
-                value="bootcamp_fulltime"
-                required
-              />
-              <label class="form-check-label">
-                Coding Bootcamp (24 Weeks Full-Time)
-              </label>
-              <div class="invalid-feedback">
-                Please choose one or more courses
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="course_type[]"
+                  value="basics"
+                />
+                <label class="form-check-label">
+                  Coding Basics (6 Weeks Part-Time)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="course_type[]"
+                  value="bootcamp_parttime"
+                />
+                <label class="form-check-label">
+                  Coding Bootcamp (48 Weeks Part-Time)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="course_type[]"
+                  value="bootcamp_fulltime"
+                />
+                <label class="form-check-label">
+                  Coding Bootcamp (24 Weeks Full-Time)
+                </label>
+                <div class="invalid-feedback">
+                  Please choose one or more courses
+                </div>
               </div>
             </div>
           </div>
@@ -267,7 +271,7 @@ layout: default
           </div>
 
           <div class="submit-button-div">
-            <button id="apply-submit" type="submit" class="btn btn-primary">Apply</button>
+            <input id="apply-submit" type="submit" class="btn btn-primary"/>
           </div>
         </form>
       </div>
@@ -369,10 +373,6 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="{% link assets/js/countries.js %}" type="text/javascript"></script>
 <script
-  src="{% link assets/js/generateSubscriberObject.js %}"
-  type="text/javascript"
-></script>
-<script
-  src="{% link assets/js/checkCheckboxes.js %}"
+  src="{% link assets/js/checkCheckboxes.js %}?v=5"
   type="text/javascript"
 ></script>
