@@ -1,9 +1,9 @@
 # specify main menu items here
 
 - text: Basics
-  url: /basics
+  url: /courses/basics
 - text: Bootcamp
-  url: /bootcamp
+  url: /courses/bootcamp
 - text: Blog
   url: /blog
 - text: About
