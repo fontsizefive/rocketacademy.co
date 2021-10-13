@@ -16,7 +16,7 @@
 title: Rocket Academy
 email: hello@rocketacademy.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Rocket Academy is SEA's best coding bootcamp. We offer a range of coding courses designed to level you up in the tech industry!
+  Selective and comprehensive online coding bootcamp in Singapore, Hong Kong and Australia that guarantees a software engineering job or full refund.
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
 url: "https://rocketacademy.co"
 
