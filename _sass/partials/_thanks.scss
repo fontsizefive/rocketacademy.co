@@ -1,0 +1,25 @@
+.thanks-row{
+  background-color:white;
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  .thanks-message-cont{
+    background-color:$light;
+    min-height:30vh;
+    margin:40px;
+    border-radius:20px;
+    padding:48px;
+    width:80%;
+    -webkit-box-shadow: 5px 5px 15px 5px #9B9B9B;
+    box-shadow: 5px 5px 15px 5px #9B9B9B;
+    @include media-breakpoint-up(md) {
+      max-width:450px;
+    }
+
+    h1{
+      color:$blue;
+    }
+  }
+}
