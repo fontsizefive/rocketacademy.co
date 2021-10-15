@@ -9,7 +9,10 @@ let sentryInitialized = false;
 
 function initSentry() {
     if (SENTRY_DSN) {
-        Sentry.init({ dsn: SENTRY_DSN });
+        Sentry.init({
+          dsn: SENTRY_DSN,
+          maxValueLength: 8000, // without this error output gets truncated
+        });
         sentryInitialized = true;
     }
 }
