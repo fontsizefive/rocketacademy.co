@@ -1,4 +1,6 @@
 require('dotenv').config()
+const middy = require('@middy/core')
+const httpUrlEncodeBodyParser  = require('@middy/http-urlencode-body-parser')
 
 const Sentry = require("@sentry/node");
 //const Tracing = require("@sentry/tracing");
@@ -20,53 +22,51 @@ function initSentry() {
 var mailchimp = require('./mailchimp.js');
 var hubspot = require('./hubspot.js');
 
-exports.handler = async (event, context) => {
+const handleRequest = async (event, context) => {
 
   initSentry();
 
   try {
 
-    if (event.httpMethod == 'OPTIONS') {
-
-        const headers = {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': "Content-Type",
-          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-        };
-
-        // To enable CORS
-        return {
-          statusCode: 200, // <-- Important!
-          headers,
-          body: 'This was not a POST request!'
-        };
-    }
-
     // Only allow POST
     if (event.httpMethod !== "POST") {
-      console.log( event.httpMethod );
-      return { statusCode: 405, body: "Method Not Allowed" };
+      return {
+        statusCode: 405,
+        body: 'Method not allowed!'
+      };
     }
 
-    const data = JSON.parse(event.body);
+    const {body} = event;
+
+    console.log(body);
 
     // send data to mailchimp/ hubspot to be added to our lists
-    const mailchimpResult = await mailchimp.audienceEntry(data);
+    const mailchimpResult = await mailchimp.audienceEntry(body);
 
-    const hubspotResult = await hubspot.subscriberEntry(data);
+    const hubspotResult = await hubspot.subscriberEntry(body);
 
     return {
-      statusCode: 200,
-      body: `Hello Banananana`,
+      statusCode: 303,
+      body: 'worked!',
+      headers: {
+        Location: 'https://rocketacademy.co/thanks',
+      }
     };
+
   } catch (e) {
     console.log("capturing sentry excpetion");
     console.log(e)
     Sentry.captureException(e);
 
     return {
-      statusCode: 500,
-      body: `whoops, some errors`,
+      statusCode: 303,
+      body: 'worked!',
+      headers: {
+        Location: 'https://rocketacademy.co/thanks',
+      }
     };
   }
 };
+
+exports.handler = middy(handleRequest)
+  .use(httpUrlEncodeBodyParser())
