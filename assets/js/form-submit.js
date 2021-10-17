@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
 
     form.classList.add("was-validated");
 
-    if (checkCheckboxes(form) == false && form.checkValidity() === false) {
+    if (checkCheckboxes(form) == false || form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation()
     }
