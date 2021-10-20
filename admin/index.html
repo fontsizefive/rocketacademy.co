@@ -7,7 +7,30 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script type="module" src="/admin/preview-templates/index.js"></script>
+  <script>
+    // from: https://www.netlifycms.org/docs/beta-features/#manual-initialization
+    // and from: https://github.com/netlify/netlify-cms/issues/1737#issuecomment-770719924
+    // This global flag enables manual initialization.
+    window.CMS_MANUAL_INIT = true
+    // Usage with import from npm package
+    import CMS, { init } from 'netlify-cms'
+    // Usage with script tag
+    const { CMS, initCMS: init } = window
+    const cms_branch = window.location.hostname.includes('staging-rocketacademyco') ? 'main' : 'production';
+    init({
+      config: {
+        "backend": {
+          "name": "git-gateway",
+          "repo": "rocketacademy/rocketacademy.co",
+          "branch": cms_branch
+        },
+      },
+    })
+    // The registry works as expected, and can be used before or after init.
+    //CMS.registerPreviewTemplate(...);"
+  </script>
 </body>
 </html>
