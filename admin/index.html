@@ -15,8 +15,6 @@
     // and from: https://github.com/netlify/netlify-cms/issues/1737#issuecomment-770719924
     // This global flag enables manual initialization.
     window.CMS_MANUAL_INIT = true
-    // Usage with import from npm package
-    import CMS, { init } from 'netlify-cms'
     // Usage with script tag
     const { CMS, initCMS: init } = window
     const cms_branch = window.location.hostname.includes('staging-rocketacademyco') ? 'main' : 'production';
