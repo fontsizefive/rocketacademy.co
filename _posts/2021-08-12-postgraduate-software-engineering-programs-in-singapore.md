@@ -9,7 +9,7 @@ categories: ["learning", "methods"]
 
 There are different methods to learn software engineering in Singapore. The four most common ones are: obtaining a degree in Computer Science; self-learning; bootcamps; and postgraduate programmes like diplomas and Master’s degrees. These are some things to consider when deciding if you should enrol in a postgraduate software engineering programme.
 
-If you prefer more structured learning, basic coding bootcamps and postgraduate programmes will be better options than self-learning. Postgraduate programmes are the most expensive (~S$10,000) and longest (one to two years) of the three post-tertiary education methods of learning software engineering.
+If you prefer more structured learning, basic software engineering bootcamps and postgraduate programmes will be better options than self-learning. Postgraduate programmes are the most expensive (~S$10,000) and longest (one to two years) of the three post-tertiary education methods of learning software engineering.
 
 As with bootcamps, postgraduate programmes typically have job fairs and career offices to support students. This may not be as extensive or intensive as bootcamps, however, as postgraduate programmes don’t have the same incentives to get graduates jobs. Unlike bootcamps, their subsidies do not depend on the employability of graduates.
 

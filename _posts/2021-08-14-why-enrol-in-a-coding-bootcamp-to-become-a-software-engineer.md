@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Enrol in a Coding Bootcamp to Become a Software Engineer
+title: Why Enrol in a Software Engineering Bootcamp to Become a Software Engineer
 meta_description: ../../assets/img/blog/blog-enrol.png
 author:
 date: "2021-08-14"
@@ -20,18 +20,18 @@ Due to the short duration of bootcamps, students tend to learn many practical sk
 
 However, to bolster the employment prospects of their graduates, most bootcamps in Singapore have relationships with employers. They usually invite employers to a demo day, where they can meet graduates. Some bootcamps like ThoughtWorks and JumpStart are also subsidiaries of a software agency, and are able to hire graduates into their own parent company.
 
-If you are interested in signing up for a basic coding bootcamp in Singapore, look for those who partner with [IMDA's Tech Immersion and Training Programme (TIPP)](https://www.imda.gov.sg/imtalent/programmes/tipp) as they are the most reputable. Rocket Academy is in the process of becoming a partner. If you already have a background in coding and are specifically interested in learning the language Go, you can also consider [Go School](https://www.goschool.sg/). This is a four-month bootcamp by Ngee Ann Polytechnic that pays a S$1,200/month stipend to students who have completed tertiary education before Jan 2019.
+If you are interested in signing up for a basic software engineering bootcamp in Singapore, look for those who partner with [IMDA's Tech Immersion and Training Programme (TIPP)](https://www.imda.gov.sg/imtalent/programmes/tipp) as they are the most reputable. Rocket Academy is in the process of becoming a partner. If you already have a background in coding and are specifically interested in learning the language Go, you can also consider [Go School](https://www.goschool.sg/). This is a four-month bootcamp by Ngee Ann Polytechnic that pays a S$1,200/month stipend to students who have completed tertiary education before Jan 2019.
 
 ## The Rocket Academy Commitment
 
-Our [bootcamp, Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp), is designed to equip you with both software engineering foundations and practical, industry-relevant skills. Beyond demo day, we also help our graduates achieve their dream job through direct career coaching from software engineers. At Rocket Academy, we are always invested in your career.
+Our [bootcamp, Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp), is designed to equip you with both software engineering foundations and practical, industry-relevant skills. Beyond demo day, we also help our graduates achieve their dream job through direct career coaching from software engineers. At Rocket Academy, we are always invested in your career.
 
-● Graduates from Coding Bootcamp who are applying, but unable to get a software engineering or related job within six months, are eligible for a full refund.
+● Graduates from Software Engineering Bootcamp who are applying, but unable to get a software engineering or related job within six months, are eligible for a full refund.
 
-● Coding Bootcamp students are supported with unlimited resume reviews, interview preparation, and continued referrals to new job openings through our network of over 100 hiring partners.
+● Software Engineering Bootcamp students are supported with unlimited resume reviews, interview preparation, and continued referrals to new job openings through our network of over 100 hiring partners.
 
 ● A database of open software engineering jobs across Singapore is maintained, so graduates can access the widest selection of jobs available.
 
 ● A weekly question and answer session with a software engineer is also hosted, so students can develop professional relationships within the industry.
 
-Please note that our [basic coding course, Coding Basics](https://www.rocketacademy.co/courses/basics), is a prerequisite to Coding Bootcamp. This course will prepare you with the fundamentals of coding, and is ideal for exploring a career in software engineering before committing to a coding bootcamp.
+Please note that our [basic coding course, Coding Basics](https://www.rocketacademy.co/courses/basics), is a prerequisite to Software Engineering Bootcamp. This course will prepare you with the fundamentals of coding, and is ideal for exploring a career in software engineering before committing to a Software Engineering Bootcamp.

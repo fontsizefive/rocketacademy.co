@@ -15,7 +15,7 @@ Prior to software engineering, Akira had been on a completely different career p
 
 Deciding on programming happened by chance when Akira randomly enrolled in a night class in PHP. “I already knew a bit about how to program basic stuff then. I enjoyed the class and it made me think it was something I could do. I also knew that I didn't need a university degree to get a job.”
 
-However, coding bootcamps had yet to exist, so Akira devoted himself to months of self-studying instead. He tried to figure out as much as he could on his own, while attending meetups and even working for free. His efforts paid off when he began interviewing and landed a first job. Since then, Akira’s built an outstanding portfolio from working at various start-ups in Silicon Valley, and being the former Lead Instructor for Software Engineering Immersive at General Assembly (Singapore and New York). He tells us more about his career so far, from lessons learnt to staying relevant in the rapid world of tech.
+However, software engineering bootcamps had yet to exist, so Akira devoted himself to months of self-studying instead. He tried to figure out as much as he could on his own, while attending meetups and even working for free. His efforts paid off when he began interviewing and landed a first job. Since then, Akira’s built an outstanding portfolio from working at various start-ups in Silicon Valley, and being the former Lead Instructor for Software Engineering Immersive at General Assembly (Singapore and New York). He tells us more about his career so far, from lessons learnt to staying relevant in the rapid world of tech.
 
 ---
 
