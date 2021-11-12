@@ -47,18 +47,24 @@ function eventsLoad(events){
           count += 1;
         }
 
-        // dates for page header
+       
+
         // full time
         if (headerCountFullTime === 0 && startsAt > today && entry.description === "Full Time") {
           const fullTimeHeaderDate = document.createElement('h2');
-          fullTimeHeaderDate.innerHTML = `Next Full Time Batch: ${getOutput(start, end)}`;
+          fullTimeHeaderDate.innerHTML = `${getOutput(start, end)} (${entry.description})`;
           (document.getElementById('next-batch-date')).appendChild(fullTimeHeaderDate);
           headerCountFullTime += 1;
         }
         // part time
         if (headerCountPartTime === 0 && startsAt > today && entry.description === "Part Time") {
+          // dates for page header
+          const nextBatchHeader = document.createElement('h2');
+          nextBatchHeader.innerHTML = 'Next Batches:';
+          (document.getElementById('next-batch-date')).appendChild(nextBatchHeader);
+          
           const partTimeHeaderDate = document.createElement('h2');
-          partTimeHeaderDate.innerHTML = `Next Part Time Batch: ${getOutput(start, end)}`;
+          partTimeHeaderDate.innerHTML = `${getOutput(start, end)} (${entry.description})`;
           (document.getElementById('next-batch-date')).appendChild(partTimeHeaderDate);
           headerCountPartTime += 1;
         }
