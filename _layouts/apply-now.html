@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="row application-row">
   <div class="ra-max-width-cont">
     <div class="row">
@@ -9,7 +8,8 @@ layout: default
         <h1>Start Your Coding Career Today.</h1>
       </div>
       <div class="col-12 col-lg-8">
-        <form id="apply-now-form" class="needs-validation" novalidate>
+        <form id="apply-now-form" class="needs-validation" method="POST" action="/.netlify/functions/apply_now" novalidate>
+
           <input
             type="hidden"
             name="contact_source"
@@ -195,7 +195,7 @@ layout: default
                   value="bootcamp_parttime"
                 />
                 <label class="form-check-label">
-                  Coding Bootcamp (48 Weeks Part-Time)
+                  Software Engineering Bootcamp (48 Weeks Part-Time)
                 </label>
               </div>
               <div class="form-check">
@@ -206,7 +206,7 @@ layout: default
                   value="bootcamp_fulltime"
                 />
                 <label class="form-check-label">
-                  Coding Bootcamp (24 Weeks Full-Time)
+                  Software Engineering Bootcamp (24 Weeks Full-Time)
                 </label>
                 <div class="invalid-feedback">
                   Please choose one or more courses
@@ -371,9 +371,8 @@ layout: default
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="{% link assets/js/countries.js %}" type="text/javascript"></script>
 <script
-  src="{% link assets/js/form-submit.js %}?v=1"
+  src="{% link assets/js/form-submit.js %}?v=4"
   type="text/javascript"
 ></script>
