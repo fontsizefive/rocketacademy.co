@@ -20,14 +20,16 @@ const formattedEnd = getFormattedDate(end);
 // this is specified in the calendar partial
 function eventsLoad(events){
     let count = 0;
-    let headerCount = 0;
-    
+    let headerCountFullTime = 0;
+    let headerCountPartTime = 0;
+
     // sorts events object by date in ascending order
     events.sort(function(a,b){
       return new Date(a.start.date) - new Date(b.start.date);
     });
 
     events.forEach(function(entry) {
+      console.log('entry', entry);
         const today = new Date();
         const startsAt = new Date(entry.start.date);
         const start  = entry.start.date;
@@ -46,11 +48,19 @@ function eventsLoad(events){
         }
 
         // dates for page header
-        if (headerCount === 0 && startsAt > today) {
-          const headerDate = document.createElement('h2');
-          headerDate.innerHTML = `Next Batch: ${getOutput(start, end)}`;
-          (document.getElementById('next-batch-date')).appendChild(headerDate);
-          headerCount += 1;
+        // full time
+        if (headerCountFullTime === 0 && startsAt > today && entry.description === "Full Time") {
+          const fullTimeHeaderDate = document.createElement('h2');
+          fullTimeHeaderDate.innerHTML = `Next Full Time Batch: ${getOutput(start, end)}`;
+          (document.getElementById('next-batch-date')).appendChild(fullTimeHeaderDate);
+          headerCountFullTime += 1;
+        }
+        // part time
+        if (headerCountPartTime === 0 && startsAt > today && entry.description === "Part Time") {
+          const partTimeHeaderDate = document.createElement('h2');
+          partTimeHeaderDate.innerHTML = `Next Part Time Batch: ${getOutput(start, end)}`;
+          (document.getElementById('next-batch-date')).appendChild(partTimeHeaderDate);
+          headerCountPartTime += 1;
         }
     });
 }

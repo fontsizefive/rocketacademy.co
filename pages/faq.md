@@ -9,7 +9,7 @@ section: faq
 
 #### Why choose Rocket's Basics course?<br><br>
 
-1. Basics is a pathway course, enabling top graduates to enrol in Rocket’s Coding Bootcamp should they wish to switch careers or learn professional coding.
+1. Basics is a pathway course, enabling top graduates to enrol in Rocket’s software engineering bootcamp should they wish to switch careers or learn professional coding.
 
 2. Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
 
@@ -98,17 +98,17 @@ There is no practical difference. Software engineering is a more professional te
 
 2. If you already code and join Rocket, we may waive the [Coding Basics](https://www.rocketacademy.co/courses/basics) requirement depending on your experience.
 
-3. Many of our most successful graduates had coding experience prior to joining Rocket. [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.<br><br><br>
+3. Many of our most successful graduates had coding experience prior to joining Rocket. [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.<br><br><br>
 
 #### Can I join Rocket's courses while working a full-time job?<br><br>
 
-1. [Coding Basics](https://www.rocketacademy.co/courses/basics) is Rocket’s introductory course and a pre-requisite for [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp). Basics is a part-time course, roughly 10 hours of work per week, and meets from 7-9pm on Tuesday evenings and 1-3pm on Saturday afternoons.
+1. [Coding Basics](https://www.rocketacademy.co/courses/basics) is Rocket’s introductory course and a pre-requisite for [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp). Basics is a part-time course, roughly 10 hours of work per week, and meets from 7-9pm on Tuesday evenings and 1-3pm on Saturday afternoons.
 
-2. [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) has both full-time and part-time options.
+2. [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) has both full-time and part-time options.
 
-   1. Full-Time Bootcamp requires students to commit 10am-6pm Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Bootcamp.
+   1. Full-Time Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Bootcamp.
 
-   2. Part-Time Bootcamp requires students to commit 7-9pm Mon and Wed evenings, and 10am-12pm Sat mornings, with roughly 20 hours of work per week for 48 weeks.
+   2. Part-Time Bootcamp requires students to commit 7.30-9.30pm SGT Mon and Wed evenings, and 10am-12pm SGT Sat mornings, with roughly 20 hours of work per week for 48 weeks.
       <br><br><br>
 
 #### How many classes can I miss?<br><br>
@@ -124,7 +124,7 @@ There is no practical difference. Software engineering is a more professional te
 
 1. [Coding Basics](https://www.rocketacademy.co/courses/basics) is currently free for all interested students. [Apply now](https://www.rocketacademy.co/apply-now)!
 
-2. [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) tuition is payable upfront or in six instalments due at the start of each month of the course. We plan to offer a deferred payment option for Singaporeans that will be more expensive than upfront or during-course instalments. If this is of interest to you, please let us know when you apply!<br><br><br>
+2. [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) tuition is payable upfront or in six instalments due at the start of each month of the course. We plan to offer a deferred payment option for Singaporeans that will be more expensive than upfront or during-course instalments. If this is of interest to you, please let us know when you apply!<br><br><br>
 
 <br><br><br>
 
@@ -140,20 +140,20 @@ There is no practical difference. Software engineering is a more professional te
 
 [Coding Basics](https://www.rocketacademy.co/courses/basics) teaches basic coding syntax, tools, and computational thinking, and not advanced frameworks such as React or Redux.
 
-The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp).<br><br><br>
+The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp).<br><br><br>
 
 #### Will Basics teach me how to make a website?<br><br>
 
-[Coding Basics](https://www.rocketacademy.co/courses/basics) teaches basic coding syntax, tools, and computational thinking, not web development. Rocket accepts top Basics graduates to [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) where we dive deeper into web and general application development.<br><br><br>
+[Coding Basics](https://www.rocketacademy.co/courses/basics) teaches basic coding syntax, tools, and computational thinking, not web development. Rocket accepts top Basics graduates to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) where we dive deeper into web and general application development.<br><br><br>
 <br><br><br>
 
-# Coding Bootcamp Course<br><br>
+# Software Engineering Bootcamp Course<br><br>
 
 #### What languages will I learn in Bootcamp?<br><br>
 
 1. Rocket’s courses focus on teaching coding concepts, NOT languages. This is because coding concepts are applicable to ALL languages, but language syntax may only be relevant to that specific language.
 
-2. Rocket teaches [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) with the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
+2. Rocket teaches [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) with the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
 
 3. More important than languages, Bootcamp concepts will be applicable to almost all languages, frameworks, and apps.
    <br><br><br>
@@ -162,18 +162,18 @@ The concepts we learn in Basics will give students the foundation to better harn
 
 1. Weekly Q&As with software engineers in Singapore to answer YOUR questions and build YOUR network.
 
-2. Comprehensive and unlimited algorithms interview prep starting from Month 3 of Coding Bootcamp.
+2. Comprehensive and unlimited algorithms interview prep starting from Month 3 of Software Engineering Bootcamp.
 
 3. Comprehensive and unlimited resume and portfolio review.
 
-4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in SG). Rocket Academy only accepts top [Coding Basics](https://www.rocketacademy.co/courses/basics) students to [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp), and companies trust we give them top talent.
+4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in SG). Rocket Academy only accepts top [Coding Basics](https://www.rocketacademy.co/courses/basics) students to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp), and companies trust we give them top talent.
 
-5. Full refund to [Coding Bootcamp](https://www.rocketacademy.co/courses/bootcamp) graduates applying but unable to get a coding job within 6 months of graduation.
+5. Full refund to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) graduates applying but unable to get a coding job within 6 months of graduation.
    <br><br><br>
 
 #### What jobs qualify as "coding jobs" for the tuition refund?<br><br>
 
-1.  Coding Bootcamp graduates applying but unable to get coding jobs within 6 months of graduation will get a full refund.
+1.  Software Engineering Bootcamp graduates applying but unable to get coding jobs within 6 months of graduation will get a full refund.
 
 2.  “Coding job” refers to the following.
 

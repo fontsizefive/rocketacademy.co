@@ -44,10 +44,10 @@ In a software engineering team, you will often find a mix of both generalist and
 
 ## Local software engineering groups
 
-Keen to learn more about software engineering in Singapore? Join [DevSG](https://t.me/joinchat/AMjNsFh9UGIR5VvOs1_nXA), a Telegram group for general software engineering chat, or visit https://engineers.sg for exciting software engineering meetups and events in Singapore. Alternatively, join a coding bootcamp to meet like-minded friends!
+Keen to learn more about software engineering in Singapore? Join [DevSG](https://t.me/joinchat/AMjNsFh9UGIR5VvOs1_nXA), a Telegram group for general software engineering chat, or visit https://engineers.sg for exciting software engineering meetups and events in Singapore. Alternatively, join a software engineering bootcamp to meet like-minded friends!
 
 ## About Rocket Academy
 
-At Rocket Academy, our comprehensive, industry-relevant curriculum is designed to be your launch pad into a rewarding career as a software engineer. Learn the fundamentals of programming first with [our basic coding course, Coding Basics](https://www.rocketacademy.co/courses/basics). Graduates can advance into [Coding Bootcamp, an intensive bootcamp](https://www.rocketacademy.co/courses/bootcamp) that is the only one in Singapore with career coaching from software engineers. You will be taught sought-after technical skills, build an impressive portfolio, and receive career support to help you clinch and ace interviews with over 100 hiring partners.
+At Rocket Academy, our comprehensive, industry-relevant curriculum is designed to be your launch pad into a rewarding career as a software engineer. Learn the fundamentals of programming first with [our basic coding course, Coding Basics](https://www.rocketacademy.co/courses/basics). Graduates can advance into [Software Engineering Bootcamp, an intensive bootcamp](https://www.rocketacademy.co/courses/bootcamp) that is the only one in Singapore with career coaching from software engineers. You will be taught sought-after technical skills, build an impressive portfolio, and receive career support to help you clinch and ace interviews with over 100 hiring partners.
 
 Graduates from Bootcamp who are applying, but unable to get a software engineering or related job within six months, are eligible for a full refund.

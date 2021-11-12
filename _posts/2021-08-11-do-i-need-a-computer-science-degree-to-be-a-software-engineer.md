@@ -26,4 +26,4 @@ A Computer Science graduate from a less reputable university may not perform as 
 
 #### 5. Less practical for career switchers
 
-If you’re looking to transition industries, undertaking a four-year university degree may be a costly and time-consuming endeavour. Many career switchers instead choose to learn basic coding or programming through coding bootcamps.
+If you’re looking to transition industries, undertaking a four-year university degree may be a costly and time-consuming endeavour. Many career switchers instead choose to learn basic coding or programming through software engineering Bootcamps.
