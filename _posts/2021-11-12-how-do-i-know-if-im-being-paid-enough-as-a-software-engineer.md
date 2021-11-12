@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How do I know if I'm being paid enough as a Software Engineer?
-meta_description: ""
+meta_description: ../../assets/img/uploads/nodeflair-screenshot.png
 author: dan_urbanowicz
-date: 2021-11-12 20:37:38
+date: 2021-11-11 21:25:33
 categories: salary
 ---
 How do you know if your salary offered is reasonable? 
@@ -46,6 +46,3 @@ With verified salary data at your fingertips, you now know what to expect even b
 ###### By the way, you can be part of the solution by contributing your salary today. [Click here](https://www.nodeflair.com/salaries/addsalary?utm_source=rocketreach&utm_medium=content&utm_campaign=rr_article_softwareengineer) to make a difference. Rest assured, all submitted data will be kept strictly anonymous. 
 
 With this guide, becoming a software engineer is as easy as 1, 2, 3! Whether you are a mid-career switcher or just looking for greener pastures, having a clear roadmap helps you to reach your goal more effectively.
-
-
-For starters, check out the image below to find out if you’re currently being compensated fairly.
