@@ -3,7 +3,7 @@ layout: post
 title: How do I know if I'm being paid enough as a Software Engineer?
 meta_description: ../../assets/img/uploads/nodeflair-screenshot.png
 author: dan_urbanowicz
-date: 2021-11-12 21:25:33
+date: 2021-11-11 21:25:33
 categories: salary
 ---
 How do you know if your salary offered is reasonable? 
