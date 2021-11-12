@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why The Singapore Tech Scene Needs Latecomers - TESTING
+title: Why The Singapore Tech Scene Needs Latecomers
 meta_description: ../../assets/img/blog/blog-latecomers.png
 author: dan_urbanowicz
 date: 2021-08-10 12:00:00
