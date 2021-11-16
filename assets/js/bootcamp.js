@@ -44,16 +44,17 @@ function eventsLoad(events){
           curriculumLi.innerHTML = listItemDate;
           (document.getElementById('course-dates-container')).appendChild(bootcampLi);
           (document.getElementById('course-dates-curriculum')).appendChild(curriculumLi);
-          count += 1;
-        }
-
-       
-        if (count === 0) {
+          
+          if (count === 0) {
            // dates for page header
           const nextBatchHeader = document.createElement('h2');
           nextBatchHeader.innerHTML = 'Next Batches:';
           (document.getElementById('next-batch-date')).appendChild(nextBatchHeader);
         }
+
+          count += 1;
+        }
+        
         // full time
         if (headerCountFullTime === 0 && startsAt > today && entry.description === "Full Time") {
           const fullTimeHeaderDate = document.createElement('h2');
