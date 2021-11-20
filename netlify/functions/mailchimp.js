@@ -27,7 +27,7 @@ exports.audienceEntry = async function (data) {
     const response = await client.lists.addListMember(MAILCHIMP_LIST_ID, mailchimpData);
     return response;
   }catch(error){
-    throw new Error(JSON.stringify(error))
+    throw new Error(error)
   }
 }
 
