@@ -14,7 +14,7 @@
 // =====================================
 // =====================================
 //
-//    Import RA specific variable file.
+//    Import Rocket specific variable file.
 //    This has to happen before the rest
 //    of bootstrap is imported and compiled
 //
@@ -67,7 +67,7 @@
 @import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
-@import "partials/mixins", "partials/typography",
-  "partials/app", "partials/footer", "partials/navbar", "partials/blog",
-  "partials/basics", "partials/bootcamp", "partials/home", "partials/about",
-  "partials/faq", "partials/posts", "partials/signup", "partials/thanks";
+@import "partials/mixins", "partials/typography", "partials/app",
+  "partials/footer", "partials/navbar", "partials/blog", "partials/basics",
+  "partials/bootcamp", "partials/home", "partials/about", "partials/faq",
+  "partials/posts", "partials/signup", "partials/thanks";
