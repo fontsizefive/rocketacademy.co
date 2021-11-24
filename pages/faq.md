@@ -132,7 +132,7 @@ There is no practical difference. Software engineering is a more professional te
 
 #### What languages will I learn in Basics?<br><br>
 
-1. Rocket’s courses focus on teaching coding concepts, NOT languages. This is because coding concepts are applicable to ALL languages, but language syntax may only be relevant to that specific language.
+1. Rocket’s courses focus on teaching coding concepts, not languages. This is because coding concepts are applicable to all languages, but language syntax may only be relevant to that specific language.
 
 2. Rocket teaches [Coding Basics](https://www.rocketacademy.co/courses/basics) in JavaScript, currently the [world’s most popular language](https://insights.stackoverflow.com/survey/2020#most-popular-technologies). Basics coding concepts are relevant to almost all programming languages used today.<br><br><br>
 
@@ -151,7 +151,7 @@ The concepts we learn in Basics will give students the foundation to better harn
 
 #### What languages will I learn in Bootcamp?<br><br>
 
-1. Rocket’s courses focus on teaching coding concepts, NOT languages. This is because coding concepts are applicable to ALL languages, but language syntax may only be relevant to that specific language.
+1. Rocket’s courses focus on teaching coding concepts, not languages. This is because coding concepts are applicable to all languages, but language syntax may only be relevant to that specific language.
 
 2. Rocket teaches [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) with the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
 
@@ -160,15 +160,15 @@ The concepts we learn in Basics will give students the foundation to better harn
 
 #### What career support does Rocket provide?<br><br>
 
-1. Weekly Q&As with software engineers in Singapore to answer YOUR questions and build YOUR network.
+1. Weekly student-only Q&A sessions with software engineers from industry to answer student questions and build students' professional networks.
 
-2. Comprehensive and unlimited algorithms interview prep starting from Month 3 of Software Engineering Bootcamp.
+2. Comprehensive and unlimited algorithms interview prep.
 
 3. Comprehensive and unlimited resume and portfolio review.
 
-4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in SG). Rocket Academy only accepts top [Coding Basics](https://www.rocketacademy.co/courses/basics) students to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp), and companies trust we give them top talent.
+4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing [Coding Basics](https://www.rocketacademy.co/courses/basics) students to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp), and companies trust that Rocket attracts and produces top talent.
 
-5. Full refund to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) graduates applying but unable to get a coding job within 6 months of graduation.
+5. Full refund to [Software Engineering Bootcamp](https://www.rocketacademy.co/courses/bootcamp) graduates applying but unable to get a software engineering job within 6 months of graduation.
    <br><br><br>
 
 #### What jobs qualify as "coding jobs" for the tuition refund?<br><br>
@@ -185,7 +185,7 @@ The concepts we learn in Basics will give students the foundation to better harn
 
 #### Who is eligible for the job guarantee?<br><br>
 
-The job guarantee is only applicable for Singaporeans and Permanent Residents (PRs) only. However, all bootcamp students will receive the same help and preparation during the job search.<br><br><br>
+The job guarantee is only applicable in graduates' country of citizenship or permanent residency due to visa restrictions. However, all bootcamp students will receive the same help and preparation during the job search.<br><br><br>
 
 #### Do you offer refunds?<br><br>
 
