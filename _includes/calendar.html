@@ -22,7 +22,8 @@ https://developers.google.com/calendar/api/v3/reference/events/get {% endcomment
             timeMin: new Date().toISOString(),
           });
         })
-        .then(function (response, courseType) {
+        .then(function (response) {
+
           if (response.result.items) {
             if (courseType === "Both") {
               eventsLoad(response.result.items);
