@@ -23,8 +23,7 @@
     "@middy/core": "^2.5.2",
     "@middy/http-urlencode-body-parser": "^2.5.2",
     "@sentry/node": "^6.13.3",
-    "@sentry/tracing": "^6.13.3",
-    "luxon": "^2.1.1"
+    "@sentry/tracing": "^6.13.3"
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
