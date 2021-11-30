@@ -1,5 +1,12 @@
 var courseType = "Both";
 
+// helper function that adds/ subtracts a number of days to specific date
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
 // helper function for formatting date
 const getFormattedDate = (d) => {
   let dateObj = new Date(d);
@@ -30,26 +37,28 @@ function eventsLoad(events){
 
     events.forEach((entry) => {
       const today = new Date();
-      let startsAt = new Date(entry.start.date);
       let start = entry.start.date;
       let end = entry.end.date;
 
+      // date 2 weeks before actual course start date
+      const expiryDate = addDays(start, -14);
+
       // header course dates
-      if (basicsCount === 0 && startsAt > today && entry.summary.includes("Basics")) {
+      if (basicsCount === 0 && expiryDate > today && entry.summary.includes("Basics")) {
         let basicsDate = document.createElement('p');
         basicsDate.innerHTML = `Next Batch: ${getOutput(start, end)}`;
         (document.getElementById('basics-homepage-dates')).appendChild(basicsDate);
         basicsCount += 1;
       }
 
-      if (fullTimeCount === 0 && startsAt > today && entry.description === 'Full Time') {
+      if (fullTimeCount === 0 && expiryDate > today && entry.description === 'Full Time') {
         let fullTimeDates = document.createElement('p');
         fullTimeDates.innerHTML = `Full Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(fullTimeDates);
         fullTimeCount += 1;
       }
 
-      if(partTimeCount === 0 && startsAt > today && entry.description === 'Part Time') {
+      if(partTimeCount === 0 && expiryDate > today && entry.description === 'Part Time') {
         let partTimeDates = document.createElement('p');
         partTimeDates.innerHTML = `Part Time: ${getOutput(start, end)}`;
         (document.getElementById('bootcamp-homepage-dates')).appendChild(partTimeDates);

@@ -1,5 +1,12 @@
 var courseType = "Basics";
 
+// helper function that adds/ subtracts a number of days to specific date
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
 // helper function for formatting date
 const getFormattedDate = (d) => {
   const dateObj = new Date(d);
@@ -29,12 +36,14 @@ function eventsLoad(events){
 
     events.forEach(function(entry) {
         const today = new Date();
-        const startsAt = new Date(entry.start.date);
         const start = entry.start.date;
         const end = entry.end.date;
 
+        // date 2 weeks before actual course start date
+        const expiryDate = addDays(start, -14);
+
         // limit of 5 course dates with start date > current date
-        if (count < 3 && startsAt > today) {
+        if (count < 3 && expiryDate > today) {
           const listItemDate = getOutput(start, end);
           const bootcampLi = document.createElement('li');
           const curriculumLi = document.createElement('li');
@@ -46,7 +55,7 @@ function eventsLoad(events){
         }
 
         // header course dates
-        if (headerCount === 0 && startsAt > today) {
+        if (headerCount === 0 && expiryDate > today) {
           const headerDate = document.createElement('h2');
           headerDate.innerHTML = `Next Batch: ${getOutput(start, end)}`;
           (document.getElementById('basics-next-batch')).appendChild(headerDate);

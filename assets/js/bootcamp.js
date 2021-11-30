@@ -1,5 +1,12 @@
 var courseType = "Bootcamp";
 
+// helper function that adds/ subtracts a number of days to specific date
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
 // helper function for formatting date
 const getFormattedDate = (d) => {
   const dateObj = new Date(d);
@@ -29,14 +36,15 @@ function eventsLoad(events){
     });
 
     events.forEach(function(entry) {
-      console.log('entry', entry);
         const today = new Date();
-        const startsAt = new Date(entry.start.date);
         const start  = entry.start.date;
         const end = entry.end.date;
 
-        // limit of 5 course dates with start date > current date
-        if (count < 5 && startsAt > today) {
+        // date 2 weeks before actual course start date
+        const expiryDate = addDays(start, -14);
+        
+        // limit of 5 course dates with expiry date > current date
+        if (count < 5 && expiryDate > today) {
           const listItemDate = `${getOutput(start, end)} (${entry.description})`;
           const bootcampLi = document.createElement('li');
           const curriculumLi = document.createElement('li');
@@ -56,14 +64,14 @@ function eventsLoad(events){
         }
         
         // full time
-        if (headerCountFullTime === 0 && startsAt > today && entry.description === "Full Time") {
+        if (headerCountFullTime === 0 && expiryDate > today && entry.description === "Full Time") {
           const fullTimeHeaderDate = document.createElement('h2');
           fullTimeHeaderDate.innerHTML = `${getOutput(start, end)} (${entry.description})`;
           (document.getElementById('next-batch-date')).appendChild(fullTimeHeaderDate);
           headerCountFullTime += 1;
         }
         // part time
-        if (headerCountPartTime === 0 && startsAt > today && entry.description === "Part Time") {
+        if (headerCountPartTime === 0 && expiryDate > today && entry.description === "Part Time") {
           const partTimeHeaderDate = document.createElement('h2');
           partTimeHeaderDate.innerHTML = `${getOutput(start, end)} (${entry.description})`;
           (document.getElementById('next-batch-date')).appendChild(partTimeHeaderDate);
