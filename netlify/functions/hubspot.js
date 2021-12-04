@@ -13,7 +13,7 @@ exports.subscriberEntry = async function (data) {
       properties: {
         ...data,
         course_type:data.course_type.join(';'),
-        bootcamp_funnel_status:'basics_apply'
+        bootcamp_funnel_status:'basics_apply',
       }
     };
 
