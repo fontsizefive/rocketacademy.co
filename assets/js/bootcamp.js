@@ -13,12 +13,12 @@ function eventsLoad(events){
   let headerCountPartTime = 0;
 
   // sorts events object by date in ascending order
-  events.sort((a, b) => {
+  events.sort(function(a, b) {
     return new Date(a.start.date) - new Date(b.start.date);
   });
 
   // dates in content of bootcamp page
-  events.forEach(entry => {
+  events.forEach(function(entry) {
     const today = new Date();
     const start  = entry.start.date;
     const end = entry.end.date;
@@ -41,7 +41,7 @@ function eventsLoad(events){
   })
       
   // dates in header of bootcamp page
-  events.forEach(entry => {
+  events.forEach(function(entry) {
     const today = new Date();
     const start  = entry.start.date;
     const end = entry.end.date;
