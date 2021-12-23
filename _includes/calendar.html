@@ -4,39 +4,42 @@ https://developers.google.com/calendar/api/v3/reference/events/get {% endcomment
 %}
 <script src="https://apis.google.com/js/api.js"></script>
 <script type="text/javascript">
-  try {
-    gapi.load("client", function printCalendar() {
-      var calendarId = "{{site.env.GOOGLE_CALENDAR_ID}}";
-      var apiKey = "{{site.env.GOOGLE_API_KEY}}";
+  document.addEventListener('DOMContentLoaded', () => {
+    try {
+      gapi.load("client", function printCalendar() {
+        var calendarId = "{{site.env.GOOGLE_CALENDAR_ID}}";
+        var apiKey = "{{site.env.GOOGLE_API_KEY}}";
 
-      gapi.client
-        .init({
-          apiKey: apiKey,
-          discoveryDocs: [
-            "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
-          ],
-        })
-        .then(function () {
-          return gapi.client.calendar.events.list({
-            calendarId: calendarId,
-            timeMin: new Date().toISOString(),
-          });
-        })
-        .then(function (response) {
+        gapi.client
+          .init({
+            apiKey: apiKey,
+            discoveryDocs: [
+              "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+            ],
+          })
+          .then(function () {
+            return gapi.client.calendar.events.list({
+              calendarId: calendarId,
+              timeMin: new Date().toISOString(),
+            });
+          })
+          .then(function (response) {
 
-          if (response.result.items) {
-            if (courseType === "Both") {
-              eventsLoad(response.result.items);
-            } else {
-              var events = response.result.items.filter(function (entry) {
-                return entry.summary.includes(courseType);
-              });
-              eventsLoad(events);
+            if (response.result.items) {
+              if (courseType === "Both") {
+                eventsLoad(response.result.items);
+              } else {
+                var events = response.result.items.filter(function (entry) {
+                  return entry.summary.includes(courseType);
+                });
+                eventsLoad(events);
+              }
             }
-          }
-        });
-    });
-  } catch (error) {
-    Sentry.captureException(error);
-  }
+          });
+      });
+    } catch (error) {
+      Sentry.captureException(error);
+    }
+  });
+  
 </script>
