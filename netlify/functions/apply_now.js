@@ -19,7 +19,6 @@ function initSentry() {
     }
 }
 
-var mailchimp = require('./mailchimp.js');
 var hubspot = require('./hubspot.js');
 
 const handleRequest = async (event, context) => {
@@ -40,9 +39,7 @@ const handleRequest = async (event, context) => {
 
     console.log(body);
 
-    // send data to mailchimp/ hubspot to be added to our lists
-    const mailchimpResult = await mailchimp.audienceEntry(body);
-
+    // send data to hubspot to be added to our lists
     const hubspotResult = await hubspot.subscriberEntry(body);
 
     return {
